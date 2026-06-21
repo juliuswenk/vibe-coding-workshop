@@ -63,7 +63,6 @@ Die Inhalte sind so aufgebaut:
 | [Erstes Projekt](mein-erstes-projekt) | Gemeinsamer Einstieg in die Arbeit mit einem Coding Agent |
 | [Eigenes Projekt](freies-projekt-inspiration) | Raum für deine eigene Idee |
 | [Glossar](glossar) | Kurze Erklärungen wichtiger Begriffe |
-| [Knowledge Base](knowledge-base) | Zusätzliche Notizen und Begriffe |
 
 ---
 
