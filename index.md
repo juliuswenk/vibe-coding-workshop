@@ -7,7 +7,7 @@ title: Vibe-Coding 101 @ SRH
 
 Willkommen zum Workshop. In den nächsten Stunden lernst du, wie du mit `Coding Agents` arbeitest: also mit KI-Werkzeugen, die nicht nur Text schreiben, sondern dir beim Planen, Bauen, Verstehen und Verbessern von Software helfen können.
 
-Du brauchst dafür kein Vorwissen in Programmierung, Git, GitHub oder Terminal. Wir starten bei den Grundlagen und arbeiten Schritt für Schritt.
+Du brauchst dafür kein Vorwissen in Programmierung. Wir starten bei den Grundlagen und arbeiten Schritt für Schritt.
 
 ## Was diese Seite erklärt
 
