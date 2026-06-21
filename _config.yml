@@ -1,3 +1,26 @@
 title: Vibe-Coding 101 @ SRH
 description: Workshop-Materialien
 theme: jekyll-theme-minimal
+nav:
+  - title: Start
+    url: /
+  - title: Theorie
+    url: /theorie
+  - title: Setup macOS
+    url: /setup/mac
+  - title: Setup Windows
+    url: /setup/windows
+  - title: GitHub Tutorial
+    url: /tutorials/github
+  - title: Zed Tutorial
+    url: /tutorials/zed
+  - title: Opencode Tutorial
+    url: /tutorials/opencode
+  - title: Mein erstes Projekt
+    url: /mein-erstes-projekt
+  - title: Projekt-Inspiration
+    url: /freies-projekt-inspiration
+  - title: Glossar
+    url: /glossar
+  - title: Knowledge Base
+    url: /knowledge-base
