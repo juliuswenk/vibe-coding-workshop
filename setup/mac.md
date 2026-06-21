@@ -182,11 +182,35 @@ Falls das nicht funktioniert, nutze die `npm`-Variante:
 npm install -g opencode-ai
 ```
 
-## 9. OpenCode verbinden
+## 9. OpenCode in Zed hinzufügen
+
+OpenCode kann in Zed als `External Agent` laufen. Dann kannst du direkt in Zed mit dem Agenten chatten, während dein Projektordner geöffnet ist.
+
+So fügst du OpenCode in Zed hinzu:
+
+1. Öffne `Zed`.
+2. Öffne dein Projekt oder den Ordner `erstes-projekt`.
+3. Öffne die Command Palette mit `Cmd + Shift + P`.
+4. Suche nach `zed: acp registry`.
+5. Öffne die ACP Registry.
+6. Suche nach `OpenCode`.
+7. Installiere den OpenCode-Agenten.
+8. Öffne das Agent Panel über das ✨-Symbol oder über die Command Palette mit `agent: new thread`.
+9. Wähle im neuen Thread `OpenCode` als Agent aus.
+
+Wenn OpenCode dich zur Anmeldung oder Verbindung auffordert, folge den Anweisungen.
 
 OpenCode braucht Zugriff auf ein KI-Modell. Je nach Workshop-Stand kann das über einen OpenCode-Account, einen API-Key oder einen anderen Provider laufen.
 
-Für jetzt reicht:
+Wenn du nach einem API-Key gefragt wirst und noch keinen hast, warte auf die Erklärung im Workshop.
+
+Du musst hier nichts kaufen, bevor wir gemeinsam geklärt haben, welchen Zugang wir verwenden.
+
+Hinweis: Wenn du zufällig schon für einen anderen Coding Agent bezahlst, zum Beispiel `Codex`, `Claude Code`, `Copilot` oder einen anderen Agenten in Zed, kannst du auch diesen benutzen. Für den gemeinsamen Workshop-Flow verwenden wir aber OpenCode.
+
+## 10. OpenCode im Terminal testen
+
+Falls die Zed-Verbindung noch nicht funktioniert, kannst du OpenCode auch direkt im Terminal testen:
 
 1. Öffne das Terminal.
 2. Starte OpenCode:
@@ -195,12 +219,7 @@ Für jetzt reicht:
 opencode
 ```
 
-3. Wenn OpenCode dich zur Anmeldung oder Verbindung auffordert, folge den Anweisungen.
-4. Wenn du nach einem API-Key gefragt wirst und noch keinen hast, warte auf die Erklärung im Workshop.
-
-Du musst hier nichts kaufen, bevor wir gemeinsam geklärt haben, welchen Zugang wir verwenden.
-
-## 10. Projektordner anlegen
+## 11. Projektordner anlegen
 
 Ein Projektordner ist einfach ein Ordner, in dem alle Dateien deines Projekts liegen.
 
@@ -226,7 +245,7 @@ Du solltest einen Pfad sehen, der ungefähr so endet:
 Desktop/vibe-coding-projekte/erstes-projekt
 ```
 
-## 11. Projekt in Zed öffnen
+## 12. Projekt in Zed öffnen
 
 Öffne `Zed`.
 
@@ -239,7 +258,7 @@ Dann:
 
 Du siehst jetzt deinen Projektordner in Zed. Er ist noch leer. Das ist normal.
 
-## 12. Kurzer Funktionstest
+## 13. Kurzer Funktionstest
 
 Gehe im Terminal in deinen Projektordner:
 
@@ -253,7 +272,7 @@ Starte OpenCode:
 opencode
 ```
 
-Wenn OpenCode startet, bist du bereit für den Workshop.
+Wenn OpenCode im Terminal startet oder als Agent in Zed auswählbar ist, bist du bereit für den Workshop.
 
 Wenn OpenCode nicht startet, prüfe:
 
