@@ -14,7 +14,6 @@ Zed ist das Programm, in dem du deine Projektdateien öffnest, bearbeitest, mit 
 Diese Seite erklärt:
 
 - was ein Code Editor ist
-- was eine `IDE` ist
 - warum wir Zed im Workshop nutzen
 - wie Zed grob aufgebaut ist
 - welche Bereiche der Oberfläche wichtig sind
@@ -60,41 +59,6 @@ Beispiele für Code Editoren sind:
 - `Sublime Text`
 - `Atom`
 
-## Was ist eine IDE?
-
-`IDE` steht für `Integrated Development Environment`.
-
-Auf Deutsch: integrierte Entwicklungsumgebung.
-
-Eine IDE bündelt mehrere Werkzeuge, die man zum Programmieren braucht:
-
-- Editor
-- Dateiansicht
-- Terminal
-- Git-Werkzeuge
-- Fehlermeldungen
-- Projektverwaltung
-- manchmal Debugger oder Build-Werkzeuge
-
-Für Anfänger*innen ist der Unterschied zwischen `Code Editor` und `IDE` nicht entscheidend.
-
-Wichtig ist: Zed ist der Ort, an dem dein Projekt sichtbar und bearbeitbar wird.
-
-## Warum Zed?
-
-Wir nutzen Zed, weil es für den Workshop genug kann, aber nicht zu überladen wirkt.
-
-Zed bietet:
-
-- eine klare Oberfläche
-- schnellen Zugriff auf Projektdateien
-- integrierte Git-Funktionen
-- ein eingebautes Terminal
-- ein Agent Panel für KI-Unterstützung
-- gute Unterstützung für moderne Webprojekte
-
-Du musst nicht jede Funktion kennen. Für den Workshop reichen die Grundlagen.
-
 ## Die wichtigsten Bereiche in Zed
 
 Zed besteht grob aus diesen Bereichen:
@@ -134,13 +98,6 @@ Der Editor ist der große Bereich in der Mitte.
 
 Hier bearbeitest du Dateien.
 
-Beispiel:
-
-```html
-<h1>Mein Projekt</h1>
-<p>Das ist meine erste Seite.</p>
-```
-
 Zed hebt Code farbig hervor. Das nennt man `Syntax Highlighting`.
 
 Das hilft dir zu erkennen:
@@ -160,7 +117,7 @@ Beispiel:
 index.html | style.css | README.md
 ```
 
-Ein Tab ist wie ein geöffneter Dokument-Reiter im Browser.
+Ein Tab ist wie ein geöffneter Reiter im Browser.
 
 Du kannst zwischen Dateien wechseln, ohne sie jedes Mal neu suchen zu müssen.
 
@@ -237,24 +194,8 @@ Frage dich:
 - Passt das zur Aufgabe?
 - Wurde etwas Unerwartetes geändert?
 
-## 7. Project Diff
 
-Ein `Diff` zeigt dir den Unterschied zwischen vorher und nachher.
-
-Beispiel:
-
-```text
-- alter Text
-+ neuer Text
-```
-
-Das Minus bedeutet: Diese Zeile wurde entfernt.
-
-Das Plus bedeutet: Diese Zeile wurde hinzugefügt.
-
-Der Project Diff ist nützlich, wenn du vor einem Commit prüfen willst, was wirklich verändert wurde.
-
-## 8. Agent Panel
+## 7. Agent Panel
 
 Das `Agent Panel` ist der Bereich, in dem du mit einem Coding Agent arbeitest.
 
@@ -276,7 +217,7 @@ Erkläre mir in einfachen Worten, welche Dateien wichtig sind.
 
 Wichtig: Lass den Agenten nicht sofort alles bauen. Starte klein.
 
-## 9. Ein Projekt öffnen
+## 8. Ein Projekt öffnen
 
 Ein Projekt ist meistens einfach ein Ordner.
 
@@ -290,7 +231,7 @@ Um ein Projekt in Zed zu öffnen:
 
 Danach sollte der Ordner links im Project Panel sichtbar sein.
 
-## 10. Eine Datei erstellen
+## 9. Eine Datei erstellen
 
 Im Project Panel:
 
@@ -306,35 +247,8 @@ index.html
 
 Dann kannst du die Datei im Editor bearbeiten.
 
-## 11. Eine Datei speichern
 
-Normalerweise speichert Zed automatisch oder zeigt ungespeicherte Änderungen an.
-
-Für den Anfang kannst du bewusst speichern:
-
-- macOS: `Cmd + S`
-- Windows: `Ctrl + S`
-
-Wenn du unsicher bist: Speichere einmal, bevor du testest oder committest.
-
-## 12. Eine Datei suchen
-
-In echten Projekten entstehen schnell mehrere Dateien.
-
-Du kannst Dateien suchen mit:
-
-- macOS: `Cmd + P`
-- Windows: `Ctrl + P`
-
-Dann tippst du den Dateinamen ein.
-
-Beispiel:
-
-```text
-style.css
-```
-
-## 13. Typischer Workshop-Workflow in Zed
+## 10. Typischer Workshop-Workflow in Zed
 
 Für den Workshop reicht dieser Ablauf:
 
@@ -353,7 +267,7 @@ Kurz:
 Öffnen -> Planen -> Ändern -> Prüfen -> Committen
 ```
 
-## 14. Was du nicht sofort verstehen musst
+## 11. Was du nicht sofort verstehen musst
 
 Du musst am Anfang nicht verstehen:
 
@@ -376,7 +290,7 @@ Für den Start reicht:
 - Agent Panel öffnen
 - kleine Änderungen prüfen
 
-## 15. Wenn du dich verirrst
+## 12. Wenn du dich verirrst
 
 Wenn Zed unübersichtlich wird:
 
@@ -391,21 +305,6 @@ Ich bin in Zed gerade unsicher.
 Erkläre mir, welche Datei ich öffnen soll und warum.
 Ändere nichts.
 ```
-
-## Mini-Glossar
-
-| Begriff | Bedeutung |
-| --- | --- |
-| `Code Editor` | Programm zum Bearbeiten von Code- und Textdateien |
-| `IDE` | Entwicklungsumgebung mit mehreren Werkzeugen an einem Ort |
-| `Project Panel` | Dateiansicht deines Projekts |
-| `Editor` | Bereich, in dem du Dateien bearbeitest |
-| `Tab` | Geöffnete Datei im Editor |
-| `Command Palette` | Suche für Zed-Befehle |
-| `Terminal` | Bereich für Textbefehle |
-| `Git Panel` | Bereich für Git-Änderungen |
-| `Project Diff` | Ansicht der Änderungen |
-| `Agent Panel` | Bereich für den Coding Agent |
 
 ## Was du jetzt gelernt hast
 
