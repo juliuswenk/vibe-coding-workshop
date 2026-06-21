@@ -41,11 +41,16 @@ pre,
 div.highlight {
     background: #0d1117;
     border: 1px solid #30363d;
+    overflow-x: visible;
+    white-space: pre-wrap;
+    word-break: break-word;
 }
 
 pre code {
     background: transparent;
     color: #f0f3f6;
+    white-space: pre-wrap;
+    word-break: break-word;
 }
 
 .highlight pre {
