@@ -7,13 +7,14 @@ title: Setup für Windows
 
 Diese Seite hilft dir dabei, deinen Windows-Computer für den Workshop vorzubereiten.
 
-Du musst nicht verstehen, wie alle Werkzeuge im Detail funktionieren. Wichtig ist erst einmal: Am Ende kannst du Dateien bearbeiten, Projekte speichern und mit einem `Coding Agent` arbeiten.
+Wir nutzen `winget` als Package Manager. Ein Package Manager installiert Programme über Befehle in PowerShell. Das wirkt am Anfang ungewohnt, ist aber oft einfacher als viele einzelne Downloadseiten.
 
 ## Was diese Seite erklärt
 
 Du installierst und prüfst:
 
 - einen GitHub-Account
+- `winget`
 - `Git`
 - `Node.js LTS`
 - `Zed`
@@ -36,7 +37,7 @@ Damit dieser Arbeitsprozess gut funktioniert, brauchst du:
 
 Öffne diese Seite auf deinem Windows-Computer und arbeite die Schritte von oben nach unten durch.
 
-Wenn ein Schritt nicht funktioniert: Nicht schlimm. Schreib dir die Fehlermeldung auf oder mach einen Screenshot. Genau solche Situationen gehören zum Arbeiten mit Entwicklungswerkzeugen dazu.
+Wenn ein Schritt nicht funktioniert: Nicht schlimm. Schreib dir die Fehlermeldung auf oder mach einen Screenshot.
 
 ## 1. GitHub-Account erstellen
 
@@ -50,8 +51,6 @@ Wenn ein Schritt nicht funktioniert: Nicht schlimm. Schreib dir die Fehlermeldun
 
 Du brauchst keinen bezahlten Plan.
 
-Quelle: GitHub beschreibt in der offiziellen Anleitung, dass du für den Einstieg einen kostenlosen persönlichen Account mit bestätigter E-Mail-Adresse brauchst: [Creating an account on GitHub](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github).
-
 ## 2. PowerShell öffnen
 
 `PowerShell` ist ein Programm, in dem du Textbefehle ausführst.
@@ -62,17 +61,43 @@ Quelle: GitHub beschreibt in der offiziellen Anleitung, dass du für den Einstie
 
 Du siehst jetzt ein Fenster, in das du Befehle schreiben kannst.
 
-## 3. Git installieren
+## 3. winget prüfen
+
+`winget` ist der Windows Package Manager. Auf Windows 11 und aktuellen Windows-10-Versionen ist er meistens schon installiert.
+
+Prüfe in PowerShell:
+
+```powershell
+winget --version
+```
+
+Wenn eine Versionsnummer erscheint, ist `winget` bereit.
+
+Wenn der Befehl nicht gefunden wird:
+
+1. Öffne den `Microsoft Store`.
+2. Suche nach `App Installer`.
+3. Installiere oder aktualisiere `App Installer`.
+4. Schließe PowerShell und öffne sie neu.
+5. Prüfe nochmal:
+
+```powershell
+winget --version
+```
+
+## 4. Git installieren
 
 `Git` speichert Versionen deines Projekts. Dadurch kannst du später nachvollziehen, was sich geändert hat.
 
-1. Öffne [git-scm.com/downloads](https://git-scm.com/downloads/).
-2. Lade `Git for Windows` herunter.
-3. Starte den Installer.
-4. Klicke dich durch die Installation mit den vorgeschlagenen Standardwerten.
-5. Schließe PowerShell und öffne sie neu.
+Installiere `Git`:
 
-Prüfe danach:
+```powershell
+winget install --id Git.Git -e
+```
+
+Schließe PowerShell danach und öffne sie neu.
+
+Prüfe dann:
 
 ```powershell
 git --version
@@ -80,7 +105,7 @@ git --version
 
 Wenn eine Versionsnummer erscheint, ist `Git` installiert.
 
-## 4. Git einmal einrichten
+## 5. Git einmal einrichten
 
 Git soll wissen, welcher Name und welche E-Mail-Adresse zu deinen Änderungen gehören.
 
@@ -100,15 +125,17 @@ git config --global user.email
 
 Wenn dein Name und deine E-Mail-Adresse angezeigt werden, passt es.
 
-## 5. Node.js LTS installieren
+## 6. Node.js LTS installieren
 
 `Node.js` hilft uns später, einfache Webprojekte lokal auszuführen. `LTS` bedeutet: stabile Version für die meisten Nutzerinnen und Nutzer.
 
-1. Öffne [nodejs.org](https://nodejs.org/).
-2. Lade die `LTS`-Version für Windows herunter.
-3. Starte den Installer.
-4. Folge dem Installer mit den vorgeschlagenen Standardwerten.
-5. Schließe PowerShell und öffne sie neu.
+Installiere `Node.js LTS`:
+
+```powershell
+winget install --id OpenJS.NodeJS.LTS -e
+```
+
+Schließe PowerShell danach und öffne sie neu.
 
 Prüfe die Installation:
 
@@ -119,18 +146,30 @@ npm --version
 
 Wenn beide Befehle eine Versionsnummer anzeigen, ist alles bereit.
 
-## 6. Zed installieren
+## 7. Zed installieren
 
 `Zed` ist unser Code Editor. Darin öffnest und bearbeitest du Projektdateien.
+
+Prüfe zuerst, ob Zed über `winget` verfügbar ist:
+
+```powershell
+winget search Zed
+```
+
+Wenn du einen Eintrag für `Zed` siehst, installiere ihn. Meistens ist der Paketname:
+
+```powershell
+winget install --id Zed.Zed -e
+```
+
+Wenn `winget` keinen Zed-Eintrag findet, nutze die offizielle Downloadseite:
 
 1. Öffne [zed.dev/download](https://zed.dev/download).
 2. Lade Zed für Windows herunter.
 3. Starte den Installer.
 4. Öffne danach `Zed`.
 
-Die offizielle Zed-Downloadseite zeigt die aktuelle Version und den Windows-Download: [Zed Download](https://zed.dev/download).
-
-## 7. OpenCode installieren
+## 8. OpenCode installieren
 
 `OpenCode` ist der Coding Agent, den wir im Workshop verwenden wollen. Er läuft in PowerShell.
 
@@ -148,9 +187,7 @@ opencode --version
 
 Wenn eine Versionsnummer erscheint, ist OpenCode installiert.
 
-Die offizielle OpenCode-Dokumentation nennt `npm install -g opencode-ai` als Installationsmöglichkeit. Für Windows empfiehlt OpenCode außerdem `WSL`, aber für den Einstieg im Workshop versuchen wir zuerst den einfacheren Weg über `npm`: [OpenCode Docs](https://opencode.ai/docs).
-
-## 8. OpenCode verbinden
+## 9. OpenCode verbinden
 
 OpenCode braucht Zugriff auf ein KI-Modell. Je nach Workshop-Stand kann das über einen OpenCode-Account, einen API-Key oder einen anderen Provider laufen.
 
@@ -168,7 +205,7 @@ opencode
 
 Du musst hier nichts kaufen, bevor wir gemeinsam geklärt haben, welchen Zugang wir verwenden.
 
-## 9. Projektordner anlegen
+## 10. Projektordner anlegen
 
 Ein Projektordner ist einfach ein Ordner, in dem alle Dateien deines Projekts liegen.
 
@@ -194,7 +231,7 @@ Du solltest einen Pfad sehen, der ungefähr so endet:
 Desktop\vibe-coding-projekte\erstes-projekt
 ```
 
-## 10. Projekt in Zed öffnen
+## 11. Projekt in Zed öffnen
 
 Öffne `Zed`.
 
@@ -207,7 +244,7 @@ Dann:
 
 Du siehst jetzt deinen Projektordner in Zed. Er ist noch leer. Das ist normal.
 
-## 11. Kurzer Funktionstest
+## 12. Kurzer Funktionstest
 
 Gehe in PowerShell in deinen Projektordner:
 
@@ -225,7 +262,8 @@ Wenn OpenCode startet, bist du bereit für den Workshop.
 
 Wenn OpenCode nicht startet, prüfe:
 
-- Ist `Node.js` installiert?
+- Gibt `winget --version` eine Versionsnummer aus?
+- Gibt `node --version` eine Versionsnummer aus?
 - Gibt `npm --version` eine Versionsnummer aus?
 - Gibt `opencode --version` eine Versionsnummer aus?
 - Bist du im richtigen Ordner?
@@ -234,4 +272,4 @@ Wenn OpenCode nicht startet, prüfe:
 
 Du hast deinen Windows-Computer so vorbereitet, dass du mit einem Coding Agent an einem eigenen Projekt arbeiten kannst.
 
-Du hast außerdem gesehen, dass ein Projekt nicht mit Code beginnt, sondern mit einer einfachen Arbeitsumgebung: Account, Editor, PowerShell, Projektordner und Agent.
+Du hast außerdem gesehen, dass ein Projekt nicht mit Code beginnt, sondern mit einer einfachen Arbeitsumgebung: Account, Package Manager, Editor, PowerShell, Projektordner und Agent.

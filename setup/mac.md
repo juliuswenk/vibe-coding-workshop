@@ -7,13 +7,14 @@ title: Setup für macOS
 
 Diese Seite hilft dir dabei, deinen Mac für den Workshop vorzubereiten.
 
-Du musst nicht verstehen, wie alle Werkzeuge im Detail funktionieren. Wichtig ist erst einmal: Am Ende kannst du Dateien bearbeiten, Projekte speichern und mit einem `Coding Agent` arbeiten.
+Wir nutzen `Homebrew` als Package Manager. Ein Package Manager installiert Programme über Befehle im Terminal. Das wirkt am Anfang ungewohnt, ist aber oft einfacher als viele einzelne Downloadseiten.
 
 ## Was diese Seite erklärt
 
 Du installierst und prüfst:
 
 - einen GitHub-Account
+- `Homebrew`
 - `Git`
 - `Node.js LTS`
 - `Zed`
@@ -36,7 +37,7 @@ Damit dieser Arbeitsprozess gut funktioniert, brauchst du:
 
 Öffne diese Seite auf deinem Mac und arbeite die Schritte von oben nach unten durch.
 
-Wenn ein Schritt nicht funktioniert: Nicht schlimm. Schreib dir die Fehlermeldung auf oder mach einen Screenshot. Genau solche Situationen gehören zum Arbeiten mit Entwicklungswerkzeugen dazu.
+Wenn ein Schritt nicht funktioniert: Nicht schlimm. Schreib dir die Fehlermeldung auf oder mach einen Screenshot.
 
 ## 1. GitHub-Account erstellen
 
@@ -50,8 +51,6 @@ Wenn ein Schritt nicht funktioniert: Nicht schlimm. Schreib dir die Fehlermeldun
 
 Du brauchst keinen bezahlten Plan.
 
-Quelle: GitHub beschreibt in der offiziellen Anleitung, dass du für den Einstieg einen kostenlosen persönlichen Account mit bestätigter E-Mail-Adresse brauchst: [Creating an account on GitHub](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github).
-
 ## 2. Terminal öffnen
 
 Das `Terminal` ist ein Programm, in dem du Textbefehle ausführst.
@@ -62,11 +61,41 @@ Das `Terminal` ist ein Programm, in dem du Textbefehle ausführst.
 
 Du siehst jetzt ein Fenster, in das du Befehle schreiben kannst.
 
-## 3. Git prüfen oder installieren
+## 3. Homebrew installieren
+
+`Homebrew` installiert Programme auf deinem Mac.
+
+Kopiere diesen Befehl in das Terminal und drücke `Enter`:
+
+```sh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+Der Installer erklärt, was er macht. Wenn er nach deinem Passwort fragt: Tippe dein Mac-Passwort ein und drücke `Enter`.
+
+Wichtig: Beim Tippen des Passworts siehst du keine Zeichen. Das ist normal.
+
+Wenn Homebrew am Ende Hinweise zu `Next steps` zeigt, führe diese Befehle ebenfalls aus. Danach schließe das Terminal und öffne es neu.
+
+Prüfe danach:
+
+```sh
+brew --version
+```
+
+Wenn eine Versionsnummer erscheint, ist `Homebrew` installiert.
+
+## 4. Git installieren
 
 `Git` speichert Versionen deines Projekts. Dadurch kannst du später nachvollziehen, was sich geändert hat.
 
-Gib im Terminal ein:
+Installiere `Git`:
+
+```sh
+brew install git
+```
+
+Prüfe danach:
 
 ```sh
 git --version
@@ -74,20 +103,7 @@ git --version
 
 Wenn eine Versionsnummer erscheint, ist `Git` installiert.
 
-Wenn macOS fragt, ob es Command Line Tools installieren soll:
-
-1. Bestätige die Installation.
-2. Warte, bis sie fertig ist.
-3. Öffne das Terminal neu.
-4. Prüfe nochmal:
-
-```sh
-git --version
-```
-
-Falls das nicht funktioniert, lade `Git` über die offizielle Seite herunter: [git-scm.com/downloads](https://git-scm.com/downloads/).
-
-## 4. Git einmal einrichten
+## 5. Git einmal einrichten
 
 Git soll wissen, welcher Name und welche E-Mail-Adresse zu deinen Änderungen gehören.
 
@@ -107,17 +123,17 @@ git config --global user.email
 
 Wenn dein Name und deine E-Mail-Adresse angezeigt werden, passt es.
 
-## 5. Node.js LTS installieren
+## 6. Node.js LTS installieren
 
 `Node.js` hilft uns später, einfache Webprojekte lokal auszuführen. `LTS` bedeutet: stabile Version für die meisten Nutzerinnen und Nutzer.
 
-1. Öffne [nodejs.org](https://nodejs.org/).
-2. Lade die `LTS`-Version für macOS herunter.
-3. Öffne die heruntergeladene Datei.
-4. Folge dem Installer.
-5. Öffne danach das Terminal neu.
+Installiere `Node.js`:
 
-Prüfe die Installation:
+```sh
+brew install node
+```
+
+Prüfe danach:
 
 ```sh
 node --version
@@ -126,26 +142,30 @@ npm --version
 
 Wenn beide Befehle eine Versionsnummer anzeigen, ist alles bereit.
 
-## 6. Zed installieren
+## 7. Zed installieren
 
 `Zed` ist unser Code Editor. Darin öffnest und bearbeitest du Projektdateien.
 
-1. Öffne [zed.dev/download](https://zed.dev/download).
-2. Lade Zed für macOS herunter.
-3. Öffne die heruntergeladene Datei.
-4. Ziehe `Zed` in den Ordner `Programme`, falls macOS dich dazu auffordert.
-5. Starte `Zed`.
+Installiere `Zed`:
 
-Die offizielle Zed-Downloadseite zeigt die aktuelle Version und den macOS-Download: [Zed Download](https://zed.dev/download).
+```sh
+brew install --cask zed
+```
 
-## 7. OpenCode installieren
+Starte danach `Zed` aus dem Programme-Ordner oder über Spotlight:
+
+1. Drücke `Cmd + Leertaste`.
+2. Tippe `Zed`.
+3. Drücke `Enter`.
+
+## 8. OpenCode installieren
 
 `OpenCode` ist der Coding Agent, den wir im Workshop verwenden wollen. Er läuft im Terminal.
 
-Installiere OpenCode mit `npm`:
+Installiere `OpenCode`:
 
 ```sh
-npm install -g opencode-ai
+brew install anomalyco/tap/opencode
 ```
 
 Prüfe danach:
@@ -156,9 +176,13 @@ opencode --version
 
 Wenn eine Versionsnummer erscheint, ist OpenCode installiert.
 
-Die offizielle OpenCode-Dokumentation nennt `npm install -g opencode-ai` als Installationsmöglichkeit: [OpenCode Docs](https://opencode.ai/docs).
+Falls das nicht funktioniert, nutze die `npm`-Variante:
 
-## 8. OpenCode verbinden
+```sh
+npm install -g opencode-ai
+```
+
+## 9. OpenCode verbinden
 
 OpenCode braucht Zugriff auf ein KI-Modell. Je nach Workshop-Stand kann das über einen OpenCode-Account, einen API-Key oder einen anderen Provider laufen.
 
@@ -176,7 +200,7 @@ opencode
 
 Du musst hier nichts kaufen, bevor wir gemeinsam geklärt haben, welchen Zugang wir verwenden.
 
-## 9. Projektordner anlegen
+## 10. Projektordner anlegen
 
 Ein Projektordner ist einfach ein Ordner, in dem alle Dateien deines Projekts liegen.
 
@@ -202,7 +226,7 @@ Du solltest einen Pfad sehen, der ungefähr so endet:
 Desktop/vibe-coding-projekte/erstes-projekt
 ```
 
-## 10. Projekt in Zed öffnen
+## 11. Projekt in Zed öffnen
 
 Öffne `Zed`.
 
@@ -215,7 +239,7 @@ Dann:
 
 Du siehst jetzt deinen Projektordner in Zed. Er ist noch leer. Das ist normal.
 
-## 11. Kurzer Funktionstest
+## 12. Kurzer Funktionstest
 
 Gehe im Terminal in deinen Projektordner:
 
@@ -233,7 +257,8 @@ Wenn OpenCode startet, bist du bereit für den Workshop.
 
 Wenn OpenCode nicht startet, prüfe:
 
-- Ist `Node.js` installiert?
+- Gibt `brew --version` eine Versionsnummer aus?
+- Gibt `node --version` eine Versionsnummer aus?
 - Gibt `npm --version` eine Versionsnummer aus?
 - Gibt `opencode --version` eine Versionsnummer aus?
 - Bist du im richtigen Ordner?
@@ -242,4 +267,4 @@ Wenn OpenCode nicht startet, prüfe:
 
 Du hast deinen Mac so vorbereitet, dass du mit einem Coding Agent an einem eigenen Projekt arbeiten kannst.
 
-Du hast außerdem gesehen, dass ein Projekt nicht mit Code beginnt, sondern mit einer einfachen Arbeitsumgebung: Account, Editor, Terminal, Projektordner und Agent.
+Du hast außerdem gesehen, dass ein Projekt nicht mit Code beginnt, sondern mit einer einfachen Arbeitsumgebung: Account, Package Manager, Editor, Terminal, Projektordner und Agent.
