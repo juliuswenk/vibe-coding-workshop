@@ -33,6 +33,8 @@ Wenn du OpenCode in Zed nutzt, arbeitest du direkt im Projekt. Das bedeutet:
 - Du kannst Git nutzen, um gute Zwischenstände zu speichern.
 - Du kannst in kleinen Schritten weiterarbeiten.
 
+---
+
 ## Was ist OpenCode?
 
 `OpenCode` ist ein Coding Agent.
@@ -47,6 +49,8 @@ Ein Coding Agent ist mehr als ein Chatbot. Er kann mit deinem Projekt arbeiten:
 - Befehle vorschlagen oder ausführen, wenn du es erlaubst
 
 Wichtig: OpenCode ist ein Werkzeug. Es ersetzt nicht dein eigenes Denken.
+
+---
 
 ## OpenCode in Zed installieren
 
@@ -74,6 +78,8 @@ zed: acp registry
 Was bringt das?
 
 Nach der Installation kann OpenCode direkt im Agent Panel von Zed genutzt werden. Du musst dann nicht ständig zwischen Editor und externem Terminal wechseln.
+
+---
 
 ## Agent Panel öffnen
 
@@ -114,6 +120,8 @@ Erkläre mir in einfachen Worten, welche Dateien wichtig sind.
 Was bringt das?
 
 Du gibst dem Agenten zuerst eine Analyseaufgabe statt sofort eine Bauaufgabe. Dadurch verstehst du besser, womit du arbeitest.
+
+---
 
 ## Modell auswählen
 
@@ -169,6 +177,8 @@ Fasse zusammen:
 4. Was ist der nächste sinnvolle Schritt?
 ```
 
+---
+
 ## Dateien erwähnen
 
 Wenn du weißt, welche Datei wichtig ist, nenne sie direkt.
@@ -207,6 +217,8 @@ Gute Grenze:
 ```text
 Füge keine neuen Libraries hinzu, ohne vorher zu fragen.
 ```
+
+---
 
 ## Wann du einen neuen Thread starten solltest
 

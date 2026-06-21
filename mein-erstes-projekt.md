@@ -36,6 +36,8 @@ Du übst außerdem, klare Grenzen zu setzen:
 
 So bleibst du in Kontrolle. Der Agent schreibt Code, aber du entscheidest, was gebaut wird und wann der nächste Schritt kommt.
 
+---
+
 ## Vorbereitung
 
 Bevor wir starten, solltest du ein eigenes `Repository` auf GitHub angelegt haben.
@@ -50,18 +52,22 @@ Wenn du noch nicht so weit bist, gehe zuerst zurück zur GitHub-Anleitung.
 
 Am Ende soll eine kleine Website entstehen, die du im Browser öffnen kannst.
 
-Sie soll enthalten:
-
-- eine große Posterfläche
-- einen Titeltext
-- abstrakte grafische Formen
-- Buttons für mindestens drei Farbpaletten
-- Buttons für mindestens drei Layout-Varianten
-- einen `Randomize`-Button
+| Bestandteil | Mindestziel |
+| --- | --- |
+| Posterfläche | Eine große sichtbare Fläche im Browser |
+| Titeltext | Ein Text, der auf dem Poster steht |
+| Formen | Abstrakte grafische Elemente |
+| Farbpaletten | Mindestens drei auswählbare Varianten |
+| Layouts | Mindestens drei unterschiedliche Anordnungen |
+| `Randomize` | Ein Button für neue zufällige Kompositionen |
 
 Ein Screenshot reicht als Ergebnis. Wir brauchen keine Exportfunktion.
 
-## Schritt 1: Einen Plan verlangen
+---
+
+## Gemeinsamer Bauprozess
+
+### Schritt 1: Einen Plan verlangen
 
 Jetzt beschreiben wir das Projekt, aber wir lassen noch keine Dateien ändern.
 
@@ -101,7 +107,7 @@ Nutze nur index.html, style.css und script.js.
 Keine Frameworks und keine zusätzlichen Tools.
 ```
 
-## Schritt 2: Erste Version bauen lassen
+### Schritt 2: Erste Version bauen lassen
 
 Wenn der Plan sinnvoll klingt, erlaubst du die erste Änderung.
 
@@ -124,7 +130,7 @@ Erkläre danach kurz:
 3. Was noch nicht eingebaut ist.
 ```
 
-## Schritt 3: Website im Browser öffnen
+### Schritt 3: Website im Browser öffnen
 
 Jetzt öffnest du die Website, damit du das Ergebnis sehen kannst.
 
@@ -155,7 +161,7 @@ Prüfe:
 4. Gibt es Fehlermeldungen?
 5. Hat der Agent ungefragt mehr gebaut als nötig?
 
-## Schritt 4: Feedback geben
+### Schritt 4: Feedback geben
 
 Jetzt kommt der wichtigste Teil: Du gibst konkretes Feedback.
 
@@ -188,7 +194,7 @@ Bitte mache drei klar unterschiedliche Layout-Varianten:
 
 Nach jeder Änderung prüfst du wieder im Browser.
 
-## Schritt 5: Randomize verbessern
+### Schritt 5: Randomize verbessern
 
 Wenn die Grundversion funktioniert, verbessern wir den `Randomize`-Button.
 
@@ -213,7 +219,7 @@ Prüfe danach:
 2. Bleibt der Text lesbar?
 3. Funktionieren die anderen Buttons noch?
 
-## Schritt 6: Optional Bewegung hinzufügen
+### Schritt 6: Optional Bewegung hinzufügen
 
 Wenn noch Zeit ist, kannst du eine kleine Animation ergänzen.
 
@@ -237,7 +243,7 @@ Bitte mache sie langsamer und reduziere die Bewegung.
 Der Text soll im Mittelpunkt bleiben.
 ```
 
-## Schritt 7: Review machen lassen
+### Schritt 7: Review machen lassen
 
 Zum Schluss lässt du den Agenten das Projekt prüfen, ohne direkt etwas zu ändern.
 
@@ -257,6 +263,8 @@ Schlage nur einen nächsten Schritt vor.
 ```
 
 Wichtig: Der Agent soll hier nur analysieren. Du entscheidest danach, ob noch etwas geändert wird.
+
+---
 
 ## Gute Abschlussfrage
 

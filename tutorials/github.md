@@ -35,6 +35,8 @@ Das ist praktisch, aber auch riskant. Ein Agent kann:
 
 `Git` ist dein Sicherheitsnetz. Es speichert Projektstände. Wenn etwas funktioniert, kannst du diesen Stand sichern. Wenn später etwas schiefgeht, kannst du sehen, was sich geändert hat.
 
+---
+
 ## Git und GitHub kurz erklärt
 
 `Git` ist ein Werkzeug auf deinem Computer. Es merkt sich Änderungen in deinem Projekt.
@@ -146,6 +148,8 @@ Für diesen Workshop bleiben wir auf `main`. Das ist der Haupt-Branch.
 
 Branches werden später wichtig, wenn mehrere Menschen an einem Projekt arbeiten oder du größere Änderungen getrennt ausprobieren möchtest.
 
+---
+
 ## Der einfache Solo-Workflow
 
 Für den Anfang reicht dieser Ablauf:
@@ -164,7 +168,9 @@ Kurz gesagt:
 Ändern -> Prüfen -> Commit (Speichern) -> Push (Hochladen)
 ```
 
-## 1. Neues Repository auf GitHub erstellen
+## Repository erstellen und öffnen
+
+### 1. Neues Repository auf GitHub erstellen
 
 1. Öffne [github.com](https://github.com/).
 2. Melde dich an.
@@ -184,7 +190,7 @@ mein-erstes-vibe-coding-projekt
 
 Für den Workshop ist `Private` völlig okay. `Public` bedeutet, dass andere Menschen dein Repository sehen können.
 
-## 2. Repository-Adresse kopieren
+### 2. Repository-Adresse kopieren
 
 Nach dem Erstellen siehst du dein neues Repository auf GitHub.
 
@@ -200,7 +206,7 @@ https://github.com/dein-name/mein-erstes-vibe-coding-projekt.git
 
 Diese Adresse sagt Zed, welches Repository auf deinen Computer kopiert werden soll.
 
-## 3. Repository in Zed clonen
+### 3. Repository in Zed clonen
 
 Öffne `Zed`.
 
@@ -219,7 +225,11 @@ Wenn Zed dich fragt, ob du dich bei GitHub anmelden möchtest, folge dem Login-F
 
 Am Ende solltest du dein Projekt links im Dateibereich von Zed sehen.
 
-## 4. Erste Änderung machen
+---
+
+## Erste Änderung speichern
+
+### 4. Erste Änderung machen
 
 Erstelle eine neue Datei in Zed.
 
@@ -239,7 +249,7 @@ Speichere die Datei.
 
 Jetzt hat dein Projekt eine Änderung.
 
-## 5. Git Panel in Zed öffnen
+### 5. Git Panel in Zed öffnen
 
 Das `Git Panel` zeigt dir, welche Dateien geändert wurden.
 
@@ -248,7 +258,7 @@ Du kannst es öffnen über:
 - das Git-Symbol in der Statusleiste
 - oder die Command Palette mit `git panel: toggle focus`
 
-Im Git Panel solltest du jetzt `index.html` als geänderte oder neue Datei sehen.
+Im Git Panel solltest du jetzt `index.md` als geänderte oder neue Datei sehen.
 
 Wenn du nichts siehst, prüfe:
 
@@ -256,7 +266,7 @@ Wenn du nichts siehst, prüfe:
 - Hast du wirklich das geklonte Repository geöffnet?
 - Bist du im richtigen Projektordner?
 
-## 6. Änderung prüfen
+### 6. Änderung prüfen
 
 Bevor du etwas speicherst, schau dir die Änderung an.
 
@@ -268,25 +278,25 @@ Beispiel:
 
 ```text
 Vorher: Datei existiert nicht.
-Nachher: index.html wurde hinzugefügt.
+Nachher: index.md wurde hinzugefügt.
 ```
 
 Das ist wichtig, weil du gerade beim Vibe Coding nicht blind alles übernehmen solltest, was ein Agent geändert hat.
 
-## 7. Änderung stagen
+### 7. Änderung stagen
 
 Im Git Panel kannst du Dateien auswählen, die in den nächsten Commit sollen.
 
 Für den Anfang:
 
-1. Suche `index.html` im Git Panel.
+1. Suche `index.md` im Git Panel.
 2. Setze das Häkchen neben der Datei.
 
 Damit ist die Datei `staged`.
 
 Das bedeutet: Diese Änderung wird gleich im nächsten Commit gespeichert.
 
-## 8. Commit erstellen
+### 8. Commit erstellen
 
 Unten im Git Panel gibt es ein Feld für die Commit-Nachricht.
 
@@ -302,7 +312,7 @@ Jetzt hast du deinen ersten Commit erstellt.
 
 Das heißt: Git hat diesen Projektstand gespeichert.
 
-## 9. Änderung zu GitHub pushen
+### 9. Änderung zu GitHub pushen
 
 Der Commit liegt jetzt erstmal nur auf deinem Computer.
 
@@ -314,11 +324,15 @@ Nach dem Push:
 
 1. Öffne dein Repository auf GitHub.
 2. Lade die Seite neu.
-3. Prüfe, ob `index.html` dort sichtbar ist.
+3. Prüfe, ob `index.md` dort sichtbar ist.
 
 Wenn ja: Du hast deine lokale Änderung erfolgreich zu GitHub hochgeladen.
 
-## 10. Später weiterarbeiten
+---
+
+## Weiterarbeiten und prüfen
+
+### 10. Später weiterarbeiten
 
 Wenn du später weiterarbeitest, nutze diesen Ablauf:
 
@@ -342,7 +356,7 @@ Oder:
 Add project cards
 ```
 
-## 11. Wann du pull benutzt
+### 11. Wann du pull benutzt
 
 Wenn du alleine arbeitest, passiert auf GitHub meistens nichts, was nicht vorher von deinem Computer kam.
 
@@ -356,8 +370,9 @@ Trotzdem ist `Pull` nützlich, wenn:
 
 In Zed findest du `Pull` im Git Panel oder über die Command Palette mit `git: pull`.
 
+---
 
-## 12. Git und Coding Agents
+### 12. Git und Coding Agents
 
 Wenn ein Coding Agent Dateien ändert, schau danach ins Git Panel.
 
@@ -383,7 +398,7 @@ Beispiel:
 Add first prototype layout
 ```
 
-## 13. Zusammenarbeit kurz erwähnt
+### 13. Zusammenarbeit kurz erwähnt
 
 Git und GitHub sind auch für Zusammenarbeit gedacht.
 
@@ -407,7 +422,9 @@ Merke dir nur: Wenn du später mit anderen zusammenarbeitest, werden `Pull`, `Br
 | `main` | Der Haupt-Branch deines Projekts |
 | `Diff` | Anzeige, was sich geändert hat |
 
-## Was du gelernt hast
+---
+
+## Was du jetzt gelernt hast
 
 Du weißt jetzt, was `Git` und `GitHub` sind und warum sie beim Vibe Coding wichtig sind.
 

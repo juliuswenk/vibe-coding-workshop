@@ -1,27 +1,39 @@
 # Vibe Coding Workshop SRH
-#### Julius Wenk
+
+## Autor
+
+Julius Wenk
+
 ---
+
 Das ist das Repo für den Vibe Coding Workshop and der SRH. Hier liegen alle Dateien für den Workshop. Dazu gehören die Ablaufpläne, Tutorials, Aufgaben und Musterlösungen.
+
 ---
 
 ## Ablaufplan
-Dauer: ~4h inkl Pausen
 
-#### Was wollen wir machen?
-1. Theorie Input: Was ist Vibe-Coding? Wie geht es? Was kann man mit Vibe-Coding machen? Was nicht? Was ist ein Coding Agent? Was brauche ich fürs Vibe-Coding? Was muss ich vorher wissen?
-2. Setup: Installiere die benötigten Tools (Ghostty, Zed, Opencode, github)
-3. Erste Schritte gemeinsam machen (Ein kleines Projekt) Was braucht ein coding agent um am besten arbeiten zu können? Prompting, recursives Arbeiten mit Prompts und Agents.md
-4. Konzeptphase für ein eigenes Projekt
-5. Erstelle ein eigenes Projekt
+**Dauer:** ca. 4 Stunden inklusive Pausen
+
+### Was wollen wir machen?
+
+| Schritt | Inhalt |
+| --- | --- |
+| 1 | Theorie-Input: Was ist `Vibe Coding`, was kann es, was nicht? |
+| 2 | Setup: benötigte Tools installieren |
+| 3 | Erste gemeinsame Schritte mit einem kleinen Projekt |
+| 4 | Konzeptphase für ein eigenes Projekt |
+| 5 | Eigenes Projekt erstellen |
 
 ---
 
-#### Wie arbeiten wir?
+### Wie arbeiten wir?
+
 Es gibt die zentrale Seite auf Github pages, die als Startseite für den Workshop dient. Hier sind alle Links zu den verschiedenen Unterseiten des Workshops. Wir werden (fast alles) gemeinsam durchgehen und ich werde die Inhalte der einzelnen Seiten erklären, so können die Studis später nochmal nachlesen, falls sie etwas nicht verstanden haben und ich muss keine Slides bauen, die sowieso keiner liest.
 
 ---
 
-#### Was in diese Repo noch rein muss:
+### Was in dieses Repo noch rein muss
+
 - Ausgebaute README.md (Ziele und Grenzen des Workshops)
 - Setup Datei (Wie installiere ich die benötigten Tools? Warum brauche ich sie überhaupt? Welchen Sinn haben die Tools für mich?)
 - Slides
@@ -31,9 +43,10 @@ Es gibt die zentrale Seite auf Github pages, die als Startseite für den Worksho
 - Knowledge für mich über Skills
 - Glossar über wichtige Begriffe und Konzepte, die im Workshp fallen könnten
 
---- 
+---
 
-#### Ziele für den Workshop: 
+### Ziele für den Workshop
+
 - Vibe Coding als Tool verstehen, nicht als "Allheilmittel" (Möflichkeiten und Grenzen verstehen)
 - Die Wichtigkeit von Konzepten verstehen: Hier findet die Gestaltung statt (Wir geben nicht alles einfach blind an die KI ab, denn sonst entsteht Slop)
 - Inspirieren statt overwhelmen
@@ -41,7 +54,7 @@ Es gibt die zentrale Seite auf Github pages, die als Startseite für den Worksho
 
 ---
 
-#### Seitenstruktur
+## Seitenstruktur
 
 - index.md: Die Hauptseite des Workshops, Ziele und Struktur, Schritt für Schritt Start
 - `theorie`: Vibe Coding 101

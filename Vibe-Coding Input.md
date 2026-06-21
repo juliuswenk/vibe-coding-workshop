@@ -10,26 +10,39 @@ Vibe Coding bedeutet: Du beschreibst einem `Coding Agent`, was du bauen möchtes
 
 Du schreibst nicht jede Codezeile selbst. Deine Aufgabe ist es, Ziele zu formulieren, Entscheidungen zu treffen, Ergebnisse zu prüfen und gutes Feedback zu geben. Hierfür kannst du die KI natürlich nach Input fragen, wenn du etwas nicht verstehst – wichtig ist, dass du in Kontrolle bleibst, damit kein generischer "KI-Slop" entsteht.
 
+## Was diese Seite erklärt
+
+Diese Seite erklärt die Grundidee von `Vibe Coding`: wie du mit einem `Coding Agent` arbeitest, welche Grenzen wichtig sind und wie du gute Arbeitsaufträge formulierst.
+
+## Warum das für Vibe Coding wichtig ist
+
+Ein Coding Agent hilft dir besser, wenn du Ziele, Kontext, Grenzen und Prüfschritte klar benennen kannst. Diese Seite gibt dir dafür die wichtigsten Regeln.
+
+---
+
 ## Inhaltsübersicht
 
-1. Was Vibe Coding ist
-2. Was Vibe Coding gut kann
-3. Wo Vibe Coding begrenzt ist
-4. Die wichtigste Regel
-5. Gute Prompts für den Start
-6. OpenCode in Zed
-7. Was du immer prüfen solltest
-8. Gute Aufgaben für Anfänger*innen
-9. Fehler als Teil des Workflows
-10. Grenzen setzen
-11. Externe Referenzen nutzen
-12. `AGENTS.md` als Projektanleitung
-13. Fortgeschritten: AI Development Guide
-14. Fortgeschritten: Projekt in Phasen aufteilen
-15. Fortgeschritten: Erst fragen, dann bauen
-16. Fortgeschritten: Agenten nicht alles glauben
-17. Fortgeschritten: Git als Sicherheitsnetz
-18. Gute Abschlussfrage nach jeder Session
+| Abschnitt | Thema |
+| --- | --- |
+| 1 | Was Vibe Coding ist |
+| 2 | Was Vibe Coding gut kann |
+| 3 | Wo Vibe Coding begrenzt ist |
+| 4 | Die wichtigste Regel |
+| 5 | Gute Prompts für den Start |
+| 6 | OpenCode in Zed |
+| 7 | Was du immer prüfen solltest |
+| 8 | Gute Aufgaben für Anfänger*innen |
+| 9 | Fehler als Teil des Workflows |
+| 10 | Grenzen setzen |
+| 11 | Externe Referenzen nutzen |
+| 12 | `AGENTS.md` als Projektanleitung |
+| 13 | Fortgeschritten: AI Development Guide |
+| 14 | Fortgeschritten: Projekt in Phasen aufteilen |
+| 15 | Fortgeschritten: Erst fragen, dann bauen |
+| 16 | Fortgeschritten: Agenten nicht alles glauben |
+| 17 | Gute Abschlussfrage nach jeder Session |
+
+---
 
 ## 1. Was Vibe Coding ist
 
@@ -143,12 +156,12 @@ In diesem Workshop arbeitest du mit `Zed` als Code Editor und `OpenCode` als Cod
 Ein sinnvoller Ablauf:
 
 1. Öffne dein Projekt in Zed.
-3. Starte OpenCode asl Agent in Zed.
-4. Beschreibe eine kleine Aufgabe.
-5. Lass dir zuerst den Plan erklären.
-6. Erlaube die Änderung.
-7. Prüfe das Ergebnis.
-8. Gib konkretes Feedback.
+2. Starte OpenCode als Agent in Zed.
+3. Beschreibe eine kleine Aufgabe.
+4. Lass dir zuerst den Plan erklären.
+5. Erlaube die Änderung.
+6. Prüfe das Ergebnis.
+7. Gib konkretes Feedback.
 
 Beispiel für den ersten Prompt:
 
@@ -193,6 +206,17 @@ Welche Datei ist am wichtigsten?
 Welche Zeilen sollte ich mir anschauen?
 ```
 
+## 8. Gute Aufgaben für Anfänger*innen
+
+Gute erste Aufgaben sind klein, sichtbar und leicht zu prüfen.
+
+| Aufgabe | Warum sie gut passt |
+| --- | --- |
+| Einfache Startseite | Du siehst schnell ein Ergebnis im Browser |
+| Kleine Text- oder Layoutänderung | Du kannst den Unterschied leicht prüfen |
+| Buttons ohne Datenbank | Du übst Interaktion ohne komplexe Technik |
+| README oder Projektnotiz | Du lernst, Dateien gezielt ändern zu lassen |
+| Fehler erklären lassen | Du verstehst Probleme, bevor etwas geändert wird |
 
 ## 9. Fehler sind Teil des Workflows
 
@@ -415,7 +439,6 @@ Gerade bei Anfänger*innen ist das wichtig, weil Agents oft zu komplexe Lösunge
 
 Einfacher Code ist meistens besser für den Lernprozess.
 
-
 ## 17. Gute Abschlussfrage nach jeder Session
 
 Beende eine Vibe-Coding-Session nicht einfach, sobald etwas funktioniert.
@@ -438,3 +461,9 @@ Diese Zusammenfassung hilft dir, später wieder einzusteigen.
 Vibe Coding ist gut für schnelle Prototypen und kreative Experimente. Es ersetzt aber nicht dein Urteilsvermögen.
 
 Arbeite klein, prüfe oft, setze klare Grenzen und lass dir Änderungen erklären. Je größer das Projekt wird, desto wichtiger werden Projektregeln, Tests, Git und klare Phasen.
+
+---
+
+## Was du jetzt gelernt hast
+
+Du kennst die wichtigsten Regeln für die Arbeit mit Coding Agents: klein starten, Grenzen setzen, Änderungen prüfen und gute Zwischenstände sichern.

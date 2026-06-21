@@ -33,13 +33,17 @@ Damit dieser Arbeitsprozess gut funktioniert, brauchst du:
 - `Node.js`, damit einfache Webprojekte später laufen können
 - `OpenCode`, damit du mit einem Coding Agent im Projekt arbeiten kannst
 
+---
+
 ## Bevor du startest
 
 Öffne diese Seite auf deinem Mac und arbeite die Schritte von oben nach unten durch.
 
 Wenn ein Schritt nicht funktioniert: Nicht schlimm. Schreib dir die Fehlermeldung auf oder mach einen Screenshot.
 
-## 1. GitHub-Account erstellen
+## Installation und Einrichtung
+
+### 1. GitHub-Account erstellen
 
 `GitHub` ist eine Website, auf der du Code speichern und teilen kannst. Für den Workshop brauchst du einen kostenlosen persönlichen Account.
 
@@ -51,7 +55,7 @@ Wenn ein Schritt nicht funktioniert: Nicht schlimm. Schreib dir die Fehlermeldun
 
 Du brauchst keinen bezahlten Plan.
 
-## 2. Terminal öffnen
+### 2. Terminal öffnen
 
 Das `Terminal` ist ein Programm, in dem du Textbefehle ausführst.
 
@@ -61,7 +65,7 @@ Das `Terminal` ist ein Programm, in dem du Textbefehle ausführst.
 
 Du siehst jetzt ein Fenster, in das du Befehle schreiben kannst.
 
-## 3. Homebrew installieren
+### 3. Homebrew installieren
 
 `Homebrew` installiert Programme auf deinem Mac.
 
@@ -85,7 +89,7 @@ brew --version
 
 Wenn eine Versionsnummer erscheint, ist `Homebrew` installiert.
 
-## 4. Git installieren
+### 4. Git installieren
 
 `Git` speichert Versionen deines Projekts. Dadurch kannst du später nachvollziehen, was sich geändert hat.
 
@@ -103,7 +107,7 @@ git --version
 
 Wenn eine Versionsnummer erscheint, ist `Git` installiert.
 
-## 5. Git einmal einrichten
+### 5. Git einmal einrichten
 
 Git soll wissen, welcher Name und welche E-Mail-Adresse zu deinen Änderungen gehören.
 
@@ -123,7 +127,7 @@ git config --global user.email
 
 Wenn dein Name und deine E-Mail-Adresse angezeigt werden, passt es.
 
-## 6. Node.js LTS installieren
+### 6. Node.js LTS installieren
 
 `Node.js` hilft uns später, einfache Webprojekte lokal auszuführen. `LTS` bedeutet: stabile Version für die meisten Nutzerinnen und Nutzer.
 
@@ -142,7 +146,7 @@ npm --version
 
 Wenn beide Befehle eine Versionsnummer anzeigen, ist alles bereit.
 
-## 7. Zed installieren
+### 7. Zed installieren
 
 `Zed` ist unser Code Editor. Darin öffnest und bearbeitest du Projektdateien.
 
@@ -158,7 +162,7 @@ Starte danach `Zed` aus dem Programme-Ordner oder über Spotlight:
 2. Tippe `Zed`.
 3. Drücke `Enter`.
 
-## 8. OpenCode installieren
+### 8. OpenCode installieren
 
 `OpenCode` ist der Coding Agent, den wir im Workshop verwenden wollen. Er läuft im Terminal.
 
@@ -182,7 +186,7 @@ Falls das nicht funktioniert, nutze die `npm`-Variante:
 npm install -g opencode-ai
 ```
 
-## 9. OpenCode in Zed hinzufügen
+### 9. OpenCode in Zed hinzufügen
 
 OpenCode kann in Zed als `External Agent` laufen. Dann kannst du direkt in Zed mit dem Agenten chatten, während dein Projektordner geöffnet ist.
 
@@ -208,7 +212,7 @@ Du musst hier nichts kaufen, bevor wir gemeinsam geklärt haben, welchen Zugang 
 
 Hinweis: Wenn du zufällig schon für einen anderen Coding Agent bezahlst, zum Beispiel `Codex`, `Claude Code`, `Copilot` oder einen anderen Agenten in Zed, kannst du auch diesen benutzen. Für den gemeinsamen Workshop-Flow verwenden wir aber OpenCode.
 
-## 10. OpenCode im Terminal testen
+### 10. OpenCode im Terminal testen
 
 Falls die Zed-Verbindung noch nicht funktioniert, kannst du OpenCode auch direkt im Terminal testen:
 
@@ -219,7 +223,7 @@ Falls die Zed-Verbindung noch nicht funktioniert, kannst du OpenCode auch direkt
 opencode
 ```
 
-## 11. Projektordner anlegen
+### 11. Projektordner anlegen
 
 Ein Projektordner ist einfach ein Ordner, in dem alle Dateien deines Projekts liegen.
 
@@ -245,7 +249,7 @@ Du solltest einen Pfad sehen, der ungefähr so endet:
 Desktop/vibe-coding-projekte/erstes-projekt
 ```
 
-## 12. Projekt in Zed öffnen
+### 12. Projekt in Zed öffnen
 
 Öffne `Zed`.
 
@@ -258,7 +262,9 @@ Dann:
 
 Du siehst jetzt deinen Projektordner in Zed. Er ist noch leer. Das ist normal.
 
-## 13. Kurzer Funktionstest
+---
+
+## Kurzer Funktionstest
 
 Gehe im Terminal in deinen Projektordner:
 

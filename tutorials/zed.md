@@ -36,6 +36,8 @@ Du brauchst eine Umgebung, in der du:
 
 Zed ist diese Arbeitsumgebung. Wenn du Zed grob verstehst, kannst du besser nachvollziehen, was ein Agent in deinem Projekt verändert.
 
+---
+
 ## Was ist ein Code Editor?
 
 Ein `Code Editor` ist ein Programm zum Bearbeiten von Code- und Textdateien.
@@ -59,6 +61,8 @@ Beispiele für Code Editoren sind:
 - `Sublime Text`
 - `Atom`
 
+---
+
 ## Die wichtigsten Bereiche in Zed
 
 Zed besteht grob aus diesen Bereichen:
@@ -69,7 +73,7 @@ Projektdateien links | Editor in der Mitte | Panels unten/seitlich
 
 Je nach Fenstergröße oder Einstellung können Panels an anderen Stellen erscheinen. Das ist normal.
 
-## 1. Project Panel
+### 1. Project Panel
 
 Das `Project Panel` zeigt die Dateien und Ordner deines Projekts.
 
@@ -92,7 +96,7 @@ mein-projekt
 
 Wenn du eine Datei anklickst, öffnet sie sich im Editor.
 
-## 2. Editor-Bereich
+### 2. Editor-Bereich
 
 Der Editor ist der große Bereich in der Mitte.
 
@@ -107,7 +111,7 @@ Das hilft dir zu erkennen:
 - Was ist ein Dateiname?
 - Was ist vielleicht ein Fehler?
 
-## 3. Tabs
+### 3. Tabs
 
 Wenn du mehrere Dateien öffnest, erscheinen sie als Tabs.
 
@@ -121,7 +125,7 @@ Ein Tab ist wie ein geöffneter Reiter im Browser.
 
 Du kannst zwischen Dateien wechseln, ohne sie jedes Mal neu suchen zu müssen.
 
-## 4. Command Palette
+### 4. Command Palette
 
 Die `Command Palette` ist eine Suchfunktion für Zed-Befehle.
 
@@ -148,7 +152,7 @@ zed: acp registry
 
 Wenn du nicht weißt, wo eine Funktion ist, ist die Command Palette oft der schnellste Weg.
 
-## 5. Terminal
+### 5. Terminal
 
 Das `Terminal` ist ein Bereich, in dem du Textbefehle ausführen kannst.
 
@@ -172,7 +176,7 @@ git status
 
 Für den Start musst du nicht viele Befehle kennen. Aber du solltest wissen, dass das Terminal existiert.
 
-## 6. Git Panel
+### 6. Git Panel
 
 Das `Git Panel` zeigt dir, welche Dateien sich geändert haben.
 
@@ -195,7 +199,7 @@ Frage dich:
 - Wurde etwas Unerwartetes geändert?
 
 
-## 7. Agent Panel
+### 7. Agent Panel
 
 Das `Agent Panel` ist der Bereich, in dem du mit einem Coding Agent arbeitest.
 
@@ -217,7 +221,11 @@ Erkläre mir in einfachen Worten, welche Dateien wichtig sind.
 
 Wichtig: Lass den Agenten nicht sofort alles bauen. Starte klein.
 
-## 8. Ein Projekt öffnen
+---
+
+## Mit einem Projekt arbeiten
+
+### 8. Ein Projekt öffnen
 
 Ein Projekt ist meistens einfach ein Ordner.
 
@@ -231,7 +239,7 @@ Um ein Projekt in Zed zu öffnen:
 
 Danach sollte der Ordner links im Project Panel sichtbar sein.
 
-## 9. Eine Datei erstellen
+### 9. Eine Datei erstellen
 
 Im Project Panel:
 
@@ -248,7 +256,7 @@ index.html
 Dann kannst du die Datei im Editor bearbeiten.
 
 
-## 10. Typischer Workshop-Workflow in Zed
+### 10. Typischer Workshop-Workflow in Zed
 
 Für den Workshop reicht dieser Ablauf:
 
@@ -267,7 +275,11 @@ Kurz:
 Öffnen -> Planen -> Ändern -> Prüfen -> Committen
 ```
 
-## 11. Was du nicht sofort verstehen musst
+---
+
+## Orientierung behalten
+
+### 11. Was du nicht sofort verstehen musst
 
 Du musst am Anfang nicht verstehen:
 
@@ -290,7 +302,7 @@ Für den Start reicht:
 - Agent Panel öffnen
 - kleine Änderungen prüfen
 
-## 12. Wenn du dich verirrst
+### 12. Wenn du dich verirrst
 
 Wenn Zed unübersichtlich wird:
 

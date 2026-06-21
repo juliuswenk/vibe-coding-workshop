@@ -23,10 +23,16 @@ Wenn du dein Projekt in kleine Bestandteile zerlegst, kann ein `Coding Agent` ge
 
 Wichtig: Starte klein. Eine sichtbare erste Version ist besser als ein großes Konzept, das nach einer Stunde noch nicht läuft.
 
-## Idee 1: Interaktives Moodboard
+---
 
-**Schwierigkeit:** einfach  
-**Art:** visuell
+## Projektideen
+
+### Idee 1: Interaktives Moodboard
+
+| Eigenschaft | Einschätzung |
+| --- | --- |
+| Schwierigkeit | einfach |
+| Art | visuell |
 
 Du baust eine Seite, auf der Bilder, Farben, Wörter und Formen zu einer Stimmung kombiniert werden.
 
@@ -44,10 +50,12 @@ Mögliche Erweiterung:
 - kleine Animationen beim Wechsel
 - eigenes Farbschema
 
-## Idee 2: Digitale Ausstellung
+### Idee 2: Digitale Ausstellung
 
-**Schwierigkeit:** einfach  
-**Art:** visuell
+| Eigenschaft | Einschätzung |
+| --- | --- |
+| Schwierigkeit | einfach |
+| Art | visuell |
 
 Du baust eine kleine Online-Ausstellung mit mehreren Arbeiten, Bildern oder fiktiven Exponaten.
 
@@ -65,10 +73,12 @@ Mögliche Erweiterung:
 - dunkler Ausstellungsmodus
 - kleine Übergänge beim Wechsel zwischen Exponaten
 
-## Idee 3: Wetter-Visualisierung
+### Idee 3: Wetter-Visualisierung
 
-**Schwierigkeit:** anspruchsvoller  
-**Art:** visuell mit `API`
+| Eigenschaft | Einschätzung |
+| --- | --- |
+| Schwierigkeit | anspruchsvoller |
+| Art | visuell mit `API` |
 
 Du baust eine Seite, die Wetterdaten abruft und daraus eine visuelle Stimmung erzeugt.
 
@@ -87,10 +97,12 @@ Mögliche Erweiterung:
 - Tageszeit visuell berücksichtigen
 
 
-## Idee 5: Lernkarten für ein Thema
+### Idee 4: Lernkarten für ein Thema
 
-**Schwierigkeit:** einfach  
-**Art:** Alltags-Tool
+| Eigenschaft | Einschätzung |
+| --- | --- |
+| Schwierigkeit | einfach |
+| Art | Alltags-Tool |
 
 Du baust ein kleines Tool zum Lernen von Begriffen, Vokabeln oder Konzepten.
 
@@ -108,10 +120,12 @@ Mögliche Erweiterung:
 - eigene Karten direkt im Browser hinzufügen
 - Karten als `verstanden` markieren
 
-## Idee 6: Mensa- oder Tagesplaner
+### Idee 5: Mensa- oder Tagesplaner
 
-**Schwierigkeit:** anspruchsvoller  
-**Art:** Alltags-Tool mit Datenquelle oder `API`
+| Eigenschaft | Einschätzung |
+| --- | --- |
+| Schwierigkeit | anspruchsvoller |
+| Art | Alltags-Tool mit Datenquelle oder `API` |
 
 Du baust eine kleine Seite, die einen Tag übersichtlich plant oder externe Tagesdaten anzeigt.
 
@@ -128,6 +142,8 @@ Mögliche Erweiterung:
 - Daten aus einer `API` laden
 - lokale Speicherung im Browser
 - kompakte mobile Ansicht
+
+---
 
 ## Wie du eine Idee auswählst
 

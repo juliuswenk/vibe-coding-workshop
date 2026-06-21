@@ -2,7 +2,21 @@
 layout: default
 title: Glossar
 ---
-## Git:
+
+# Glossar
+
+## Was diese Seite erklärt
+
+Diese Seite sammelt kurze Erklärungen für Begriffe, die im Workshop immer wieder auftauchen.
+
+## Warum das für Vibe Coding wichtig ist
+
+Wenn du Begriffe wie `Commit`, `Diff` oder `Thread` einordnen kannst, kannst du einem Coding Agent besser folgen und gezielter nachfragen.
+
+---
+
+## Git
+
 | Begriff | Bedeutung |
 | --- | --- |
 | `Repository` | Ein Projektordner, der von Git verwaltet wird |
@@ -14,6 +28,8 @@ title: Glossar
 | `Branch` | Eine eigene Entwicklungslinie in Git |
 | `main` | Der Haupt-Branch deines Projekts |
 | `Diff` | Anzeige, was sich geändert hat |
+
+---
 
 ## Zed
 
@@ -29,8 +45,9 @@ title: Glossar
 | `Project Diff` | Ansicht der Änderungen |
 | `Agent Panel` | Bereich für den Coding Agent |
 
-## OpenCode
+---
 
+## OpenCode
 
 | Begriff | Bedeutung |
 | --- | --- |
@@ -43,3 +60,7 @@ title: Glossar
 | `API-Key` | Geheimer Zugangsschlüssel zu einem KI-Anbieter |
 | `Context` | Informationen, die der Agent für die Aufgabe braucht |
 | `Diff` | Anzeige der geänderten Stellen |
+
+## Was du jetzt gelernt hast
+
+Du kannst die wichtigsten Begriffe nachschlagen und erkennst schneller, worüber Zed, GitHub oder OpenCode sprechen.

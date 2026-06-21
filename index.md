@@ -32,6 +32,8 @@ Gute Ergebnisse entstehen, wenn du lernst:
 
 Die KI kann viel Arbeit abnehmen. Denken, Entscheiden und Bewerten bleiben aber deine Aufgabe.
 
+---
+
 ## Ziele des Workshops
 
 Nach dem Workshop sollst du nicht alles über Softwareentwicklung wissen. Das wäre in vier Stunden unrealistisch.
@@ -53,13 +55,17 @@ Wir gehen die wichtigsten Teile gemeinsam durch. Du kannst die Seiten aber auch 
 
 Die Inhalte sind so aufgebaut:
 
-- [Theorie](theorie): die wichtigsten Begriffe und Grundideen
-- Setup: [macOS](setup/mac) und [Windows](setup/windows)
-- Tutorials: [GitHub](tutorials/github), [Zed](tutorials/zed) und [Opencode](tutorials/opencode)
-- [Erstes Projekt](mein-erstes-projekt): ein gemeinsamer Einstieg in die Arbeit mit einem Coding Agent
-- [Eigenes Projekt](freies-projekt-inspiration): Raum für deine eigene Idee
-- [Glossar](glossar): kurze Erklärungen wichtiger Begriffe
-- [Knowledge Base](knowledge-base): zusätzliche Notizen und Begriffe
+| Bereich | Wofür du ihn nutzt |
+| --- | --- |
+| [Theorie](theorie) | Die wichtigsten Begriffe und Grundideen |
+| Setup: [macOS](setup/mac), [Windows](setup/windows) | Werkzeuge installieren und prüfen |
+| Tutorials: [GitHub](tutorials/github), [Zed](tutorials/zed), [OpenCode](tutorials/opencode) | Einzelne Werkzeuge Schritt für Schritt verstehen |
+| [Erstes Projekt](mein-erstes-projekt) | Gemeinsamer Einstieg in die Arbeit mit einem Coding Agent |
+| [Eigenes Projekt](freies-projekt-inspiration) | Raum für deine eigene Idee |
+| [Glossar](glossar) | Kurze Erklärungen wichtiger Begriffe |
+| [Knowledge Base](knowledge-base) | Zusätzliche Notizen und Begriffe |
+
+---
 
 ## Grober Ablauf
 
@@ -78,8 +84,14 @@ Der Workshop dauert ungefähr vier Stunden inklusive Pausen.
 
 Die Zeiten sind Orientierungspunkte. Wenn eine Phase mehr Zeit braucht, passen wir den Ablauf an.
 
-## Während des Workshops:
+---
+
+## Während des Workshops
 
 Du musst nicht alles sofort perfekt verstehen. Das Ziel ist, handlungsfähig zu werden.
 
 Das ist bereits ein wichtiger Teil von Vibe Coding: nicht ein perfekter Befehl, sondern ein guter Arbeitsprozess.
+
+## Was du jetzt gelernt hast
+
+Du weißt jetzt, wie diese Website aufgebaut ist und welche Stationen dich im Workshop erwarten.
