@@ -79,22 +79,8 @@ Der Workshop dauert ungefähr vier Stunden inklusive Pausen.
 
 Die Zeiten sind Orientierungspunkte. Wenn eine Phase mehr Zeit braucht, passen wir den Ablauf an.
 
-## Wie du während des Workshops arbeiten solltest
+## Während des Workshops:
 
-Versuche nicht, alles sofort perfekt zu verstehen. Das Ziel ist, handlungsfähig zu werden.
-
-Arbeite lieber so:
-
-1. Lies den aktuellen Abschnitt.
-2. Mach den nächsten kleinen Schritt.
-3. Frage nach, wenn ein Begriff oder Schritt unklar ist.
-4. Prüfe, was der Coding Agent ausgibt.
-5. Verbessere deinen Prompt oder deine Idee in kleinen Runden.
+Du musst nicht alles sofort perfekt verstehen. Das Ziel ist, handlungsfähig zu werden.
 
 Das ist bereits ein wichtiger Teil von Vibe Coding: nicht ein perfekter Befehl, sondern ein guter Arbeitsprozess.
-
-## Was du jetzt gelernt hast
-
-Du weißt jetzt, worum es im Workshop geht, wie wir mit dieser Website arbeiten und was du am Ende mitnehmen sollst.
-
-Der wichtigste Gedanke für den Start: Du musst nicht programmieren können, um mit einem Coding Agent zu beginnen. Aber du musst lernen, klar zu denken, gute Fragen zu stellen und Ergebnisse kritisch anzuschauen.
