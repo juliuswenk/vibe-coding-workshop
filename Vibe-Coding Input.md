@@ -8,38 +8,7 @@ permalink: /theorie/
 
 Vibe Coding bedeutet: Du beschreibst einem `Coding Agent`, was du bauen möchtest, und entwickelst gemeinsam mit ihm ein funktionierendes Projekt.
 
-Du schreibst nicht jede Codezeile selbst. Deine Aufgabe ist es, Ziele zu formulieren, Entscheidungen zu treffen, Ergebnisse zu prüfen und gutes Feedback zu geben.
-
-## Was diese Seite erklärt
-
-Diese Seite erklärt die wichtigsten Grundlagen für den Workshop:
-
-- was `Vibe Coding` bedeutet
-- was Vibe Coding gut kann
-- wo die Grenzen liegen
-- wie gute Prompts aussehen
-- wie du mit OpenCode und Zed arbeitest
-- wie du Ergebnisse prüfst
-- wie du mit Fehlern umgehst
-- wie du klare Grenzen setzt
-- wie eine `AGENTS.md`-Datei hilft
-- wie du externe Referenzen sinnvoll nutzt
-- welche fortgeschrittenen Arbeitsweisen später wichtig werden
-
-## Warum das für Vibe Coding wichtig ist
-
-Vibe Coding funktioniert nicht dadurch, dass du einer KI einfach sagst: "Bau mir eine App."
-
-Gute Ergebnisse entstehen, wenn du den Prozess führst:
-
-- Du beschreibst eine kleine Aufgabe.
-- Du lässt dir einen Plan erklären.
-- Du erlaubst eine Änderung.
-- Du prüfst das Ergebnis.
-- Du gibst konkretes Feedback.
-- Du machst den nächsten kleinen Schritt.
-
-Der `Coding Agent` ist ein Werkzeug. Er kann dir viel Arbeit abnehmen, aber du bleibst verantwortlich für Richtung, Entscheidungen und Kontrolle.
+Du schreibst nicht jede Codezeile selbst. Deine Aufgabe ist es, Ziele zu formulieren, Entscheidungen zu treffen, Ergebnisse zu prüfen und gutes Feedback zu geben. Hierfür kannst du die KI natürlich nach Input fragen, wenn du etwas nicht verstehst – wichtig ist, dass du in Kontrolle bleibst, damit kein generischer "KI-Slop" entsteht.
 
 ## Inhaltsübersicht
 
@@ -93,9 +62,7 @@ Vibe Coding ist besonders stark bei:
 - dem Vergleichen von Alternativen
 - Dokumentation und Setup-Anleitungen
 
-Ein guter Coding Agent kann Dateien lesen, Änderungen vorschlagen, Code ausführen und Fehlermeldungen nutzen, um weiterzuarbeiten.
-
-Dadurch fühlt sich der Prozess oft eher wie ein Gespräch über ein Projekt an als wie klassisches Programmieren.
+Ein Coding Agent kann Dateien lesen, Änderungen vorschlagen, Code ausführen und Fehlermeldungen nutzen, um weiterzuarbeiten.
 
 ## 3. Wo Vibe Coding begrenzt ist
 
@@ -107,7 +74,7 @@ Typische Probleme:
 - Der Agent verändert bestehende Logik, obwohl es nicht nötig ist.
 - Der Agent erfindet Libraries, Funktionen oder APIs.
 - Der Agent übersieht Nebenwirkungen.
-- Der Agent macht Code komplizierter als nötig.
+- Der Agent macht Code komplizierter als nötig. (!)
 - Der Agent löst ein Symptom, aber nicht die eigentliche Ursache.
 - Der Agent kann Sicherheitsprobleme einbauen.
 - Der Agent kann bei großen Projekten den Überblick verlieren.
@@ -176,8 +143,7 @@ In diesem Workshop arbeitest du mit `Zed` als Code Editor und `OpenCode` als Cod
 Ein sinnvoller Ablauf:
 
 1. Öffne dein Projekt in Zed.
-2. Öffne den Projektordner im Terminal.
-3. Starte OpenCode.
+3. Starte OpenCode asl Agent in Zed.
 4. Beschreibe eine kleine Aufgabe.
 5. Lass dir zuerst den Plan erklären.
 6. Erlaube die Änderung.
@@ -195,7 +161,7 @@ Erkläre mir in einfachen Worten, welche Dateien für den Einstieg wichtig sind.
 Beispiel für eine kleine Änderung:
 
 ```text
-Erstelle eine sehr einfache HTML-Seite für ein Projekt namens "Black Box Breakout".
+Erstelle eine sehr einfache HTML-Seite für ein Projekt namens "Vibe Coding Workshop SRH".
 Sie soll einen Titel, einen kurzen Beschreibungstext und drei farbige Bereiche haben.
 Nutze nur HTML und CSS.
 Bitte ändere nur die Dateien, die dafür notwendig sind.
@@ -227,28 +193,6 @@ Welche Datei ist am wichtigsten?
 Welche Zeilen sollte ich mir anschauen?
 ```
 
-## 8. Gute Aufgaben für Anfänger*innen
-
-Starte mit Aufgaben, die sichtbar und überschaubar sind:
-
-- eine einfache Webseite erstellen
-- Farben und Layout ändern
-- Textbereiche ergänzen
-- Buttons oder Karten bauen
-- eine kleine Interaktion hinzufügen
-- einen Fehler aus der Konsole erklären lassen
-- eine README schreiben lassen
-- eine vorhandene Datei zusammenfassen lassen
-
-Vermeide am Anfang:
-
-- Login-Systeme
-- Datenbanken
-- Bezahlsysteme
-- komplexe Installationen
-- große Refactorings
-- mehrere Frameworks gleichzeitig
-- Sicherheitsfunktionen, die du nicht verstehst
 
 ## 9. Fehler sind Teil des Workflows
 
@@ -304,7 +248,7 @@ Erkläre mir am Ende, wie ich das Ergebnis testen kann.
 
 ## 11. Externe Referenzen nutzen
 
-Du darfst externe Beispiele nutzen. Das ist sogar oft sinnvoll.
+Für die allermeisten Aufgaben gibt es schon eine ähnliche Lösung. Wir müssen also nicht immer alles neu schreiben, sondern können es unserem Coding Agenten als Referenz geben. So bauen wir auf ein stabiles Fundament auf und sparen Zeit, nerven und tokens.
 
 Beispiele:
 
@@ -471,34 +415,8 @@ Gerade bei Anfänger*innen ist das wichtig, weil Agents oft zu komplexe Lösunge
 
 Einfacher Code ist meistens besser für den Lernprozess.
 
-## 17. Fortgeschritten: Git als Sicherheitsnetz
 
-`Git` speichert Projektstände. Wenn du mit Coding Agents arbeitest, ist das besonders wichtig.
-
-Gute Gewohnheit:
-
-1. Starte mit einem funktionierenden Zustand.
-2. Lass den Agenten eine kleine Änderung machen.
-3. Teste.
-4. Wenn es gut ist, speichere den Stand mit Git.
-
-Nützliche Befehle:
-
-```sh
-git status
-git diff
-git add .
-git commit -m "Add first prototype"
-```
-
-Wenn du noch nicht sicher mit Git bist, frage den Agenten:
-
-```text
-Erkläre mir, was `git status` gerade bedeutet.
-Ändere nichts.
-```
-
-## 18. Gute Abschlussfrage nach jeder Session
+## 17. Gute Abschlussfrage nach jeder Session
 
 Beende eine Vibe-Coding-Session nicht einfach, sobald etwas funktioniert.
 
@@ -520,9 +438,3 @@ Diese Zusammenfassung hilft dir, später wieder einzusteigen.
 Vibe Coding ist gut für schnelle Prototypen und kreative Experimente. Es ersetzt aber nicht dein Urteilsvermögen.
 
 Arbeite klein, prüfe oft, setze klare Grenzen und lass dir Änderungen erklären. Je größer das Projekt wird, desto wichtiger werden Projektregeln, Tests, Git und klare Phasen.
-
-## Was du jetzt gelernt hast
-
-Du weißt jetzt, wie du mit einem Coding Agent arbeitest, ohne die Kontrolle über dein Projekt abzugeben.
-
-Du hast gelernt, wie gute Prompts aufgebaut sind, warum kleine Schritte wichtig sind, wie du Fehler nutzt, wie externe Referenzen helfen können und wie eine `AGENTS.md` dem Agenten klare Projektregeln gibt.

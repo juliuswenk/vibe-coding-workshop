@@ -41,13 +41,6 @@ Das ist praktisch, aber auch riskant. Ein Agent kann:
 
 `GitHub` ist eine Website, auf der du dein Git-Projekt online speichern kannst.
 
-Stell es dir so vor:
-
-- Dein Projektordner ist dein Arbeitsplatz.
-- `Git` ist dein Speicherbuch für Projektstände.
-- `GitHub` ist die Online-Kopie deines Projekts.
-- `Zed` ist der Editor, mit dem du Dateien bearbeitest und Git einfacher bedienst.
-
 ## Die wichtigsten Begriffe
 
 ### Repository
@@ -64,7 +57,7 @@ Wenn dieser Ordner ein Git-Repository ist, kann Git Änderungen darin speichern.
 
 ### Clone
 
-`Clone` bedeutet: Du kopierst ein GitHub-Repository auf deinen Computer.
+`Clone` bedeutet: Du kopierst ein GitHub-Repository auf deinen Computer. Dann ist es nicht mehr nur online, sondern du hast eine lokale Kopie.
 
 Beispiel:
 
@@ -161,14 +154,14 @@ Für den Anfang reicht dieser Ablauf:
 2. Repository mit Zed auf den Computer clonen.
 3. Dateien in Zed ändern.
 4. Änderungen im Git Panel prüfen.
-5. Änderungen stagen.
-6. Commit mit kurzer Nachricht erstellen.
-7. Push zu GitHub machen.
+5. Änderungen stagen. (Welche Änderungen sollen wirklich gespeichert werden?)
+6. Commit mit kurzer Nachricht erstellen. (Die aktuelle Version auf deinem Computer speichern)
+7. Push zu GitHub machen. (Die Version auf deinem Computer auf GitHub hochladen)
 
 Kurz gesagt:
 
 ```text
-Ändern -> Prüfen -> Commit -> Push
+Ändern -> Prüfen -> Commit (Speichern) -> Push (Hochladen)
 ```
 
 ## 1. Neues Repository auf GitHub erstellen
@@ -233,14 +226,13 @@ Erstelle eine neue Datei in Zed.
 Name:
 
 ```text
-index.html
+index.md
 ```
 
 Inhalt:
 
-```html
-<h1>Mein erstes Vibe-Coding-Projekt</h1>
-<p>Diese Datei wurde in Zed erstellt.</p>
+```
+Mein erstes Vibe-Coding-Projekt
 ```
 
 Speichere die Datei.
@@ -301,7 +293,7 @@ Unten im Git Panel gibt es ein Feld für die Commit-Nachricht.
 Schreibe:
 
 ```text
-Add first HTML page
+index.md hinzugefügt
 ```
 
 Dann klicke auf den Commit-Button oder nutze die passende Tastenkombination, die Zed dir anzeigt.
@@ -364,26 +356,8 @@ Trotzdem ist `Pull` nützlich, wenn:
 
 In Zed findest du `Pull` im Git Panel oder über die Command Palette mit `git: pull`.
 
-## 12. Was Git nicht automatisch löst
 
-Git speichert Projektstände. Git versteht aber nicht automatisch, ob dein Projekt gut oder richtig ist.
-
-Git beantwortet nicht:
-
-- Ist mein Design gut?
-- Funktioniert die Webseite?
-- Hat der Coding Agent zu viel geändert?
-- Ist der Code verständlich?
-
-Dafür bist du zuständig.
-
-Gute Gewohnheit:
-
-1. Erst testen.
-2. Dann committen.
-3. Dann pushen.
-
-## 13. Git und Coding Agents
+## 12. Git und Coding Agents
 
 Wenn ein Coding Agent Dateien ändert, schau danach ins Git Panel.
 
@@ -409,7 +383,7 @@ Beispiel:
 Add first prototype layout
 ```
 
-## 14. Zusammenarbeit kurz erwähnt
+## 13. Zusammenarbeit kurz erwähnt
 
 Git und GitHub sind auch für Zusammenarbeit gedacht.
 
@@ -433,7 +407,7 @@ Merke dir nur: Wenn du später mit anderen zusammenarbeitest, werden `Pull`, `Br
 | `main` | Der Haupt-Branch deines Projekts |
 | `Diff` | Anzeige, was sich geändert hat |
 
-## Was du jetzt gelernt hast
+## Was du gelernt hast
 
 Du weißt jetzt, was `Git` und `GitHub` sind und warum sie beim Vibe Coding wichtig sind.
 

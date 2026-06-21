@@ -26,10 +26,6 @@ Diese Seite erklärt:
 
 ## Warum das für Vibe Coding wichtig ist
 
-Vibe Coding funktioniert nur gut, wenn du den Agenten gezielt führst.
-
-OpenCode kann dir helfen, schneller von einer Idee zu einer sichtbaren Version zu kommen. Aber der Agent braucht klare Aufgaben, Kontext und Grenzen.
-
 Wenn du OpenCode in Zed nutzt, arbeitest du direkt im Projekt. Das bedeutet:
 
 - Der Agent kann deine Dateien sehen.
@@ -51,13 +47,6 @@ Ein Coding Agent ist mehr als ein Chatbot. Er kann mit deinem Projekt arbeiten:
 - Befehle vorschlagen oder ausführen, wenn du es erlaubst
 
 Wichtig: OpenCode ist ein Werkzeug. Es ersetzt nicht dein eigenes Denken.
-
-Du entscheidest:
-
-- Was soll gebaut werden?
-- Welche Änderung ist erlaubt?
-- Wann ist ein Ergebnis gut genug?
-- Was wird gespeichert?
 
 ## OpenCode in Zed installieren
 
@@ -130,49 +119,20 @@ Du gibst dem Agenten zuerst eine Analyseaufgabe statt sofort eine Bauaufgabe. Da
 
 OpenCode braucht ein KI-Modell im Hintergrund.
 
-Je nach OpenCode-Konfiguration kannst du ein Modell oder einen Anbieter auswählen. Das kann zum Beispiel über OpenCode selbst, einen Login, einen API-Key oder eine Subscription laufen.
+Je nach OpenCode-Konfiguration kannst du ein Modell auswählen.
 
 Typische Unterschiede zwischen Modellen:
 
 - Einige Modelle sind schneller.
 - Einige Modelle sind besser bei komplexen Aufgaben.
-- Einige Modelle sind günstiger.
 - Einige Modelle können längeren Kontext besser verarbeiten.
 - Einige Modelle machen bessere Erklärungen.
 
 Für Anfänger*innen gilt:
 
-Starte mit dem Modell, das im Workshop empfohlen wird.
-
-Wenn du später selbst auswählst, denke so:
-
-| Situation | Sinnvolle Wahl |
-| --- | --- |
-| Kleine HTML/CSS-Aufgabe | schnelles Standardmodell |
-| Fehler verstehen | Modell mit guten Erklärungen |
-| Größere Änderung planen | stärkeres Modell |
-| Viel Kontext im Projekt | Modell mit größerem Kontextfenster |
-
 Was bringt das?
 
 Die Modellwahl beeinflusst Qualität, Geschwindigkeit und manchmal Kosten. Für den Workshop ist wichtiger, dass du sauber arbeitest, als dass du sofort das "beste" Modell findest.
-
-## Auth, Login und API-Keys
-
-OpenCode kann nach einem Login oder API-Key fragen.
-
-Ein `API-Key` ist ein geheimer Zugangsschlüssel für einen KI-Anbieter.
-
-Wichtig:
-
-- Teile API-Keys nie öffentlich.
-- Schreibe API-Keys nicht in Projektdateien.
-- Lade API-Keys nicht zu GitHub hoch.
-- Wenn du keinen Zugang hast, warte auf die gemeinsame Erklärung im Workshop.
-
-Was bringt das?
-
-Ohne gültigen Zugang kann ein Agent oft nicht arbeiten. Gleichzeitig sind Zugangsdaten sensibel. Darum behandeln wir sie vorsichtig.
 
 ## Thread Panel und Thread History
 
@@ -209,39 +169,6 @@ Fasse zusammen:
 4. Was ist der nächste sinnvolle Schritt?
 ```
 
-## Kontext geben
-
-Ein Agent arbeitet besser, wenn er weiß, worauf er achten soll.
-
-Du kannst Kontext geben durch:
-
-- klare Beschreibung deiner Idee
-- Dateinamen
-- ausgewählte Textstellen
-- Fehlermeldungen
-- Screenshots
-- Links zu Referenzen
-- Regeln aus deiner `AGENTS.md`
-
-Schlechter Prompt:
-
-```text
-Mach die Seite besser.
-```
-
-Besser:
-
-```text
-Die Startseite wirkt zu textlastig.
-Bitte schlage drei kleine visuelle Verbesserungen vor.
-Ändere noch nichts.
-Nutze nur HTML und CSS.
-```
-
-Was bringt das?
-
-Je klarer der Kontext, desto weniger muss der Agent raten.
-
 ## Dateien erwähnen
 
 Wenn du weißt, welche Datei wichtig ist, nenne sie direkt.
@@ -257,81 +184,6 @@ Erkläre mir, wie die Seite aufgebaut ist.
 Was bringt das?
 
 Der Agent konzentriert sich auf die relevanten Dateien und verliert weniger Zeit mit dem Rest des Projekts.
-
-## Änderungen zuerst planen lassen
-
-Bei größeren Änderungen solltest du OpenCode erst planen lassen.
-
-Prompt:
-
-```text
-Bitte ändere noch nichts.
-Analysiere zuerst das Projekt und schlage einen Plan in 3 bis 5 Schritten vor.
-Nenne genau, welche Dateien du ändern würdest.
-Warte danach auf meine Bestätigung.
-```
-
-Was bringt das?
-
-Du behältst Kontrolle. Der Agent erklärt zuerst, was er tun will, bevor Dateien geändert werden.
-
-## Kleine Änderungen erlauben
-
-Wenn der Plan gut ist, gib eine kleine Aufgabe frei.
-
-Beispiel:
-
-```text
-Setze nur Schritt 1 um.
-Ändere nur `index.html` und `style.css`.
-Erkläre danach kurz, was du geändert hast.
-```
-
-Was bringt das?
-
-Kleine Änderungen sind leichter zu prüfen. Wenn etwas schiefgeht, findest du schneller die Ursache.
-
-## Änderungen prüfen
-
-Nach jeder Agent-Änderung solltest du prüfen:
-
-1. Welche Dateien wurden geändert?
-2. Passt die Änderung zur Aufgabe?
-3. Funktioniert das Projekt noch?
-4. Gibt es Fehlermeldungen?
-5. Hat der Agent ungefragt zusätzliche Dinge eingebaut?
-
-Nutze dafür:
-
-- die geänderten Dateien in Zed
-- das Git Panel
-- den Project Diff
-- den Browser
-- Fehlermeldungen aus Terminal oder Konsole
-
-Was bringt das?
-
-Du übernimmst nicht blind KI-Code. Du lernst, den Prozess zu kontrollieren.
-
-## Änderungen mit Git sichern
-
-Wenn eine Änderung funktioniert, speichere sie mit Git.
-
-Workflow:
-
-```text
-Änderung prüfen -> Commit schreiben -> Push zu GitHub
-```
-
-Beispiel für eine Commit-Nachricht:
-
-```text
-Add first prototype layout
-```
-
-Was bringt das?
-
-Git ist dein Sicherheitsnetz. Wenn spätere Agent-Änderungen schlechter werden, hast du einen guten Zwischenstand gespeichert.
 
 ## Tool Permissions und Bestätigung
 
@@ -355,29 +207,6 @@ Gute Grenze:
 ```text
 Füge keine neuen Libraries hinzu, ohne vorher zu fragen.
 ```
-
-## Wenn OpenCode etwas falsch macht
-
-Das passiert. Wichtig ist, wie du reagierst.
-
-Nicht gut:
-
-```text
-Nein falsch, mach nochmal.
-```
-
-Besser:
-
-```text
-Die letzte Änderung hat das Layout verschlechtert.
-Bitte erkläre zuerst, welche Änderung wahrscheinlich dafür verantwortlich ist.
-Schlage dann den kleinsten möglichen Fix vor.
-Ändere noch nichts.
-```
-
-Was bringt das?
-
-Du zwingst den Agenten zur Analyse, statt direkt die nächste unsichere Änderung auszulösen.
 
 ## Wann du einen neuen Thread starten solltest
 
@@ -441,20 +270,6 @@ Bitte erkläre sie in einfachen Worten.
 Schlage den kleinsten möglichen Fix vor.
 Ändere noch nichts.
 ```
-
-## Mini-Glossar
-
-| Begriff | Bedeutung |
-| --- | --- |
-| `OpenCode` | Coding Agent für die Arbeit an Softwareprojekten |
-| `Agent Panel` | Zed-Bereich für Agent-Unterhaltungen |
-| `Thread` | Eine einzelne Unterhaltung mit einem Agenten |
-| `External Agent` | Externer Agent, der in Zed eingebunden wird |
-| `ACP Registry` | Zed-Verzeichnis zum Installieren externer Agents |
-| `Model` | KI-Modell, das Antworten und Code erzeugt |
-| `API-Key` | Geheimer Zugangsschlüssel zu einem KI-Anbieter |
-| `Context` | Informationen, die der Agent für die Aufgabe braucht |
-| `Diff` | Anzeige der geänderten Stellen |
 
 ## Was du jetzt gelernt hast
 
