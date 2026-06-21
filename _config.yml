@@ -4,7 +4,7 @@ theme: jekyll-theme-minimal
 nav:
   - title: Start
     url: /
-  - title: Theorie
+  - title: Vibe-Coding Input
     url: /theorie
   - title: Setup macOS
     url: /setup/mac
@@ -22,5 +22,3 @@ nav:
     url: /freies-projekt-inspiration
   - title: Glossar
     url: /glossar
-  - title: Knowledge Base
-    url: /knowledge-base
