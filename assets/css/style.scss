@@ -1,10 +1,20 @@
 ---
 ---
 
-@import "jekyll-theme-minimal";
+@import "{{ site.theme }}";
 
 body {
     background: #1f2328;
+    color: #f0f3f6;
+}
+
+body,
+p,
+ul,
+ol,
+table,
+pre,
+dl {
     color: #f0f3f6;
 }
 
@@ -26,6 +36,21 @@ code {
     color: #f0f3f6;
 }
 
-table {
-    color: #f0f3f6;
+header p,
+footer,
+small {
+    color: #c9d1d9;
+}
+
+strong {
+    color: #ffffff;
+}
+
+hr {
+    background: #30363d;
+}
+
+th,
+td {
+    border-bottom: 1px solid #30363d;
 }
