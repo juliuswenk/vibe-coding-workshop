@@ -36,6 +36,22 @@ code {
     color: #f0f3f6;
 }
 
+pre,
+.highlight,
+div.highlight {
+    background: #0d1117;
+    border: 1px solid #30363d;
+}
+
+pre code {
+    background: transparent;
+    color: #f0f3f6;
+}
+
+.highlight pre {
+    background: #0d1117;
+}
+
 header p,
 footer,
 small {
