@@ -53,14 +53,13 @@ Wir gehen die wichtigsten Teile gemeinsam durch. Du kannst die Seiten aber auch 
 
 Die Inhalte sind so aufgebaut:
 
-- **Theorie:** die wichtigsten Begriffe und Grundideen
-- **Setup:** was du installieren oder öffnen musst
-- **Tutorials:** kleine Schritt-für-Schritt-Anleitungen
-- **Erstes Projekt:** ein gemeinsamer Einstieg in die Arbeit mit einem Coding Agent
-- **Eigenes Projekt:** Raum für deine eigene Idee
-- **Glossar:** kurze Erklärungen wichtiger Begriffe
-
-Einige Seiten entstehen oder wachsen erst im Laufe der Vorbereitung. Wenn etwas noch nicht verlinkt ist, ist das Absicht.
+- [Theorie](theorie): die wichtigsten Begriffe und Grundideen
+- Setup: [macOS](setup/mac) und [Windows](setup/windows)
+- Tutorials: [GitHub](tutorials/github), [Zed](tutorials/zed) und [Opencode](tutorials/opencode)
+- [Erstes Projekt](mein-erstes-projekt): ein gemeinsamer Einstieg in die Arbeit mit einem Coding Agent
+- [Eigenes Projekt](freies-projekt-inspiration): Raum für deine eigene Idee
+- [Glossar](glossar): kurze Erklärungen wichtiger Begriffe
+- [Knowledge Base](knowledge-base): zusätzliche Notizen und Begriffe
 
 ## Grober Ablauf
 
