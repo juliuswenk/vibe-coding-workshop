@@ -15,7 +15,18 @@
 
         <nav class="site-nav" aria-label="Workshop Navigation">
           {% for item in site.nav %}
-            <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+            {% if item.divider %}
+              <hr>
+            {% elsif item.children %}
+              <div class="site-nav-group">
+                <p class="site-nav-heading">{{ item.title }}</p>
+                {% for child in item.children %}
+                  <a class="site-nav-child" href="{{ child.url | relative_url }}">{{ child.title }}</a>
+                {% endfor %}
+              </div>
+            {% else %}
+              <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+            {% endif %}
           {% endfor %}
         </nav>
 

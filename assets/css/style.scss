@@ -67,9 +67,30 @@ small {
     margin: 24px 0;
 }
 
+.site-nav hr {
+    margin: 14px 0;
+    height: 1px;
+    border: 0;
+    background: #30363d;
+}
+
 .site-nav a {
     display: block;
     padding: 4px 0;
+}
+
+.site-nav-heading {
+    margin: 0 0 4px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.site-nav-group {
+    margin: 0;
+}
+
+.site-nav-child {
+    padding-left: 14px !important;
 }
 
 strong {

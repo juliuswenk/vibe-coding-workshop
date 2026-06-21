@@ -4,21 +4,31 @@ theme: jekyll-theme-minimal
 nav:
   - title: Start
     url: /
-  - title: Vibe-Coding Input
-    url: /theorie
-  - title: Setup macOS
-    url: /setup/mac
-  - title: Setup Windows
-    url: /setup/windows
-  - title: GitHub Tutorial
-    url: /tutorials/github
-  - title: Zed Tutorial
-    url: /tutorials/zed
-  - title: Opencode Tutorial
-    url: /tutorials/opencode
-  - title: Mein erstes Projekt
-    url: /mein-erstes-projekt
-  - title: Projekt-Inspiration
-    url: /freies-projekt-inspiration
+  - divider: true
+  - title: Grundlagen
+    children:
+      - title: Vibe-Coding Input
+        url: /theorie
+      - title: Setup macOS
+        url: /setup/mac
+      - title: Setup Windows
+        url: /setup/windows
+  - divider: true
+  - title: Tutorials
+    children:
+      - title: GitHub Tutorial
+        url: /tutorials/github
+      - title: Zed Tutorial
+        url: /tutorials/zed
+      - title: Opencode Tutorial
+        url: /tutorials/opencode
+  - divider: true
+  - title: Projekte
+    children:
+      - title: Mein erstes Projekt
+        url: /mein-erstes-projekt
+      - title: Projekt-Inspiration
+        url: /freies-projekt-inspiration
+  - divider: true
   - title: Glossar
     url: /glossar
