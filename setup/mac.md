@@ -5,7 +5,7 @@ title: Setup for macOS
 
 # Setup for macOS
 
-This page helps you prepare your Mac for the workshop.
+This page helps you prepare your Mac for Vibe Coding.
 
 We use `Homebrew` as a Package Manager. A Package Manager installs programs through commands in the Terminal. This may feel unfamiliar at first, but it is often easier than many separate download pages.
 
@@ -45,7 +45,7 @@ If a step does not work: that is okay. Write down the error message or take a sc
 
 ### 1. Create a GitHub account
 
-`GitHub` is a website where you can store and share code. For the workshop, you need a free personal account.
+`GitHub` is a website where you can store and share code. For this guide, a free personal account is enough.
 
 1. Open [github.com](https://github.com/).
 2. Click `Sign up`.
@@ -164,7 +164,7 @@ Then start `Zed` from the Applications folder or through Spotlight:
 
 ### 8. Install OpenCode
 
-`OpenCode` is the Coding Agent we want to use in the workshop. It runs in the Terminal.
+`OpenCode` is the Coding Agent used in this guide. It runs in the Terminal.
 
 Install `OpenCode`:
 
@@ -204,13 +204,13 @@ Add OpenCode to Zed like this:
 
 If OpenCode asks you to sign in or connect, follow the instructions.
 
-OpenCode needs access to an AI model. Depending on the workshop setup, this can happen through an OpenCode account, an API key, or another provider.
+OpenCode needs access to an AI model. Depending on your setup, this can happen through an OpenCode account, an API key, or another provider.
 
-If you are asked for an API key and do not have one yet, wait for the explanation in the workshop.
+If you are asked for an API key and do not have one yet, check the OpenCode documentation or the instructions from your AI provider.
 
-You do not need to buy anything before we have clarified together which access we will use.
+You do not need to buy anything before you know which access you want to use.
 
-Note: if you already happen to pay for another Coding Agent, for example `Codex`, `Claude Code`, `Copilot`, or another Agent in Zed, you can also use that. For the shared workshop flow, we use OpenCode.
+Note: if you already happen to pay for another Coding Agent, for example `Codex`, `Claude Code`, `Copilot`, or another Agent in Zed, you can also use that. This guide uses OpenCode for the shared examples.
 
 ### 10. Test OpenCode in Terminal
 
@@ -278,7 +278,7 @@ Start OpenCode:
 opencode
 ```
 
-If OpenCode starts in Terminal or can be selected as an Agent in Zed, you are ready for the workshop.
+If OpenCode starts in Terminal or can be selected as an Agent in Zed, you are ready to start.
 
 If OpenCode does not start, check:
 

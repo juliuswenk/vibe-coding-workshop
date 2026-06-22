@@ -140,7 +140,7 @@ For beginners:
 
 Why does this matter?
 
-The model choice affects quality, speed, and sometimes cost. For the workshop, clean work is more important than immediately finding the "best" model.
+The model choice affects quality, speed, and sometimes cost. At the start, clean work is more important than immediately finding the "best" model.
 
 ## Thread Panel and Thread History
 

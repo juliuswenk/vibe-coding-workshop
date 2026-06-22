@@ -7,7 +7,7 @@ title: Glossary
 
 ## What this page explains
 
-This page collects short explanations of terms that appear repeatedly in the workshop.
+This page collects short explanations of terms that appear repeatedly in this guide.
 
 ## Why this matters for Vibe Coding
 

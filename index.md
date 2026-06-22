@@ -1,22 +1,22 @@
 ---
 layout: default
-title: Vibe-Coding 101 @ SRH
+title: Vibe-Coding 101
 ---
 
-# Vibe-Coding 101 @ SRH
+# Vibe-Coding 101
 
-Welcome to the workshop. Over the next few hours, you will learn how to work with `Coding Agents`: AI tools that do more than write text and can help you plan, build, understand, and improve software.
+Welcome! This page aims to teach how to work with `Coding Agents`: AI tools that do more than write text and can help you plan, build, understand, and improve software.
 
 You do not need any programming experience. We start with the basics and move step by step.
 
 ## What this page explains
 
-This page is the starting point for the workshop. It explains:
+This page is the starting point. It explains:
 
-- what the workshop is about
-- what goals we are working toward
-- how we will use this website
-- what the rough four-hour schedule looks like
+- what this guide is about
+- what you can learn here
+- how to use this website
+- which path to follow first
 
 ## Why this matters for Vibe Coding
 
@@ -34,9 +34,9 @@ The AI can take over a lot of work. Thinking, deciding, and judging the result r
 
 ---
 
-## Workshop goals
+## Learning goals
 
-After the workshop, you will not know everything about software development. That would be unrealistic in four hours.
+After working through this guide, you will not know everything about software development. That would be unrealistic at the start.
 
 But you should have understood and tried enough to keep working independently afterward:
 
@@ -49,9 +49,9 @@ But you should have understood and tried enough to keep working independently af
 
 ## How we use this website
 
-This website is our shared guide for the workshop. It replaces traditional slides.
+This website is a practical guide for getting started with Vibe Coding.
 
-We will go through the most important parts together. You can also reopen the pages later if you want to look something up or repeat a step.
+You can read it from start to finish, or reopen individual pages later when you want to look something up or repeat a step.
 
 The content is organized like this:
 
@@ -60,32 +60,29 @@ The content is organized like this:
 | [Theory](theorie) | The most important terms and basic ideas |
 | Setup: [macOS](setup/mac), [Windows](setup/windows) | Install and check tools |
 | Tutorials: [GitHub](tutorials/github), [Zed](tutorials/zed), [OpenCode](tutorials/opencode) | Understand individual tools step by step |
-| [First project](mein-erstes-projekt) | Shared first steps with a Coding Agent |
+| [First project](mein-erstes-projekt) | First steps with a Coding Agent |
 | [Your own project](freies-projekt-inspiration) | Space for your own idea |
 | [Glossary](glossar) | Short explanations of important terms |
 
 ---
 
-## Rough schedule
+## Suggested path
 
-The workshop lasts about four hours including breaks.
+If you are new to coding, follow this order:
 
-| Time | Section | Content |
+| Step | Section | Content |
 | --- | --- | --- |
-| 0:00-0:35 | Introduction and theory | What is Vibe Coding? What is a Coding Agent? What is AI good at, and what is it not good at? |
-| 0:35-1:10 | Setup | We set up the most important tools and clarify basic terms. |
-| 1:10-1:25 | Break | Time to breathe. |
-| 1:25-2:15 | First shared project | We build a small project together and practice prompts, follow-up questions, and corrections. |
-| 2:15-2:35 | Concept phase | You develop your own small project idea. |
-| 2:35-2:50 | Break | Second short break. |
-| 2:50-3:45 | Your own project | You work with a Coding Agent on your idea. |
-| 3:45-4:00 | Wrap-up | We collect insights, problems, and next steps. |
+| 1 | Introduction and theory | What is Vibe Coding? What is a Coding Agent? What is AI good at, and what is it not good at? |
+| 2 | Setup | Install the most important tools and clarify basic terms. |
+| 3 | First project | Build a small project and practice prompts, follow-up questions, and corrections. |
+| 4 | Project idea | Develop your own small project idea. |
+| 5 | Continue independently | Work with a Coding Agent on your idea and save useful project states. |
 
-The times are guideposts. If one phase needs more time, we will adjust the schedule.
+Take breaks when you need them. The goal is not speed, but a workflow you can repeat.
 
 ---
 
-## During the workshop
+## While you work
 
 You do not have to understand everything perfectly right away. The goal is to become able to act.
 
@@ -93,4 +90,4 @@ That is already an important part of Vibe Coding: not one perfect command, but a
 
 ## What you have learned
 
-You now know how this website is structured and which stations you will move through during the workshop.
+You now know how this website is structured and which steps help you get started with Vibe Coding.

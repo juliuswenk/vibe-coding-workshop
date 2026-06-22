@@ -1,4 +1,4 @@
-# Vibe Coding Workshop SRH
+# Vibe Coding 101
 
 ## Author
 
@@ -6,70 +6,39 @@ Julius Wenk
 
 ---
 
-This is the repository for the Vibe Coding Workshop at SRH. It contains the files for the workshop, including schedules, tutorials, tasks, and sample solutions.
+This repository contains a GitHub Pages guide for getting started with Vibe Coding. It focuses on beginners who want to understand how to work with Coding Agents, project files, Git, GitHub, and simple project ideas.
 
 ---
 
-## Schedule
+## What this guide covers
 
-**Duration:** about 4 hours including breaks
-
-### What do we want to do?
-
-| Step | Content |
+| Area | Content |
 | --- | --- |
-| 1 | Theory input: What is `Vibe Coding`, what can it do, and what can it not do? |
-| 2 | Setup: install the required tools |
-| 3 | First shared steps with a small project |
-| 4 | Concept phase for an own project |
-| 5 | Create an own project |
+| Theory | What `Vibe Coding` is, what it can do, and what it cannot do |
+| Setup | Installing the basic tools |
+| Tutorials | GitHub, Zed, and OpenCode |
+| First project | Small first steps with a Coding Agent |
+| Project inspiration | Ideas for continuing with your own project |
+| Glossary | Short explanations of recurring terms |
 
 ---
 
-### How do we work?
+## Goals
 
-There is one central GitHub Pages site that serves as the workshop homepage. It contains all links to the different workshop subpages. We will go through almost everything together, and I will explain the content of the individual pages. Students can read things again later if they did not understand something, and I do not have to build slides that nobody reads anyway.
-
----
-
-### What still needs to go into this repo
-
-- Expanded `README.md` with goals and limits of the workshop
-- Setup file: how to install the required tools, why they are needed, and what they are useful for
-- Slides
-- First small project idea with sample solution and ideas for further development
-- Inspiration for own projects
-- Knowledge Base
-- Knowledge for me about Skills
-- Glossary of important terms and concepts that may appear in the workshop
-
----
-
-### Goals for the workshop
-
-- Understand Vibe Coding as a tool, not as a cure-all. Understand possibilities and limits.
-- Understand the importance of concepts: this is where design happens. We do not blindly hand everything to AI, because otherwise slop appears.
-- Inspire instead of overwhelming.
-- Learn how to approach the concept phase of software.
+- Understand Vibe Coding as a tool, not as a cure-all.
+- Learn why concepts, small steps, and feedback matter.
+- Build enough confidence to start a small project.
+- Keep the material simple, practical, and beginner-friendly.
 
 ---
 
 ## Page structure
 
-- `index.md`: the main workshop page, goals and structure, step-by-step start
-- `theorie`: Vibe Coding 101
-- `tutorials`: tutorials for the workshop
-  - `github.md`
-  - `zed.md`
-  - `opencode.md`
-- `mein-erstes-projekt`: the first project we will build together. The concept and breakdown into small parts are already prepared here for demonstration.
-- `freies-projekt-inspiration`: a few roughly sketched ideas that students can use as inspiration for own projects. These are finished sketches only, not a build plan or code.
-- `setup`: setup guide for the workshop
-  - `windows.md`
-    - GitHub
-    - Zed
-    - OpenCode/Codex/Claude
-  - `mac.md`
-    - GitHub
-    - Zed
-    - OpenCode/Codex/Claude
+- `index.md`: the main guide page, goals, structure, and suggested path
+- `Vibe-Coding Input.md`: Vibe Coding 101, available at `/theorie/`
+- `tutorials`: tutorials for GitHub, Zed, and OpenCode
+- `mein-erstes-projekt.md`: the first project guide
+- `freies-projekt-inspiration.md`: project ideas for continuing independently
+- `setup`: setup guides for macOS and Windows
+- `glossar.md`: glossary of important terms
+- `knowledge-base.md`: reusable notes and prompts

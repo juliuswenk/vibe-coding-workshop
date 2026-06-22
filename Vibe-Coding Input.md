@@ -55,7 +55,7 @@ That can be very fast. It can also become chaotic if you:
 - do not ask what changed
 - do not set limits for the Agent
 
-For this course, Vibe Coding does not mean: "The AI does everything."
+In this guide, Vibe Coding does not mean: "The AI does everything."
 
 It means: you use an Agent as a technical tool to try ideas faster, build prototypes, and support your own learning process.
 
@@ -151,7 +151,7 @@ Do not change any files yet.
 
 ## 6. OpenCode in Zed
 
-In this workshop, you work with `Zed` as the Code Editor and `OpenCode` as the Coding Agent.
+In this guide, the examples use `Zed` as the Code Editor and `OpenCode` as the Coding Agent.
 
 A useful workflow:
 
@@ -174,7 +174,7 @@ Do not change anything yet.
 Example for a small change:
 
 ```text
-Create a very simple HTML page for a project called "Vibe Coding Workshop SRH".
+Create a very simple HTML page for a project called "My first Vibe Coding project".
 It should have a title, a short description, and three colored sections.
 Use only HTML and CSS.
 Please change only the files necessary for this.
@@ -373,7 +373,7 @@ This project is a small prototype for an interactive installation.
 
 An `AGENTS.md` does not make the Agent perfect. But it reduces misunderstandings.
 
-For the workshop: if your own project becomes larger, a small `AGENTS.md` is often better than one very long prompt.
+If your own project becomes larger, a small `AGENTS.md` is often better than one very long prompt.
 
 ## 13. Advanced: AI Development Guide
 

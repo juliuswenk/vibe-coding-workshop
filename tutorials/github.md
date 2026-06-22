@@ -145,7 +145,7 @@ If you work alone, you need `Pull` less often. Still, it is good to briefly chec
 
 A `Branch` is a separate line of development in Git.
 
-For this workshop, we stay on `main`. That is the main Branch.
+For the beginning, stay on `main`. That is the main Branch.
 
 Branches become important later when several people work on a project or when you want to try larger changes separately.
 
@@ -189,7 +189,7 @@ my-first-vibe-coding-project
 7. Activate `Add a README file`.
 8. Click `Create repository`.
 
-For the workshop, `Private` is completely fine. `Public` means other people can see your Repository.
+For your first projects, `Private` is completely fine. `Public` means other people can see your Repository.
 
 ### 2. Copy the Repository address
 
@@ -430,7 +430,7 @@ Git and GitHub are also made for collaboration.
 
 Several people can work on a project, share changes, and merge them later.
 
-That is powerful, but it is also more complexity at the start. In this workshop, we first work alone on `main`.
+That is powerful, but it is also more complexity at the start. First, work alone on `main`.
 
 Just remember: when you work with others later, `Pull`, `Branches`, and `Pull Requests` become more important.
 

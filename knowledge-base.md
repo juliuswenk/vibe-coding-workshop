@@ -7,7 +7,7 @@ title: Knowledge Base
 
 ## What this page explains
 
-This page collects extra notes, small reminders, and useful phrasing for the workshop.
+This page collects extra notes, small reminders, and useful phrasing for working with Coding Agents.
 
 ## Why this matters for Vibe Coding
 
@@ -28,4 +28,4 @@ When you work with a Coding Agent, small questions often come up that do not nee
 
 ## What you have learned
 
-You now have a place for short helpful notes that you can quickly look up during the workshop.
+You now have a place for short helpful notes that you can quickly look up while working on a project.

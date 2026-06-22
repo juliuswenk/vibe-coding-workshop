@@ -14,7 +14,7 @@ Zed is the program where you open and edit your project files, work with Git, an
 This page explains:
 
 - what a Code Editor is
-- why we use Zed in the workshop
+- why Zed is useful for this workflow
 - how Zed is roughly structured
 - which parts of the interface matter
 - how to open a project
@@ -254,9 +254,9 @@ index.html
 
 Then you can edit the file in the Editor.
 
-### 10. Typical workshop workflow in Zed
+### 10. Typical workflow in Zed
 
-For the workshop, this workflow is enough:
+For the beginning, this workflow is enough:
 
 1. Open the project folder in Zed.
 2. Briefly look at which files exist.
@@ -318,8 +318,8 @@ Do not change anything.
 
 ## What you have learned
 
-You now know what Zed is, roughly what an IDE means, and which interface areas are important for the workshop.
+You now know what Zed is, roughly what an IDE means, and which interface areas are important for Vibe Coding.
 
 You can open a project, find files, create new files, find the Git Panel, and understand what the Agent Panel is for.
 
-That is enough to not only write prompts during the workshop, but to really work on your own project.
+That is enough to not only write prompts, but to really work on your own project.
