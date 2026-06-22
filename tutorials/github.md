@@ -19,6 +19,7 @@ This page explains:
 - which terms matter
 - how to create a Repository on GitHub
 - how to bring it onto your computer with Zed
+- how to add an existing project folder to a GitHub Repository
 - how to save changes
 - how to upload changes to GitHub
 
@@ -225,6 +226,31 @@ If Zed asks whether you want to sign in to GitHub, follow the login flow.
 
 At the end, you should see your project in the file area on the left side of Zed.
 
+### 3a. Add an existing project folder to GitHub
+
+Sometimes you already have a project folder on your computer and want to put it under version control.
+
+`Version control` means: Git starts tracking the files, so you can save project states as Commits and upload them to GitHub.
+
+The beginner-safe way is:
+
+1. Create a new Repository on GitHub.
+2. Clone that Repository with Zed, as described above.
+3. Open your old project folder in Finder or File Explorer.
+4. Copy your project files into the cloned Repository folder.
+5. Go back to Zed.
+6. Check the Git Panel.
+7. Stage the copied files.
+8. Create a Commit, for example:
+
+```text
+Add existing project files
+```
+
+9. Push the Commit to GitHub.
+
+Do not copy the hidden `.git` folder if your old project already has one. The `.git` folder contains Git history. Copying it into another Repository can confuse Git.
+
 ---
 
 ## Save your first change
@@ -428,6 +454,6 @@ Just remember: when you work with others later, `Pull`, `Branches`, and `Pull Re
 
 You now know what `Git` and `GitHub` are and why they matter for Vibe Coding.
 
-You can create a Repository on GitHub, clone it to your computer with Zed, check changes, commit them, and push them to GitHub.
+You can create a Repository on GitHub, clone it to your computer with Zed, add existing project files, check changes, commit them, and push them to GitHub.
 
 This is an important step: you now have a safety net for your projects.
