@@ -1,45 +1,45 @@
 # AGENTS.md
 
-Dieses Repo enthält die studentische Website für den Vibe Coding Workshop an der SRH.
-Alle Änderungen sollen darauf einzahlen, dass Studierende ohne Coding-, Git- oder Terminal-Erfahrung dem Workshop sicher folgen können.
+This repo contains the student-facing website for the Vibe Coding Workshop at SRH.
+All changes should help students without coding, Git, or Terminal experience follow the workshop safely.
 
 ## Website
 
-- Die Website wird mit GitHub Pages gebaut.
-- Standard ist `jekyll-theme-minimal`.
-- Die zweispaltige Minimal-Theme-Struktur soll erhalten bleiben: Navigation/Meta links, Inhalt rechts.
-- Keine eigene Frontend-App, kein React/Vite/Next, kein unnötiges JavaScript, solange Markdown und Jekyll reichen.
-- Styling nur anfassen, wenn es ausdrücklich gewünscht ist oder die Lesbarkeit klar verbessert.
-- Wenn Styling geändert wird, kleine Änderungen bevorzugen: Farben, Abstände, Typografie, Navigation.
-- Die Website ersetzt Slides. Keine Slide-Struktur planen, außer sie wird ausdrücklich angefordert.
+- The website is built with GitHub Pages.
+- The default theme is `jekyll-theme-minimal`.
+- Keep the two-column Minimal Theme structure: navigation/meta on the left, content on the right.
+- No custom frontend app, no React/Vite/Next, no unnecessary JavaScript as long as Markdown and Jekyll are enough.
+- Only touch styling when explicitly requested or when it clearly improves readability.
+- If styling changes, prefer small changes: colors, spacing, typography, navigation.
+- The website replaces slides. Do not plan a slide structure unless explicitly requested.
 
-## Inhaltliche Zielgruppe
+## Target audience
 
-- Die Studierenden haben wahrscheinlich noch nie mit Git, GitHub, Terminal oder Code gearbeitet.
-- Begriffe müssen langsam eingeführt werden.
-- Jede Anleitung soll ohne Vorwissen verständlich sein.
-- Keine vorausgesetzten Abkürzungen wie "Repo klonen", "Commit machen" oder "Dependency installieren", ohne sie kurz zu erklären.
-- Vibe Coding soll als Werkzeug vermittelt werden, nicht als magische Komplettlösung.
-- Wichtig ist: Konzepte, gutes Zerlegen von Problemen und iteratives Arbeiten mit Coding Agents.
+- Students have probably never worked with Git, GitHub, Terminal, or code before.
+- Terms must be introduced slowly.
+- Every guide should be understandable without prior knowledge.
+- Do not assume shorthand like "clone the repo", "make a commit", or "install a dependency" without briefly explaining it.
+- Vibe Coding should be taught as a tool, not as a magical complete solution.
+- The important parts are concepts, good problem breakdown, and iterative work with Coding Agents.
 
-## Sprache und Ton
+## Language and tone
 
-- Studentische Inhalte sind überwiegend auf Deutsch.
-- Etablierte englische Fachbegriffe bleiben auf Englisch, zum Beispiel `Prompt`, `Coding Agent`, `Repository`, `Commit`, `Branch`, `Markdown`, `Vibe Coding`.
-- Beim ersten Auftauchen eines wichtigen Begriffs kurz erklären, was er praktisch bedeutet.
-- Ton: klar, ruhig, anleitend und leicht ermutigend.
-- Keine akademische Distanz, aber auch kein Marketing-Ton.
-- Gelegentlich darauf hinweisen, was die Studierenden bereits geschafft haben.
+- Student-facing content is in English.
+- Established English technical terms stay in English, for example `Prompt`, `Coding Agent`, `Repository`, `Commit`, `Branch`, `Markdown`, `Vibe Coding`.
+- Briefly explain an important term the first time it appears.
+- Tone: clear, calm, guiding, and lightly encouraging.
+- No academic distance, but also no marketing tone.
+- Occasionally point out what students have already accomplished.
 
-## Seitenstruktur
+## Page structure
 
-- Eine Markdown-Datei pro Thema.
-- Kurze, stabile Dateinamen in kebab-case verwenden.
-- Seiten so schneiden, dass Studierende während des Workshops schnell die richtige Stelle finden.
-- Lange Sammelseiten vermeiden, wenn mehrere eigenständige Schritte entstehen.
-- Interne Links zwischen zusammengehörigen Seiten setzen.
+- One Markdown file per topic.
+- Use short, stable filenames in kebab-case.
+- Split pages so students can quickly find the right place during the workshop.
+- Avoid long collection pages when several independent steps emerge.
+- Set internal links between related pages.
 
-Geplante Struktur:
+Planned structure:
 
 ```text
 index.md
@@ -57,75 +57,75 @@ glossar.md
 knowledge-base.md
 ```
 
-Die Struktur darf angepasst werden, wenn dadurch die Nutzung im Workshop einfacher wird.
+The structure may be adjusted if that makes the workshop easier to use.
 
-## Pflichtstruktur Für Jede Inhaltsseite
+## Required structure for each content page
 
-Jede studentische `.md`-Datei soll diese drei Orientierungsteile enthalten:
+Every student-facing `.md` file should contain these three orientation parts:
 
-1. Am Anfang: `## Was diese Seite erklärt`
-   - Kurz sagen, worum es auf der Seite geht.
-   - Maximal wenige Absätze oder eine kurze Liste.
+1. At the beginning: `## What this page explains`
+   - Briefly state what the page is about.
+   - Use at most a few paragraphs or a short list.
 
-2. Danach: `## Warum das für Vibe Coding wichtig ist`
-   - Erklären, welchen Nutzen dieser Teil für das Arbeiten mit Coding Agents hat.
-   - Praktisch bleiben: Was können Studierende danach besser entscheiden, vorbereiten oder ausführen?
+2. After that: `## Why this matters for Vibe Coding`
+   - Explain the benefit of this part for working with Coding Agents.
+   - Stay practical: what can students decide, prepare, or execute better afterward?
 
-3. Am Ende: `## Was du jetzt gelernt hast`
-   - Kurz zusammenfassen, was die Studierenden nach diesem Abschnitt können oder verstanden haben.
-   - Darf ermutigend sein, aber konkret bleiben.
+3. At the end: `## What you have learned`
+   - Briefly summarize what students can do or understand after this section.
+   - It may be encouraging, but should stay concrete.
 
-Beispiel:
+Example:
 
 ```md
-## Was diese Seite erklärt
+## What this page explains
 
-Diese Seite zeigt dir, wie du ...
+This page shows you how to ...
 
-## Warum das für Vibe Coding wichtig ist
+## Why this matters for Vibe Coding
 
-Ein Coding Agent kann besser helfen, wenn ...
+A Coding Agent can help better when ...
 
 ...
 
-## Was du jetzt gelernt hast
+## What you have learned
 
-Du hast jetzt ...
+You have now ...
 ```
 
-## Schreibregeln Für Anleitungen
+## Writing rules for guides
 
-- Schritte nummerieren, wenn sie in einer festen Reihenfolge passieren müssen.
-- Kurze Absätze verwenden.
-- Code, Dateinamen, Befehle und technische Begriffe in Backticks setzen.
-- Keine langen Theorieblöcke ohne konkrete Anwendung.
-- Bei Befehlen kurz sagen, wo sie ausgeführt werden.
-- Fehlerstellen vorwegnehmen, wenn Anfänger dort wahrscheinlich hängen bleiben.
-- Screenshots oder einfache Visualisierungen sind willkommen, wenn sie Studierenden wirklich helfen.
-- Visuelle Würze ist erlaubt: kleine Diagramme, Icons, Screenshots, Skizzen oder einfache Callouts.
-- Visuelle Elemente dürfen die Seite nicht schwerer wartbar machen.
+- Number steps when they must happen in a fixed order.
+- Use short paragraphs.
+- Put code, filenames, commands, and technical terms in backticks.
+- No long theory blocks without concrete application.
+- For commands, briefly say where they are run.
+- Anticipate likely beginner mistakes.
+- Screenshots or simple visualizations are welcome when they genuinely help students.
+- Visual flavor is allowed: small diagrams, icons, screenshots, sketches, or simple callouts.
+- Visual elements must not make the page harder to maintain.
 
-## Workshop-Philosophie
+## Workshop philosophy
 
-- Einfachheit gewinnt.
-- Markdown vor Custom Code.
-- Vorhandene Jekyll-/GitHub-Pages-Funktionen vor eigener Logik.
-- Keine Features "für später" bauen.
-- Keine Tooling-Annahmen in `AGENTS.md` festschreiben, da sich die Workshop-Tools ändern können.
-- Inhalte müssen während eines 4-Stunden-Workshops nutzbar sein: schnell auffindbar, klar gegliedert, nicht überladen.
+- Simplicity wins.
+- Markdown before custom code.
+- Existing Jekyll/GitHub Pages features before custom logic.
+- Do not build features "for later."
+- Do not hard-code tooling assumptions in `AGENTS.md`, because workshop tools may change.
+- Content must be usable during a 4-hour workshop: quickly findable, clearly structured, not overloaded.
 
-## Was Nicht In Dieses Repo Gehört
+## What does not belong in this repo
 
-- Komplexe Web-App-Strukturen.
-- Unnötige Build-Tools.
-- Ungefragte Design-Systeme.
-- Lange Präsentationsfolien als Ersatz für die Website.
-- Musterlösungen außerhalb des ausdrücklich vorgesehenen Bereichs.
+- Complex web app structures.
+- Unnecessary build tools.
+- Unrequested design systems.
+- Long presentation slides as a replacement for the website.
+- Sample solutions outside the explicitly intended area.
 
-## Prüfen Vor Abschluss
+## Check before finishing
 
-- Neue oder geänderte Seiten in der GitHub-Pages-Struktur verlinken.
-- Prüfen, ob Anfänger die Begriffe verstehen können.
-- Prüfen, ob jede Inhaltsseite die drei Pflichtteile enthält.
-- Prüfen, ob die zweispaltige Minimal-Theme-Struktur erhalten bleibt.
-- Bei größeren Seiten lokal bauen oder zumindest die Markdown-Struktur sorgfältig prüfen.
+- Link new or changed pages in the GitHub Pages structure.
+- Check whether beginners can understand the terms.
+- Check whether every content page contains the three required parts.
+- Check whether the two-column Minimal Theme structure is preserved.
+- For larger pages, build locally or at least carefully check the Markdown structure.

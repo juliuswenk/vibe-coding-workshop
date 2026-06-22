@@ -1,300 +1,300 @@
 ---
 layout: default
-title: Setup für Windows
+title: Setup for Windows
 ---
 
-# Setup für Windows
+# Setup for Windows
 
-Diese Seite hilft dir dabei, deinen Windows-Computer für den Workshop vorzubereiten.
+This page helps you prepare your Windows computer for the workshop.
 
-Wir nutzen `winget` als Package Manager. Ein Package Manager installiert Programme über Befehle in PowerShell. Das wirkt am Anfang ungewohnt, ist aber oft einfacher als viele einzelne Downloadseiten.
+We use `winget` as a Package Manager. A Package Manager installs programs through commands in PowerShell. This may feel unfamiliar at first, but it is often easier than many separate download pages.
 
-## Was diese Seite erklärt
+## What this page explains
 
-Du installierst und prüfst:
+You install and check:
 
-- einen GitHub-Account
+- a GitHub account
 - `winget`
 - `Git`
 - `Node.js LTS`
 - `Zed`
 - `OpenCode`
-- einen einfachen Projektordner
+- a simple project folder
 
-## Warum das für Vibe Coding wichtig ist
+## Why this matters for Vibe Coding
 
-Ein `Coding Agent` braucht einen Ort, an dem er arbeiten kann: einen Projektordner mit Dateien.
+A `Coding Agent` needs a place where it can work: a project folder with files.
 
-Damit dieser Arbeitsprozess gut funktioniert, brauchst du:
+For this workflow to work well, you need:
 
-- einen Editor, um Dateien zu sehen und zu ändern
-- `Git`, um Projektstände speichern zu können
-- GitHub, um Projekte online abzulegen
-- `Node.js`, damit einfache Webprojekte später laufen können
-- `OpenCode`, damit du mit einem Coding Agent im Projekt arbeiten kannst
+- an Editor to see and change files
+- `Git` to save project states
+- GitHub to store projects online
+- `Node.js` so simple web projects can run later
+- `OpenCode` so you can work with a Coding Agent inside the project
 
 ---
 
-## Bevor du startest
+## Before you start
 
-Öffne diese Seite auf deinem Windows-Computer und arbeite die Schritte von oben nach unten durch.
+Open this page on your Windows computer and work through the steps from top to bottom.
 
-Wenn ein Schritt nicht funktioniert: Nicht schlimm. Schreib dir die Fehlermeldung auf oder mach einen Screenshot.
+If a step does not work: that is okay. Write down the error message or take a screenshot.
 
-## Installation und Einrichtung
+## Installation and setup
 
-### 1. GitHub-Account erstellen
+### 1. Create a GitHub account
 
-`GitHub` ist eine Website, auf der du Code speichern und teilen kannst. Für den Workshop brauchst du einen kostenlosen persönlichen Account.
+`GitHub` is a website where you can store and share code. For the workshop, you need a free personal account.
 
-1. Öffne [github.com](https://github.com/).
-2. Klicke auf `Sign up`.
-3. Erstelle einen Account mit deiner E-Mail-Adresse.
-4. Bestätige deine E-Mail-Adresse.
-5. Merke dir deinen Benutzernamen.
+1. Open [github.com](https://github.com/).
+2. Click `Sign up`.
+3. Create an account with your email address.
+4. Confirm your email address.
+5. Remember your username.
 
-Du brauchst keinen bezahlten Plan.
+You do not need a paid plan.
 
-### 2. PowerShell öffnen
+### 2. Open PowerShell
 
-`PowerShell` ist ein Programm, in dem du Textbefehle ausführst.
+`PowerShell` is a program where you run text commands.
 
-1. Drücke die `Windows`-Taste.
-2. Tippe `PowerShell`.
-3. Öffne `Windows PowerShell`.
+1. Press the `Windows` key.
+2. Type `PowerShell`.
+3. Open `Windows PowerShell`.
 
-Du siehst jetzt ein Fenster, in das du Befehle schreiben kannst.
+You now see a window where you can type commands.
 
-### 3. winget prüfen
+### 3. Check winget
 
-`winget` ist der Windows Package Manager. Auf Windows 11 und aktuellen Windows-10-Versionen ist er meistens schon installiert.
+`winget` is the Windows Package Manager. On Windows 11 and current Windows 10 versions, it is usually already installed.
 
-Prüfe in PowerShell:
-
-```powershell
-winget --version
-```
-
-Wenn eine Versionsnummer erscheint, ist `winget` bereit.
-
-Wenn der Befehl nicht gefunden wird:
-
-1. Öffne den `Microsoft Store`.
-2. Suche nach `App Installer`.
-3. Installiere oder aktualisiere `App Installer`.
-4. Schließe PowerShell und öffne sie neu.
-5. Prüfe nochmal:
+Check in PowerShell:
 
 ```powershell
 winget --version
 ```
 
-### 4. Git installieren
+If a version number appears, `winget` is ready.
 
-`Git` speichert Versionen deines Projekts. Dadurch kannst du später nachvollziehen, was sich geändert hat.
+If the command is not found:
 
-Installiere `Git`:
+1. Open the `Microsoft Store`.
+2. Search for `App Installer`.
+3. Install or update `App Installer`.
+4. Close PowerShell and open it again.
+5. Check again:
+
+```powershell
+winget --version
+```
+
+### 4. Install Git
+
+`Git` saves versions of your project. This lets you understand later what changed.
+
+Install `Git`:
 
 ```powershell
 winget install --id Git.Git -e
 ```
 
-Schließe PowerShell danach und öffne sie neu.
+Close PowerShell afterward and open it again.
 
-Prüfe dann:
+Then check:
 
 ```powershell
 git --version
 ```
 
-Wenn eine Versionsnummer erscheint, ist `Git` installiert.
+If a version number appears, `Git` is installed.
 
-### 5. Git einmal einrichten
+### 5. Configure Git once
 
-Git soll wissen, welcher Name und welche E-Mail-Adresse zu deinen Änderungen gehören.
+Git should know which name and email address belong to your changes.
 
-Ersetze die Beispielwerte durch deine Daten:
+Replace the example values with your own data:
 
 ```powershell
-git config --global user.name "Dein Name"
-git config --global user.email "deine-mail@example.com"
+git config --global user.name "Your Name"
+git config --global user.email "your-email@example.com"
 ```
 
-Prüfe danach:
+Check afterward:
 
 ```powershell
 git config --global user.name
 git config --global user.email
 ```
 
-Wenn dein Name und deine E-Mail-Adresse angezeigt werden, passt es.
+If your name and email address are shown, it is set up correctly.
 
-### 6. Node.js LTS installieren
+### 6. Install Node.js LTS
 
-`Node.js` hilft uns später, einfache Webprojekte lokal auszuführen. `LTS` bedeutet: stabile Version für die meisten Nutzerinnen und Nutzer.
+`Node.js` helps us later run simple web projects locally. `LTS` means: stable version for most users.
 
-Installiere `Node.js LTS`:
+Install `Node.js LTS`:
 
 ```powershell
 winget install --id OpenJS.NodeJS.LTS -e
 ```
 
-Schließe PowerShell danach und öffne sie neu.
+Close PowerShell afterward and open it again.
 
-Prüfe die Installation:
+Check the installation:
 
 ```powershell
 node --version
 npm --version
 ```
 
-Wenn beide Befehle eine Versionsnummer anzeigen, ist alles bereit.
+If both commands show a version number, everything is ready.
 
-### 7. Zed installieren
+### 7. Install Zed
 
-`Zed` ist unser Code Editor. Darin öffnest und bearbeitest du Projektdateien.
+`Zed` is our Code Editor. You open and edit project files in it.
 
-Prüfe zuerst, ob Zed über `winget` verfügbar ist:
+First check whether Zed is available through `winget`:
 
 ```powershell
 winget search Zed
 ```
 
-Wenn du einen Eintrag für `Zed` siehst, installiere ihn. Meistens ist der Paketname:
+If you see an entry for `Zed`, install it. Usually the package name is:
 
 ```powershell
 winget install --id Zed.Zed -e
 ```
 
-Wenn `winget` keinen Zed-Eintrag findet, nutze die offizielle Downloadseite:
+If `winget` does not find a Zed entry, use the official download page:
 
-1. Öffne [zed.dev/download](https://zed.dev/download).
-2. Lade Zed für Windows herunter.
-3. Starte den Installer.
-4. Öffne danach `Zed`.
+1. Open [zed.dev/download](https://zed.dev/download).
+2. Download Zed for Windows.
+3. Start the installer.
+4. Open `Zed` afterward.
 
-### 8. OpenCode installieren
+### 8. Install OpenCode
 
-`OpenCode` ist der Coding Agent, den wir im Workshop verwenden wollen. Er läuft in PowerShell.
+`OpenCode` is the Coding Agent we want to use in the workshop. It runs in PowerShell.
 
-Installiere OpenCode mit `npm`:
+Install OpenCode with `npm`:
 
 ```powershell
 npm install -g opencode-ai
 ```
 
-Prüfe danach:
+Check afterward:
 
 ```powershell
 opencode --version
 ```
 
-Wenn eine Versionsnummer erscheint, ist OpenCode installiert.
+If a version number appears, OpenCode is installed.
 
-### 9. OpenCode in Zed hinzufügen
+### 9. Add OpenCode to Zed
 
-OpenCode kann in Zed als `External Agent` laufen. Dann kannst du direkt in Zed mit dem Agenten chatten, während dein Projektordner geöffnet ist.
+OpenCode can run in Zed as an `External Agent`. Then you can chat with the Agent directly in Zed while your project folder is open.
 
-So fügst du OpenCode in Zed hinzu:
+Add OpenCode to Zed like this:
 
-1. Öffne `Zed`.
-2. Öffne dein Projekt oder den Ordner `erstes-projekt`.
-3. Öffne die Command Palette mit `Ctrl + Shift + P`.
-4. Suche nach `zed: acp registry`.
-5. Öffne die ACP Registry.
-6. Suche nach `OpenCode`.
-7. Installiere den OpenCode-Agenten.
-8. Öffne das Agent Panel über das ✨-Symbol oder über die Command Palette mit `agent: new thread`.
-9. Wähle im neuen Thread `OpenCode` als Agent aus.
+1. Open `Zed`.
+2. Open your project or the folder `first-project`.
+3. Open the Command Palette with `Ctrl + Shift + P`.
+4. Search for `zed: acp registry`.
+5. Open the ACP Registry.
+6. Search for `OpenCode`.
+7. Install the OpenCode Agent.
+8. Open the Agent Panel through the sparkle icon or through the Command Palette with `agent: new thread`.
+9. In the new Thread, choose `OpenCode` as the Agent.
 
-Wenn OpenCode dich zur Anmeldung oder Verbindung auffordert, folge den Anweisungen.
+If OpenCode asks you to sign in or connect, follow the instructions.
 
-OpenCode braucht Zugriff auf ein KI-Modell. Je nach Workshop-Stand kann das über einen OpenCode-Account, einen API-Key oder einen anderen Provider laufen.
+OpenCode needs access to an AI model. Depending on the workshop setup, this can happen through an OpenCode account, an API key, or another provider.
 
-Wenn du nach einem API-Key gefragt wirst und noch keinen hast, warte auf die Erklärung im Workshop.
+If you are asked for an API key and do not have one yet, wait for the explanation in the workshop.
 
-Du musst hier nichts kaufen, bevor wir gemeinsam geklärt haben, welchen Zugang wir verwenden.
+You do not need to buy anything before we have clarified together which access we will use.
 
-Hinweis: Wenn du zufällig schon für einen anderen Coding Agent bezahlst, zum Beispiel `Codex`, `Claude Code`, `Copilot` oder einen anderen Agenten in Zed, kannst du auch diesen benutzen. Für den gemeinsamen Workshop-Flow verwenden wir aber OpenCode.
+Note: if you already happen to pay for another Coding Agent, for example `Codex`, `Claude Code`, `Copilot`, or another Agent in Zed, you can also use that. For the shared workshop flow, we use OpenCode.
 
-### 10. OpenCode in PowerShell testen
+### 10. Test OpenCode in PowerShell
 
-Falls die Zed-Verbindung noch nicht funktioniert, kannst du OpenCode auch direkt in PowerShell testen:
+If the Zed connection does not work yet, you can also test OpenCode directly in PowerShell:
 
-1. Öffne PowerShell.
-2. Starte OpenCode:
+1. Open PowerShell.
+2. Start OpenCode:
 
 ```powershell
 opencode
 ```
 
-### 11. Projektordner anlegen
+### 11. Create a project folder
 
-Ein Projektordner ist einfach ein Ordner, in dem alle Dateien deines Projekts liegen.
+A project folder is simply a folder where all files of your project live.
 
-Lege auf dem Desktop einen Ordner an:
+Create a folder on the Desktop:
 
 ```powershell
 cd Desktop
-mkdir vibe-coding-projekte
-cd vibe-coding-projekte
-mkdir erstes-projekt
-cd erstes-projekt
+mkdir vibe-coding-projects
+cd vibe-coding-projects
+mkdir first-project
+cd first-project
 ```
 
-Prüfe, wo du bist:
+Check where you are:
 
 ```powershell
 pwd
 ```
 
-Du solltest einen Pfad sehen, der ungefähr so endet:
+You should see a path that ends roughly like this:
 
 ```text
-Desktop\vibe-coding-projekte\erstes-projekt
+Desktop\vibe-coding-projects\first-project
 ```
 
-### 12. Projekt in Zed öffnen
+### 12. Open the project in Zed
 
-Öffne `Zed`.
+Open `Zed`.
 
-Dann:
+Then:
 
-1. Klicke auf `File`.
-2. Klicke auf `Open Folder`.
-3. Wähle den Ordner `erstes-projekt`.
-4. Öffne ihn.
+1. Click `File`.
+2. Click `Open Folder`.
+3. Choose the folder `first-project`.
+4. Open it.
 
-Du siehst jetzt deinen Projektordner in Zed. Er ist noch leer. Das ist normal.
+You now see your project folder in Zed. It is still empty. That is normal.
 
 ---
 
-## Kurzer Funktionstest
+## Short function test
 
-Gehe in PowerShell in deinen Projektordner:
+Go to your project folder in PowerShell:
 
 ```powershell
-cd Desktop\vibe-coding-projekte\erstes-projekt
+cd Desktop\vibe-coding-projects\first-project
 ```
 
-Starte OpenCode:
+Start OpenCode:
 
 ```powershell
 opencode
 ```
 
-Wenn OpenCode in PowerShell startet oder als Agent in Zed auswählbar ist, bist du bereit für den Workshop.
+If OpenCode starts in PowerShell or can be selected as an Agent in Zed, you are ready for the workshop.
 
-Wenn OpenCode nicht startet, prüfe:
+If OpenCode does not start, check:
 
-- Gibt `winget --version` eine Versionsnummer aus?
-- Gibt `node --version` eine Versionsnummer aus?
-- Gibt `npm --version` eine Versionsnummer aus?
-- Gibt `opencode --version` eine Versionsnummer aus?
-- Bist du im richtigen Ordner?
+- Does `winget --version` output a version number?
+- Does `node --version` output a version number?
+- Does `npm --version` output a version number?
+- Does `opencode --version` output a version number?
+- Are you in the right folder?
 
-## Was du jetzt gelernt hast
+## What you have learned
 
-Du hast deinen Windows-Computer so vorbereitet, dass du mit einem Coding Agent an einem eigenen Projekt arbeiten kannst.
+You prepared your Windows computer so you can work on your own project with a Coding Agent.
 
-Du hast außerdem gesehen, dass ein Projekt nicht mit Code beginnt, sondern mit einer einfachen Arbeitsumgebung: Account, Package Manager, Editor, PowerShell, Projektordner und Agent.
+You also saw that a project does not start with code, but with a simple working environment: account, Package Manager, Editor, PowerShell, project folder, and Agent.

@@ -1,300 +1,300 @@
 ---
 layout: default
-title: Mein erstes Projekt
+title: My First Project
 ---
 
-# Mein erstes Projekt: Poster-Generator
+# My First Project: Poster Generator
 
-## Was diese Seite erklärt
+## What this page explains
 
-In diesem Abschnitt bauen wir gemeinsam einen kleinen interaktiven `Poster-Generator`.
+In this section, we build a small interactive `Poster Generator` together.
 
-Ein `Poster-Generator` ist eine einfache Website, auf der du ein digitales Poster verändern kannst: Farben wechseln, Layouts ausprobieren, Formen zufällig anordnen und Texte anpassen.
+A `Poster Generator` is a simple website where you can change a digital poster: switch colors, try layouts, arrange shapes randomly, and edit text.
 
-Wir bauen keine perfekte App. Wir bauen eine erste funktionierende Version, damit du den Workflow mit einem `Coding Agent` verstehst:
+We are not building a perfect app. We are building a first working version so you understand the workflow with a `Coding Agent`:
 
-1. Ziel beschreiben
-2. Grenzen setzen
-3. Plan prüfen
-4. kleine Änderung erlauben
-5. Ergebnis testen
-6. Feedback geben
+1. describe the goal
+2. set limits
+3. check the plan
+4. allow a small change
+5. test the result
+6. give feedback
 
-## Warum das für Vibe Coding wichtig ist
+## Why this matters for Vibe Coding
 
-Der Poster-Generator ist klein genug für den Einstieg, aber groß genug, um echtes Vibe Coding zu üben.
+The Poster Generator is small enough for a first step, but large enough to practice real Vibe Coding.
 
-Du lernst dabei, wie du ein Projekt in kleinere Teile zerlegst. Das ist wichtig, weil ein `Coding Agent` bessere Ergebnisse liefert, wenn du ihm nicht alles auf einmal gibst.
+You learn how to break a project into smaller parts. This matters because a `Coding Agent` produces better results when you do not give it everything at once.
 
-Du übst außerdem, klare Grenzen zu setzen:
+You also practice setting clear limits:
 
-- keine externen Frameworks
-- keine Datenbank
-- kein Login
-- nur `HTML`, `CSS` und `JavaScript`
-- erst planen, dann Dateien ändern
+- no external frameworks
+- no database
+- no login
+- only `HTML`, `CSS`, and `JavaScript`
+- plan first, then change files
 
-So bleibst du in Kontrolle. Der Agent schreibt Code, aber du entscheidest, was gebaut wird und wann der nächste Schritt kommt.
+That keeps you in control. The Agent writes code, but you decide what gets built and when the next step happens.
 
 ---
 
-## Vorbereitung
+## Preparation
 
-Bevor wir starten, solltest du ein eigenes `Repository` auf GitHub angelegt haben.
+Before we start, you should have created your own `Repository` on GitHub.
 
-Ein `Repository` ist der Projektordner auf GitHub. Dort liegen später deine Dateien, zum Beispiel `index.html`, `style.css` und `script.js`.
+A `Repository` is the project folder on GitHub. Later, it will contain your files, for example `index.html`, `style.css`, and `script.js`.
 
-Öffne dein Repository in `Zed` und starte dort deinen `Coding Agent`.
+Open your Repository in `Zed` and start your `Coding Agent` there.
 
-Wenn du noch nicht so weit bist, gehe zuerst zurück zur GitHub-Anleitung.
+If you are not there yet, go back to the GitHub guide first.
 
-## Ziel des Projekts
+## Project goal
 
-Am Ende soll eine kleine Website entstehen, die du im Browser öffnen kannst.
+At the end, you should have a small website that you can open in the browser.
 
-| Bestandteil | Mindestziel |
+| Part | Minimum goal |
 | --- | --- |
-| Posterfläche | Eine große sichtbare Fläche im Browser |
-| Titeltext | Ein Text, der auf dem Poster steht |
-| Formen | Abstrakte grafische Elemente |
-| Farbpaletten | Mindestens drei auswählbare Varianten |
-| Layouts | Mindestens drei unterschiedliche Anordnungen |
-| `Randomize` | Ein Button für neue zufällige Kompositionen |
+| Poster area | A large visible area in the browser |
+| Title text | Text displayed on the poster |
+| Shapes | Abstract graphic elements |
+| Color palettes | At least three selectable variants |
+| Layouts | At least three different arrangements |
+| `Randomize` | A button for new random compositions |
 
-Ein Screenshot reicht als Ergebnis. Wir brauchen keine Exportfunktion.
+A screenshot is enough as the result. We do not need an export feature.
 
 ---
 
-## Gemeinsamer Bauprozess
+## Shared build process
 
-### Schritt 1: Einen Plan verlangen
+### Step 1: Ask for a plan
 
-Jetzt beschreiben wir das Projekt, aber wir lassen noch keine Dateien ändern.
+Now we describe the project, but we do not allow file changes yet.
 
-Kopiere diesen Prompt:
-
-```text
-Ich möchte einen interaktiven Poster-Generator bauen.
-
-Nutze nur HTML, CSS und JavaScript.
-Nutze keine externen Frameworks.
-Baue keine Datenbank, kein Login und keine Exportfunktion.
-
-Die Website soll enthalten:
-- eine große Posterfläche
-- einen Titeltext
-- abstrakte grafische Formen
-- Buttons für mindestens drei Farbpaletten
-- Buttons für mindestens drei Layout-Varianten
-- einen Randomize-Button
-
-Erstelle zuerst einen kurzen Plan in 3 bis 5 Schritten.
-Nenne genau, welche Dateien du erstellen oder ändern würdest.
-Ändere noch keine Dateien.
-```
-
-Lies den Plan. Er sollte ungefähr so aussehen:
-
-- `index.html` für die Struktur
-- `style.css` für Gestaltung und Posterfläche
-- `script.js` für Buttons und Zufall
-
-Wenn der Agent mehr bauen will, zum Beispiel ein Framework, eine Datenbank oder viele neue Ordner, stoppe ihn:
+Copy this prompt:
 
 ```text
-Bitte halte es einfacher.
-Nutze nur index.html, style.css und script.js.
-Keine Frameworks und keine zusätzlichen Tools.
+I want to build an interactive Poster Generator.
+
+Use only HTML, CSS, and JavaScript.
+Do not use external frameworks.
+Do not build a database, login, or export feature.
+
+The website should include:
+- a large poster area
+- title text
+- abstract graphic shapes
+- buttons for at least three color palettes
+- buttons for at least three layout variants
+- a Randomize button
+
+First create a short plan in 3 to 5 steps.
+Name exactly which files you would create or change.
+Do not change any files yet.
 ```
 
-### Schritt 2: Erste Version bauen lassen
+Read the plan. It should look roughly like this:
 
-Wenn der Plan sinnvoll klingt, erlaubst du die erste Änderung.
+- `index.html` for the structure
+- `style.css` for styling and the poster area
+- `script.js` for buttons and randomness
 
-Kopiere diesen Prompt:
+If the Agent wants to build more, for example a framework, database, or many new folders, stop it:
 
 ```text
-Der Plan ist okay.
-
-Erstelle jetzt die erste einfache Version.
-
-Wichtig:
-- Nutze nur HTML, CSS und JavaScript.
-- Halte den Code einfach verständlich.
-- Erstelle nur die Dateien, die du im Plan genannt hast.
-- Baue zuerst nur die Grundversion mit Posterfläche, Titel, Formen und Buttons.
-
-Erkläre danach kurz:
-1. Welche Dateien du erstellt oder geändert hast.
-2. Wie ich die Seite im Browser öffnen kann.
-3. Was noch nicht eingebaut ist.
+Please keep it simpler.
+Use only index.html, style.css, and script.js.
+No frameworks and no additional tools.
 ```
 
-### Schritt 3: Website im Browser öffnen
+### Step 2: Let the Agent build the first version
 
-Jetzt öffnest du die Website, damit du das Ergebnis sehen kannst.
+If the plan sounds reasonable, allow the first change.
 
-Wenn der Agent eine Datei `index.html` erstellt hat:
+Copy this prompt:
 
-1. Suche die Datei `index.html` links im Dateibaum von `Zed`.
-2. Klicke mit der rechten Maustaste auf `index.html`.
-3. Wähle eine Option wie `Reveal in Finder`, `Im Finder anzeigen` oder `Im Explorer anzeigen`.
-4. Öffne die Datei dann mit einem Doppelklick im Browser.
+```text
+The plan is okay.
 
-Wenn dein Browser die Datei öffnet, siehst du oben in der Adresszeile meistens einen Pfad, der mit `file://` beginnt. Das ist okay. Es bedeutet nur, dass du die Datei direkt von deinem Computer geöffnet hast.
+Now create the first simple version.
 
-Falls dein Agent einen lokalen Server gestartet hat, gibt er dir wahrscheinlich eine Adresse wie diese:
+Important:
+- Use only HTML, CSS, and JavaScript.
+- Keep the code easy to understand.
+- Create only the files you named in the plan.
+- First build only the basic version with poster area, title, shapes, and buttons.
+
+Afterward, briefly explain:
+1. Which files you created or changed.
+2. How I can open the page in the browser.
+3. What is not built yet.
+```
+
+### Step 3: Open the website in the browser
+
+Now open the website so you can see the result.
+
+If the Agent created a file called `index.html`:
+
+1. Find `index.html` in the file tree on the left side of `Zed`.
+2. Right-click `index.html`.
+3. Choose an option like `Reveal in Finder`, `Show in Finder`, or `Show in Explorer`.
+4. Then open the file in the browser with a double-click.
+
+When your browser opens the file, the address bar usually shows a path that starts with `file://`. That is okay. It only means that you opened the file directly from your computer.
+
+If your Agent started a local server, it will probably give you an address like this:
 
 ```text
 http://localhost:3000
 ```
 
-Kopiere diese Adresse in deinen Browser.
+Copy this address into your browser.
 
-`localhost` bedeutet: Die Website läuft gerade nur auf deinem eigenen Computer.
+`localhost` means: the website is currently running only on your own computer.
 
-Prüfe:
+Check:
 
-1. Siehst du eine Posterfläche?
-2. Sind Buttons sichtbar?
-3. Passiert etwas, wenn du Buttons klickst?
-4. Gibt es Fehlermeldungen?
-5. Hat der Agent ungefragt mehr gebaut als nötig?
+1. Can you see a poster area?
+2. Are buttons visible?
+3. Does something happen when you click the buttons?
+4. Are there error messages?
+5. Did the Agent build more than necessary without asking?
 
-### Schritt 4: Feedback geben
+### Step 4: Give feedback
 
-Jetzt kommt der wichtigste Teil: Du gibst konkretes Feedback.
+Now comes the most important part: you give concrete feedback.
 
-Schlecht:
-
-```text
-Mach es schöner.
-```
-
-Besser:
+Bad:
 
 ```text
-Das Poster wirkt noch zu leer.
-Bitte füge mehr abstrakte Formen hinzu.
-Ändere nur CSS und JavaScript.
-Die Buttons und die bestehende Struktur sollen bleiben.
+Make it prettier.
 ```
 
-Oder:
+Better:
 
 ```text
-Die Layouts sehen noch zu ähnlich aus.
-Bitte mache drei klar unterschiedliche Layout-Varianten:
-1. ein ruhiges Layout mit viel Leerraum
-2. ein dichtes Layout mit vielen Formen
-3. ein diagonales Layout mit starker Bewegung
-
-Ändere nur, was dafür nötig ist.
+The poster still feels too empty.
+Please add more abstract shapes.
+Only change CSS and JavaScript.
+The buttons and existing structure should stay the same.
 ```
 
-Nach jeder Änderung prüfst du wieder im Browser.
-
-### Schritt 5: Randomize verbessern
-
-Wenn die Grundversion funktioniert, verbessern wir den `Randomize`-Button.
-
-Kopiere diesen Prompt:
+Or:
 
 ```text
-Verbessere den Randomize-Button.
+The layouts still look too similar.
+Please create three clearly different layout variants:
+1. a calm layout with lots of empty space
+2. a dense layout with many shapes
+3. a diagonal layout with strong movement
 
-Wenn man klickt, sollen sich ändern:
-- Positionen der Formen
-- Größen der Formen
-- Farben innerhalb der gewählten Palette
-- Rotation der Formen
-
-Der Code soll einfach verständlich bleiben.
-Erkläre danach, welche Funktion für die zufällige Komposition verantwortlich ist.
+Only change what is necessary for that.
 ```
 
-Prüfe danach:
+After every change, check the browser again.
 
-1. Verändert sich das Poster sichtbar?
-2. Bleibt der Text lesbar?
-3. Funktionieren die anderen Buttons noch?
+### Step 5: Improve Randomize
 
-### Schritt 6: Optional Bewegung hinzufügen
+When the basic version works, we improve the `Randomize` button.
 
-Wenn noch Zeit ist, kannst du eine kleine Animation ergänzen.
-
-Kopiere diesen Prompt:
+Copy this prompt:
 
 ```text
-Füge eine dezente Animation hinzu.
+Improve the Randomize button.
 
-Die Formen dürfen sich langsam bewegen oder leicht pulsieren.
-Es soll einen Button geben, mit dem man Bewegung ein- und ausschalten kann.
+When someone clicks it, these things should change:
+- positions of the shapes
+- sizes of the shapes
+- colors within the selected palette
+- rotation of the shapes
 
-Die Animation soll nicht vom Text ablenken.
-Halte die Lösung einfach.
+The code should stay easy to understand.
+Afterward, explain which function is responsible for the random composition.
 ```
 
-Wenn die Animation unruhig wirkt, gib direkt Feedback:
+Then check:
+
+1. Does the poster visibly change?
+2. Does the text stay readable?
+3. Do the other buttons still work?
+
+### Step 6: Optionally add motion
+
+If there is time left, you can add a small animation.
+
+Copy this prompt:
 
 ```text
-Die Animation ist zu stark.
-Bitte mache sie langsamer und reduziere die Bewegung.
-Der Text soll im Mittelpunkt bleiben.
+Add a subtle animation.
+
+The shapes may move slowly or pulse slightly.
+There should be a button that turns motion on and off.
+
+The animation should not distract from the text.
+Keep the solution simple.
 ```
 
-### Schritt 7: Review machen lassen
-
-Zum Schluss lässt du den Agenten das Projekt prüfen, ohne direkt etwas zu ändern.
-
-Kopiere diesen Prompt:
+If the animation feels too busy, give direct feedback:
 
 ```text
-Bitte reviewe den Poster-Generator.
-
-Ändere keine Dateien.
-
-Prüfe:
-- Sind die Controls verständlich?
-- Sind die Layouts wirklich unterschiedlich?
-- Hat der Code unnötige Komplexität?
-
-Schlage nur einen nächsten Schritt vor.
+The animation is too strong.
+Please make it slower and reduce the movement.
+The text should remain the focus.
 ```
 
-Wichtig: Der Agent soll hier nur analysieren. Du entscheidest danach, ob noch etwas geändert wird.
+### Step 7: Ask for a review
+
+At the end, ask the Agent to review the project without changing anything directly.
+
+Copy this prompt:
+
+```text
+Please review the Poster Generator.
+
+Do not change any files.
+
+Check:
+- Are the controls understandable?
+- Are the layouts really different?
+- Does the code have unnecessary complexity?
+
+Suggest only one next step.
+```
+
+Important: the Agent should only analyze here. You decide afterward whether anything else should change.
 
 ---
 
-## Gute Abschlussfrage
+## Good closing question
 
-Beende die Arbeit nicht sofort, sobald etwas funktioniert.
+Do not stop working immediately once something works.
 
-Lass dir den Stand zusammenfassen:
+Ask for a summary of the current state:
 
 ```text
-Fasse zusammen:
-1. Was wurde gebaut?
-2. Welche Dateien wurden geändert?
-3. Wie teste ich das Projekt?
-4. Was wäre der sinnvollste nächste Schritt?
-5. Gibt es bekannte Probleme oder Risiken?
+Summarize:
+1. What was built?
+2. Which files were changed?
+3. How do I test the project?
+4. What would be the most useful next step?
+5. Are there known problems or risks?
 ```
 
-Diese Zusammenfassung hilft dir, später wieder einzusteigen.
+This summary helps you return to the project later.
 
-## Was du jetzt gelernt hast
+## What you have learned
 
-Du hast ein erstes kleines Browser-Projekt mit einem Coding Agent gebaut.
+You built a first small browser project with a Coding Agent.
 
-Dabei hast du geübt:
+You practiced:
 
-- ein Ziel verständlich zu beschreiben
-- technische Grenzen zu setzen
-- zuerst einen Plan einzufordern
-- Änderungen in kleinen Schritten zu erlauben
-- Ergebnisse im Browser zu prüfen
-- Feedback konkret zu formulieren
-- den Agenten am Ende reviewen zu lassen
+- describing a goal clearly
+- setting technical limits
+- asking for a plan first
+- allowing changes in small steps
+- checking results in the browser
+- giving concrete feedback
+- asking the Agent for a final review
 
-Das ist der wichtigste Workflow für dein eigenes Projekt: klein starten, prüfen, verbessern und die Kontrolle behalten.
+This is the most important workflow for your own project: start small, check, improve, and stay in control.

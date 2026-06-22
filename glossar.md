@@ -1,66 +1,66 @@
 ---
 layout: default
-title: Glossar
+title: Glossary
 ---
 
-# Glossar
+# Glossary
 
-## Was diese Seite erklärt
+## What this page explains
 
-Diese Seite sammelt kurze Erklärungen für Begriffe, die im Workshop immer wieder auftauchen.
+This page collects short explanations of terms that appear repeatedly in the workshop.
 
-## Warum das für Vibe Coding wichtig ist
+## Why this matters for Vibe Coding
 
-Wenn du Begriffe wie `Commit`, `Diff` oder `Thread` einordnen kannst, kannst du einem Coding Agent besser folgen und gezielter nachfragen.
+If you can place terms like `Commit`, `Diff`, or `Thread`, you can follow a Coding Agent more easily and ask better follow-up questions.
 
 ---
 
 ## Git
 
-| Begriff | Bedeutung |
+| Term | Meaning |
 | --- | --- |
-| `Repository` | Ein Projektordner, der von Git verwaltet wird |
-| `Clone` | Ein GitHub-Repository auf deinen Computer kopieren |
-| `Stage` | Änderungen für den nächsten Commit auswählen |
-| `Commit` | Einen Projektstand speichern |
-| `Push` | Lokale Commits zu GitHub hochladen |
-| `Pull` | Neue Änderungen von GitHub herunterladen |
-| `Branch` | Eine eigene Entwicklungslinie in Git |
-| `main` | Der Haupt-Branch deines Projekts |
-| `Diff` | Anzeige, was sich geändert hat |
+| `Repository` | A project folder managed by Git |
+| `Clone` | Copy a GitHub repository to your computer |
+| `Stage` | Select changes for the next commit |
+| `Commit` | Save a project state |
+| `Push` | Upload local commits to GitHub |
+| `Pull` | Download new changes from GitHub |
+| `Branch` | A separate line of development in Git |
+| `main` | The main branch of your project |
+| `Diff` | A view that shows what changed |
 
 ---
 
 ## Zed
 
-| Begriff | Bedeutung |
+| Term | Meaning |
 | --- | --- |
-| `Code Editor` | Programm zum Bearbeiten von Code- und Textdateien |
-| `Project Panel` | Dateiansicht deines Projekts |
-| `Editor` | Bereich, in dem du Dateien bearbeitest |
-| `Tab` | Geöffnete Datei im Editor |
-| `Command Palette` | Suche für Zed-Befehle |
-| `Terminal` | Bereich für Textbefehle |
-| `Git Panel` | Bereich für Git-Änderungen |
-| `Project Diff` | Ansicht der Änderungen |
-| `Agent Panel` | Bereich für den Coding Agent |
+| `Code Editor` | Program for editing code and text files |
+| `Project Panel` | File view of your project |
+| `Editor` | Area where you edit files |
+| `Tab` | Open file in the editor |
+| `Command Palette` | Search for Zed commands |
+| `Terminal` | Area for text commands |
+| `Git Panel` | Area for Git changes |
+| `Project Diff` | View of the changes |
+| `Agent Panel` | Area for the Coding Agent |
 
 ---
 
 ## OpenCode
 
-| Begriff | Bedeutung |
+| Term | Meaning |
 | --- | --- |
-| `OpenCode` | Coding Agent für die Arbeit an Softwareprojekten |
-| `Agent Panel` | Zed-Bereich für Agent-Unterhaltungen |
-| `Thread` | Eine einzelne Unterhaltung mit einem Agenten |
-| `External Agent` | Externer Agent, der in Zed eingebunden wird |
-| `ACP Registry` | Zed-Verzeichnis zum Installieren externer Agents |
-| `Model` | KI-Modell, das Antworten und Code erzeugt |
-| `API-Key` | Geheimer Zugangsschlüssel zu einem KI-Anbieter |
-| `Context` | Informationen, die der Agent für die Aufgabe braucht |
-| `Diff` | Anzeige der geänderten Stellen |
+| `OpenCode` | Coding Agent for working on software projects |
+| `Agent Panel` | Zed area for Agent conversations |
+| `Thread` | A single conversation with an Agent |
+| `External Agent` | External Agent integrated into Zed |
+| `ACP Registry` | Zed directory for installing external Agents |
+| `Model` | AI model that generates answers and code |
+| `API-Key` | Secret access key for an AI provider |
+| `Context` | Information the Agent needs for the task |
+| `Diff` | View of the changed places |
 
-## Was du jetzt gelernt hast
+## What you have learned
 
-Du kannst die wichtigsten Begriffe nachschlagen und erkennst schneller, worüber Zed, GitHub oder OpenCode sprechen.
+You can look up the most important terms and recognize more quickly what Zed, GitHub, or OpenCode are talking about.

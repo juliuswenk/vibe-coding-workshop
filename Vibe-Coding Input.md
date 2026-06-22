@@ -6,464 +6,464 @@ permalink: /theorie/
 
 # Vibe-Coding Input
 
-Vibe Coding bedeutet: Du beschreibst einem `Coding Agent`, was du bauen möchtest, und entwickelst gemeinsam mit ihm ein funktionierendes Projekt.
+Vibe Coding means: you describe to a `Coding Agent` what you want to build, and you develop a working project together with it.
 
-Du schreibst nicht jede Codezeile selbst. Deine Aufgabe ist es, Ziele zu formulieren, Entscheidungen zu treffen, Ergebnisse zu prüfen und gutes Feedback zu geben. Hierfür kannst du die KI natürlich nach Input fragen, wenn du etwas nicht verstehst – wichtig ist, dass du in Kontrolle bleibst, damit kein generischer "KI-Slop" entsteht.
+You do not write every line of code yourself. Your job is to formulate goals, make decisions, check results, and give good feedback. Of course, you can ask the AI for input when you do not understand something. What matters is that you stay in control so the result does not become generic "AI slop."
 
-## Was diese Seite erklärt
+## What this page explains
 
-Diese Seite erklärt die Grundidee von `Vibe Coding`: wie du mit einem `Coding Agent` arbeitest, welche Grenzen wichtig sind und wie du gute Arbeitsaufträge formulierst.
+This page explains the basic idea of `Vibe Coding`: how you work with a `Coding Agent`, which limits matter, and how you formulate good work requests.
 
-## Warum das für Vibe Coding wichtig ist
+## Why this matters for Vibe Coding
 
-Ein Coding Agent hilft dir besser, wenn du Ziele, Kontext, Grenzen und Prüfschritte klar benennen kannst. Diese Seite gibt dir dafür die wichtigsten Regeln.
+A Coding Agent can help you better when you can clearly name goals, context, limits, and check steps. This page gives you the most important rules for that.
 
 ---
 
-## Inhaltsübersicht
+## Contents
 
-| Abschnitt | Thema |
+| Section | Topic |
 | --- | --- |
-| 1 | Was Vibe Coding ist |
-| 2 | Was Vibe Coding gut kann |
-| 3 | Wo Vibe Coding begrenzt ist |
-| 4 | Die wichtigste Regel |
-| 5 | Gute Prompts für den Start |
+| 1 | What Vibe Coding is |
+| 2 | What Vibe Coding is good at |
+| 3 | Where Vibe Coding is limited |
+| 4 | The most important rule |
+| 5 | Good prompts for starting |
 | 6 | OpenCode in Zed |
-| 7 | Was du immer prüfen solltest |
-| 8 | Gute Aufgaben für Anfänger*innen |
-| 9 | Fehler als Teil des Workflows |
-| 10 | Grenzen setzen |
-| 11 | Externe Referenzen nutzen |
-| 12 | `AGENTS.md` als Projektanleitung |
-| 13 | Fortgeschritten: AI Development Guide |
-| 14 | Fortgeschritten: Projekt in Phasen aufteilen |
-| 15 | Fortgeschritten: Erst fragen, dann bauen |
-| 16 | Fortgeschritten: Agenten nicht alles glauben |
-| 17 | Gute Abschlussfrage nach jeder Session |
+| 7 | What you should always check |
+| 8 | Good tasks for beginners |
+| 9 | Errors as part of the workflow |
+| 10 | Set limits |
+| 11 | Use external references |
+| 12 | `AGENTS.md` as project instructions |
+| 13 | Advanced: AI Development Guide |
+| 14 | Advanced: split the project into phases |
+| 15 | Advanced: ask first, then build |
+| 16 | Advanced: do not believe everything Agents say |
+| 17 | Good closing question after every session |
 
 ---
 
-## 1. Was Vibe Coding ist
+## 1. What Vibe Coding is
 
-Vibe Coding heißt: Du arbeitest mit einem Coding Agent an einem Softwareprojekt, ohne alles selbst von Hand schreiben zu müssen.
+Vibe Coding means working with a Coding Agent on a software project without having to write everything by hand yourself.
 
-Das kann sehr schnell sein. Es kann aber auch chaotisch werden, wenn du:
+That can be very fast. It can also become chaotic if you:
 
-- zu viel auf einmal verlangst
-- Ergebnisse nicht prüfst
-- nicht nachfragst, was geändert wurde
-- dem Agenten keine Grenzen setzt
+- ask for too much at once
+- do not check results
+- do not ask what changed
+- do not set limits for the Agent
 
-Für diesen Kurs heißt Vibe Coding nicht: "Die KI macht alles."
+For this course, Vibe Coding does not mean: "The AI does everything."
 
-Es heißt: Du benutzt einen Agenten als technisches Werkzeug, um Ideen schneller auszuprobieren, Prototypen zu bauen und deinen eigenen Lernprozess zu unterstützen.
+It means: you use an Agent as a technical tool to try ideas faster, build prototypes, and support your own learning process.
 
-## 2. Was Vibe Coding gut kann
+## 2. What Vibe Coding is good at
 
-Vibe Coding ist besonders stark bei:
+Vibe Coding is especially strong for:
 
-- schnellen Prototypen
-- kleinen Webseiten
-- interaktiven Skizzen
-- einfachen Tools
-- Erklärungen zu bestehenden Dateien
-- Übersetzungen von Fehlermeldungen
-- kleinen Feature-Ergänzungen
-- Layout, Text, Struktur und Styling
-- dem Zerlegen von Code in kleinere Schritte
-- dem Vergleichen von Alternativen
-- Dokumentation und Setup-Anleitungen
+- quick prototypes
+- small websites
+- interactive sketches
+- simple tools
+- explanations of existing files
+- translations of error messages
+- small feature additions
+- layout, text, structure, and styling
+- breaking code into smaller steps
+- comparing alternatives
+- documentation and setup guides
 
-Ein Coding Agent kann Dateien lesen, Änderungen vorschlagen, Code ausführen und Fehlermeldungen nutzen, um weiterzuarbeiten.
+A Coding Agent can read files, suggest changes, run code, and use error messages to keep working.
 
-## 3. Wo Vibe Coding begrenzt ist
+## 3. Where Vibe Coding is limited
 
-Coding Agents machen Fehler. Sie können überzeugend klingen und trotzdem falschen Code schreiben.
+Coding Agents make mistakes. They can sound convincing and still write wrong code.
 
-Typische Probleme:
+Typical problems:
 
-- Der Agent baut mehr als du gefragt hast.
-- Der Agent verändert bestehende Logik, obwohl es nicht nötig ist.
-- Der Agent erfindet Libraries, Funktionen oder APIs.
-- Der Agent übersieht Nebenwirkungen.
-- Der Agent macht Code komplizierter als nötig. (!)
-- Der Agent löst ein Symptom, aber nicht die eigentliche Ursache.
-- Der Agent kann Sicherheitsprobleme einbauen.
-- Der Agent kann bei großen Projekten den Überblick verlieren.
+- The Agent builds more than you asked for.
+- The Agent changes existing logic even though it is not necessary.
+- The Agent invents libraries, functions, or APIs.
+- The Agent misses side effects.
+- The Agent makes code more complicated than necessary. (!)
+- The Agent fixes a symptom, but not the real cause.
+- The Agent can introduce security problems.
+- The Agent can lose track in large projects.
 
-Vibe Coding funktioniert deshalb nur gut, wenn du den Prozess führst.
+That is why Vibe Coding only works well when you lead the process.
 
-Du musst nicht jede Codezeile verstehen. Du solltest aber immer wissen:
+You do not have to understand every line of code. But you should always know:
 
-- Was soll das Projekt tun?
-- Was wurde gerade geändert?
-- Wie kann ich testen, ob es funktioniert?
-- Was soll der Agent als Nächstes machen?
+- What should the project do?
+- What was just changed?
+- How can I test whether it works?
+- What should the Agent do next?
 
-## 4. Die wichtigste Regel
+## 4. The most important rule
 
-Arbeite in kleinen Schritten.
+Work in small steps.
 
-Schlecht:
+Bad:
 
 ```text
-Baue mir eine komplette interaktive Website mit Login, Datenbank, Galerie, Animationen und Exportfunktion.
+Build me a complete interactive website with login, database, gallery, animations, and export feature.
 ```
 
-Besser:
+Better:
 
 ```text
-Erstelle eine einfache Startseite mit einem Titel, einem kurzen Beschreibungstext und einem Button.
-Nutze nur HTML und CSS.
-Danach zeige mir, welche Dateien du geändert hast.
+Create a simple homepage with a title, a short description, and a button.
+Use only HTML and CSS.
+Afterward, show me which files you changed.
 ```
 
-Wenn das funktioniert, kommt der nächste Schritt.
+When that works, the next step comes.
 
-## 5. Gute Prompts für den Start
+## 5. Good prompts for starting
 
-Ein guter Prompt enthält meistens:
+A good prompt usually contains:
 
-- Ziel
-- Kontext
-- Einschränkungen
-- gewünschtes Ergebnis
-- Prüfschritt
+- goal
+- context
+- constraints
+- desired result
+- check step
 
-Beispiel:
+Example:
 
 ```text
-Ich möchte eine kleine Webseite für eine interaktive Installation bauen.
-Erstelle eine einfache HTML/CSS-Version mit einem Titel, einem kurzen Introtext und drei Projektkarten.
-Nutze keine externen Frameworks.
-Ändere nur Dateien in diesem Ordner.
-Erkläre danach kurz, was du geändert hast und wie ich es im Browser öffnen kann.
+I want to build a small website for an interactive installation.
+Create a simple HTML/CSS version with a title, a short intro text, and three project cards.
+Do not use external frameworks.
+Only change files in this folder.
+Afterward, briefly explain what you changed and how I can open it in the browser.
 ```
 
-Noch besser ist es, wenn du zuerst planen lässt:
+It is even better if you ask for a plan first:
 
 ```text
-Ich möchte eine kleine Webseite bauen, kenne mich aber kaum mit Code aus.
-Bitte schlage zuerst einen kurzen Plan in 3 bis 5 Schritten vor.
-Ändere noch keine Dateien.
+I want to build a small website, but I barely know any code.
+Please first suggest a short plan in 3 to 5 steps.
+Do not change any files yet.
 ```
 
 ## 6. OpenCode in Zed
 
-In diesem Workshop arbeitest du mit `Zed` als Code Editor und `OpenCode` als Coding Agent.
+In this workshop, you work with `Zed` as the Code Editor and `OpenCode` as the Coding Agent.
 
-Ein sinnvoller Ablauf:
+A useful workflow:
 
-1. Öffne dein Projekt in Zed.
-2. Starte OpenCode als Agent in Zed.
-3. Beschreibe eine kleine Aufgabe.
-4. Lass dir zuerst den Plan erklären.
-5. Erlaube die Änderung.
-6. Prüfe das Ergebnis.
-7. Gib konkretes Feedback.
+1. Open your project in Zed.
+2. Start OpenCode as an Agent in Zed.
+3. Describe a small task.
+4. Ask the Agent to explain the plan first.
+5. Allow the change.
+6. Check the result.
+7. Give concrete feedback.
 
-Beispiel für den ersten Prompt:
-
-```text
-Schau dir dieses Projekt kurz an.
-Erkläre mir in einfachen Worten, welche Dateien für den Einstieg wichtig sind.
-Ändere noch nichts.
-```
-
-Beispiel für eine kleine Änderung:
+Example for the first prompt:
 
 ```text
-Erstelle eine sehr einfache HTML-Seite für ein Projekt namens "Vibe Coding Workshop SRH".
-Sie soll einen Titel, einen kurzen Beschreibungstext und drei farbige Bereiche haben.
-Nutze nur HTML und CSS.
-Bitte ändere nur die Dateien, die dafür notwendig sind.
+Take a quick look at this project.
+Explain in simple words which files are important for getting started.
+Do not change anything yet.
 ```
 
-Beispiel für Feedback:
+Example for a small change:
 
 ```text
-Das ist zu textlastig.
-Mach die Seite visueller, aber behalte die bestehende Struktur.
-Bitte ändere nur das CSS.
+Create a very simple HTML page for a project called "Vibe Coding Workshop SRH".
+It should have a title, a short description, and three colored sections.
+Use only HTML and CSS.
+Please change only the files necessary for this.
 ```
 
-## 7. Was du immer prüfen solltest
-
-Nach jeder Änderung:
-
-1. Welche Dateien wurden geändert?
-2. Kann ich das Projekt starten oder öffnen?
-3. Sieht das Ergebnis ungefähr so aus, wie ich wollte?
-4. Gibt es Fehlermeldungen?
-5. Hat der Agent ungefragt zusätzliche Dinge eingebaut?
-
-Wenn etwas unklar ist, frage:
+Example for feedback:
 
 ```text
-Erkläre mir die letzte Änderung in einfachen Worten.
-Welche Datei ist am wichtigsten?
-Welche Zeilen sollte ich mir anschauen?
+This is too text-heavy.
+Make the page more visual, but keep the existing structure.
+Please only change the CSS.
 ```
 
-## 8. Gute Aufgaben für Anfänger*innen
+## 7. What you should always check
 
-Gute erste Aufgaben sind klein, sichtbar und leicht zu prüfen.
+After every change:
 
-| Aufgabe | Warum sie gut passt |
+1. Which files were changed?
+2. Can I start or open the project?
+3. Does the result look roughly like what I wanted?
+4. Are there error messages?
+5. Did the Agent add extra things without asking?
+
+If something is unclear, ask:
+
+```text
+Explain the last change in simple words.
+Which file is most important?
+Which lines should I look at?
+```
+
+## 8. Good tasks for beginners
+
+Good first tasks are small, visible, and easy to check.
+
+| Task | Why it fits well |
 | --- | --- |
-| Einfache Startseite | Du siehst schnell ein Ergebnis im Browser |
-| Kleine Text- oder Layoutänderung | Du kannst den Unterschied leicht prüfen |
-| Buttons ohne Datenbank | Du übst Interaktion ohne komplexe Technik |
-| README oder Projektnotiz | Du lernst, Dateien gezielt ändern zu lassen |
-| Fehler erklären lassen | Du verstehst Probleme, bevor etwas geändert wird |
+| Simple homepage | You quickly see a result in the browser |
+| Small text or layout change | You can easily check the difference |
+| Buttons without a database | You practice interaction without complex technology |
+| README or project note | You learn to have files changed deliberately |
+| Have an error explained | You understand problems before anything changes |
 
-## 9. Fehler sind Teil des Workflows
+## 9. Errors are part of the workflow
 
-Wenn etwas nicht funktioniert, kopiere nicht einfach blind neue Prompts hinterher.
+If something does not work, do not blindly copy more prompts afterward.
 
-Gib dem Agenten die Fehlermeldung und den Kontext.
+Give the Agent the error message and the context.
 
-Beispiel:
+Example:
 
 ```text
-Beim Starten bekomme ich diese Fehlermeldung:
+When starting, I get this error message:
 
-[Fehlermeldung hier einfügen]
+[paste error message here]
 
-Bitte erkläre zuerst, was sie bedeutet.
-Schlage dann den kleinsten möglichen Fix vor.
-Ändere noch nichts, bevor du den Plan erklärt hast.
+Please first explain what it means.
+Then suggest the smallest possible fix.
+Do not change anything before you have explained the plan.
 ```
 
-Wenn der Agent schon etwas geändert hat und es schlechter wurde:
+If the Agent already changed something and it got worse:
 
 ```text
-Die letzte Änderung hat das Layout kaputt gemacht.
-Bitte analysiere, welche Änderung wahrscheinlich dafür verantwortlich ist.
-Schlage eine minimale Korrektur vor.
+The last change broke the layout.
+Please analyze which change is probably responsible.
+Suggest a minimal correction.
 ```
 
-## 10. Grenzen setzen
+## 10. Set limits
 
-Coding Agents arbeiten besser, wenn du klare Grenzen setzt.
+Coding Agents work better when you set clear limits.
 
-Nützliche Einschränkungen:
-
-```text
-Ändere nur HTML und CSS.
-```
+Useful constraints:
 
 ```text
-Füge keine neuen Abhängigkeiten hinzu.
+Only change HTML and CSS.
 ```
 
 ```text
-Erstelle zuerst einen Plan und warte auf meine Bestätigung.
+Do not add new dependencies.
 ```
 
 ```text
-Halte die Lösung so einfach wie möglich.
+First create a plan and wait for my confirmation.
 ```
 
 ```text
-Erkläre mir am Ende, wie ich das Ergebnis testen kann.
+Keep the solution as simple as possible.
 ```
-
-## 11. Externe Referenzen nutzen
-
-Für die allermeisten Aufgaben gibt es schon eine ähnliche Lösung. Wir müssen also nicht immer alles neu schreiben, sondern können es unserem Coding Agenten als Referenz geben. So bauen wir auf ein stabiles Fundament auf und sparen Zeit, nerven und tokens.
-
-Beispiele:
-
-- `three.js` Demos
-- CodePen-Beispiele
-- GitHub-Repositories
-- Dokumentationen
-- Screenshots von Layouts
-- kleine Animationen oder Interaktionsideen
-
-Wichtig ist: Eine Referenz ist kein fertiger Arbeitsauftrag.
-
-Schlecht:
 
 ```text
-Bau mir diese Three.js-Demo nach.
+At the end, explain how I can test the result.
 ```
 
-Besser:
+## 11. Use external references
+
+For most tasks, a similar solution already exists. So we do not always have to write everything from scratch. We can give our Coding Agent a reference. This lets us build on a stable foundation and save time, energy, and tokens.
+
+Examples:
+
+- `three.js` demos
+- CodePen examples
+- GitHub repositories
+- documentation
+- screenshots of layouts
+- small animation or interaction ideas
+
+Important: a reference is not a finished work request.
+
+Bad:
 
 ```text
-Ich mag an dieser Three.js-Demo die langsam rotierende 3D-Form und die dunkle Bühne.
-Bitte baue eine sehr einfache eigene Version davon.
-Nutze nur eine Kugel, eine Lichtquelle und eine Kamera.
-Erstelle zuerst einen Plan und sage mir, welche Dateien du ändern würdest.
+Rebuild this Three.js demo for me.
 ```
 
-Wenn du eine externe Referenz nutzt, beschreibe:
-
-- Was genau gefällt dir daran?
-- Was soll übernommen werden?
-- Was soll nicht übernommen werden?
-- Wie einfach soll die erste Version sein?
-- Darf der Agent eine Library nutzen?
-
-Bei Libraries wie `three.js` ist besonders wichtig:
-
-- Starte mit einem kleinen Demo.
-- Nutze die offizielle Dokumentation oder ein kleines Beispiel.
-- Lass dir erklären, welche Dateien neu sind.
-- Teste nach jeder Änderung im Browser.
-- Verlange keine komplette 3D-Welt im ersten Prompt.
-
-Guter Prompt:
+Better:
 
 ```text
-Ich möchte eine kleine Three.js-Szene als Experiment bauen.
-Die Szene soll nur einen rotierenden Würfel auf dunklem Hintergrund zeigen.
-Nutze eine möglichst einfache Struktur.
-Erkläre mir zuerst, welche Dateien nötig sind.
-Ändere noch nichts, bevor du den Plan gezeigt hast.
+What I like about this Three.js demo is the slowly rotating 3D shape and the dark stage.
+Please build a very simple own version of that.
+Use only one sphere, one light source, and one camera.
+First create a plan and tell me which files you would change.
 ```
 
-## 12. AGENTS.md als Projektanleitung
+When you use an external reference, describe:
 
-Eine `AGENTS.md`-Datei ist eine Anleitung für den Coding Agent.
+- What exactly do you like about it?
+- What should be adopted?
+- What should not be adopted?
+- How simple should the first version be?
+- May the Agent use a library?
 
-Sie sagt dem Agenten, wie er in einem Projekt arbeiten soll. Das ist hilfreich, weil Agents sonst oft raten, welche Regeln gelten.
+With libraries like `three.js`, this is especially important:
 
-Eine gute `AGENTS.md` kann enthalten:
+- Start with a small demo.
+- Use the official documentation or a small example.
+- Ask the Agent to explain which files are new.
+- Test after every change in the browser.
+- Do not ask for a complete 3D world in the first prompt.
 
-- Was ist das Ziel des Projekts?
-- Welche Dateien sind wichtig?
-- Wie startet man das Projekt?
-- Wie testet man das Projekt?
-- Welche Designregeln gelten?
-- Welche Dateien darf der Agent ändern?
-- Welche Dateien soll der Agent nicht anfassen?
-- Wie einfach soll die Lösung bleiben?
-- Wann soll der Agent erst fragen?
+Good prompt:
 
-Beispiel:
+```text
+I want to build a small Three.js scene as an experiment.
+The scene should only show a rotating cube on a dark background.
+Use the simplest possible structure.
+First explain which files are needed.
+Do not change anything before you have shown the plan.
+```
+
+## 12. AGENTS.md as project instructions
+
+An `AGENTS.md` file is an instruction file for the Coding Agent.
+
+It tells the Agent how it should work in a project. This is useful because Agents otherwise often guess which rules apply.
+
+A good `AGENTS.md` can include:
+
+- What is the goal of the project?
+- Which files are important?
+- How do you start the project?
+- How do you test the project?
+- Which design rules apply?
+- Which files may the Agent change?
+- Which files should the Agent not touch?
+- How simple should the solution stay?
+- When should the Agent ask first?
+
+Example:
 
 ```md
 # AGENTS.md
 
-Dieses Projekt ist ein kleiner Prototyp für eine interaktive Installation.
+This project is a small prototype for an interactive installation.
 
-## Arbeitsweise
+## Workflow
 
-- Mache kleine, verständliche Änderungen.
-- Erkläre vor größeren Änderungen zuerst deinen Plan.
-- Füge keine neuen Libraries hinzu, ohne zu fragen.
-- Ändere keine Setup-Dateien, außer es ist wirklich nötig.
+- Make small, understandable changes.
+- Explain your plan before larger changes.
+- Do not add new libraries without asking.
+- Do not change setup files unless it is really necessary.
 
-## Testen
+## Testing
 
-- Öffne `index.html` im Browser.
-- Prüfe, ob Text und Buttons sichtbar sind.
-- Prüfe die Browser-Konsole auf Fehler.
+- Open `index.html` in the browser.
+- Check whether text and buttons are visible.
+- Check the browser console for errors.
 
 ## Design
 
-- Halte das Layout einfach.
-- Nutze klare Kontraste.
-- Keine überladenen Animationen.
+- Keep the layout simple.
+- Use clear contrast.
+- No overloaded animations.
 ```
 
-Eine `AGENTS.md` macht den Agenten nicht perfekt. Sie reduziert aber Missverständnisse.
+An `AGENTS.md` does not make the Agent perfect. But it reduces misunderstandings.
 
-Für den Workshop gilt: Wenn dein eigenes Projekt größer wird, ist eine kleine `AGENTS.md` oft besser als ein sehr langer Prompt.
+For the workshop: if your own project becomes larger, a small `AGENTS.md` is often better than one very long prompt.
 
-## 13. Fortgeschritten: AI Development Guide
+## 13. Advanced: AI Development Guide
 
-Bei größeren Projekten lohnt es sich, dem Agenten eine feste Projektanleitung zu geben.
+For larger projects, it is worth giving the Agent fixed project instructions.
 
-Das kann eine Datei wie diese sein:
+That can be a file like:
 
 - `AGENTS.md`
 - `AI_DEVELOPMENT_GUIDE.md`
 - `CONTRIBUTING.md`
 
-Für Anfänger*innen reicht meistens `AGENTS.md`, weil viele Coding Agents diese Datei automatisch beachten.
+For beginners, `AGENTS.md` is usually enough because many Coding Agents automatically pay attention to this file.
 
-Der wichtigste Inhalt ist nicht die perfekte Form, sondern klare Regeln:
+The most important content is not the perfect format, but clear rules:
 
-- Was bauen wir?
-- Was ist gerade nicht Teil des Projekts?
-- Welche Befehle testen das Projekt?
-- Was soll einfach bleiben?
-- Wann muss der Agent fragen?
+- What are we building?
+- What is currently not part of the project?
+- Which commands test the project?
+- What should stay simple?
+- When must the Agent ask?
 
-## 14. Fortgeschritten: Projekt in Phasen aufteilen
+## 14. Advanced: split the project into phases
 
-Für größere Projekte solltest du nicht alles in einem Thread bauen.
+For larger projects, you should not build everything in one Thread.
 
-Teile das Projekt in Phasen:
+Split the project into phases:
 
-1. Konzept
-2. Grundstruktur
-3. Erste sichtbare Version
-4. Interaktion
+1. Concept
+2. Basic structure
+3. First visible version
+4. Interaction
 5. Styling
 6. Tests
-7. Aufräumen
-8. Dokumentation
+7. Cleanup
+8. Documentation
 
-Für jede Phase kannst du einen eigenen Agent-Thread starten. Das hält den Kontext sauberer und verhindert, dass alte Entscheidungen den nächsten Schritt verwirren.
+For each phase, you can start a separate Agent Thread. This keeps the context cleaner and prevents old decisions from confusing the next step.
 
-## 15. Fortgeschritten: Erst fragen, dann bauen
+## 15. Advanced: ask first, then build
 
-Bei größeren Änderungen ist dieser Prompt nützlich:
-
-```text
-Bitte ändere noch nichts.
-Analysiere zuerst das Projekt und schlage einen Plan für die nächste Änderung vor.
-Nenne genau, welche Dateien du ändern würdest.
-Warte danach auf meine Bestätigung.
-```
-
-Das gibt dir Kontrolle zurück.
-
-## 16. Fortgeschritten: Agenten nicht alles glauben
-
-Wenn ein Agent eine technische Entscheidung trifft, frage nach dem Grund:
+For larger changes, this prompt is useful:
 
 ```text
-Warum hast du diese Lösung gewählt?
-Welche einfachere Alternative gäbe es?
-Welche Nachteile hat deine Lösung?
+Please do not change anything yet.
+First analyze the project and suggest a plan for the next change.
+Name exactly which files you would change.
+Then wait for my confirmation.
 ```
 
-Gerade bei Anfänger*innen ist das wichtig, weil Agents oft zu komplexe Lösungen vorschlagen.
+This gives you back control.
 
-Einfacher Code ist meistens besser für den Lernprozess.
+## 16. Advanced: do not believe everything Agents say
 
-## 17. Gute Abschlussfrage nach jeder Session
-
-Beende eine Vibe-Coding-Session nicht einfach, sobald etwas funktioniert.
-
-Lass dir den Stand zusammenfassen:
+When an Agent makes a technical decision, ask for the reason:
 
 ```text
-Fasse zusammen:
-1. Was wurde gebaut?
-2. Welche Dateien wurden geändert?
-3. Wie teste ich das Projekt?
-4. Was wäre der sinnvollste nächste Schritt?
-5. Gibt es bekannte Probleme oder Risiken?
+Why did you choose this solution?
+Which simpler alternative would there be?
+What are the disadvantages of your solution?
 ```
 
-Diese Zusammenfassung hilft dir, später wieder einzusteigen.
+This matters especially for beginners because Agents often suggest overly complex solutions.
 
-## Kurzfassung
+Simple code is usually better for the learning process.
 
-Vibe Coding ist gut für schnelle Prototypen und kreative Experimente. Es ersetzt aber nicht dein Urteilsvermögen.
+## 17. Good closing question after every session
 
-Arbeite klein, prüfe oft, setze klare Grenzen und lass dir Änderungen erklären. Je größer das Projekt wird, desto wichtiger werden Projektregeln, Tests, Git und klare Phasen.
+Do not end a Vibe Coding session just because something works.
+
+Ask for a summary of the current state:
+
+```text
+Summarize:
+1. What was built?
+2. Which files were changed?
+3. How do I test the project?
+4. What would be the most useful next step?
+5. Are there known problems or risks?
+```
+
+This summary helps you return to the project later.
+
+## Short version
+
+Vibe Coding is useful for quick prototypes and creative experiments. But it does not replace your judgment.
+
+Work small, check often, set clear limits, and ask for changes to be explained. The larger the project becomes, the more important project rules, tests, Git, and clear phases become.
 
 ---
 
-## Was du jetzt gelernt hast
+## What you have learned
 
-Du kennst die wichtigsten Regeln für die Arbeit mit Coding Agents: klein starten, Grenzen setzen, Änderungen prüfen und gute Zwischenstände sichern.
+You know the most important rules for working with Coding Agents: start small, set limits, check changes, and save good intermediate states.

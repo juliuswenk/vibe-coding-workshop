@@ -5,92 +5,92 @@ title: Vibe-Coding 101 @ SRH
 
 # Vibe-Coding 101 @ SRH
 
-Willkommen zum Workshop. In den nächsten Stunden lernst du, wie du mit `Coding Agents` arbeitest: also mit KI-Werkzeugen, die nicht nur Text schreiben, sondern dir beim Planen, Bauen, Verstehen und Verbessern von Software helfen können.
+Welcome to the workshop. Over the next few hours, you will learn how to work with `Coding Agents`: AI tools that do more than write text and can help you plan, build, understand, and improve software.
 
-Du brauchst dafür kein Vorwissen in Programmierung. Wir starten bei den Grundlagen und arbeiten Schritt für Schritt.
+You do not need any programming experience. We start with the basics and move step by step.
 
-## Was diese Seite erklärt
+## What this page explains
 
-Diese Seite ist der Startpunkt für den Workshop. Sie erklärt:
+This page is the starting point for the workshop. It explains:
 
-- worum es im Workshop geht
-- welche Ziele wir verfolgen
-- wie wir mit dieser Website arbeiten
-- wie der grobe Ablauf der vier Stunden aussieht
+- what the workshop is about
+- what goals we are working toward
+- how we will use this website
+- what the rough four-hour schedule looks like
 
-## Warum das für Vibe Coding wichtig ist
+## Why this matters for Vibe Coding
 
-Vibe Coding funktioniert nicht dadurch, dass man einer KI einfach sagt: "Bau mir eine App."
+Vibe Coding does not work by simply telling an AI: "Build me an app."
 
-Gute Ergebnisse entstehen, wenn du lernst:
+Good results happen when you learn to:
 
-- eine Idee klar zu beschreiben
-- ein Problem in kleinere Teile zu zerlegen
-- einem `Coding Agent` gute Arbeitsaufträge zu geben
-- Zwischenergebnisse zu prüfen
-- Fehler und Grenzen der KI mitzudenken
+- describe an idea clearly
+- break a problem into smaller parts
+- give a `Coding Agent` clear tasks
+- check intermediate results
+- think about the AI's mistakes and limits
 
-Die KI kann viel Arbeit abnehmen. Denken, Entscheiden und Bewerten bleiben aber deine Aufgabe.
+The AI can take over a lot of work. Thinking, deciding, and judging the result remain your job.
 
 ---
 
-## Ziele des Workshops
+## Workshop goals
 
-Nach dem Workshop sollst du nicht alles über Softwareentwicklung wissen. Das wäre in vier Stunden unrealistisch.
+After the workshop, you will not know everything about software development. That would be unrealistic in four hours.
 
-Du sollst aber genug verstanden und ausprobiert haben, um danach selbstständig weiterarbeiten zu können:
+But you should have understood and tried enough to keep working independently afterward:
 
-- Du verstehst, was `Vibe Coding` ist.
-- Du weißt, was ein `Coding Agent` macht.
-- Du kannst eine eigene Projektidee grob strukturieren.
-- Du kannst einem Coding Agent bessere Prompts geben.
-- Du kannst einfache Ergebnisse prüfen und weiterentwickeln.
-- Du weißt, wo KI hilfreich ist und wo du aufpassen musst.
+- You understand what `Vibe Coding` is.
+- You know what a `Coding Agent` does.
+- You can roughly structure your own project idea.
+- You can write better prompts for a Coding Agent.
+- You can check and improve simple results.
+- You know where AI is useful and where you need to be careful.
 
-## Wie wir mit dieser Website arbeiten
+## How we use this website
 
-Diese Website ist unser gemeinsamer Leitfaden für den Workshop. Sie ersetzt klassische Slides.
+This website is our shared guide for the workshop. It replaces traditional slides.
 
-Wir gehen die wichtigsten Teile gemeinsam durch. Du kannst die Seiten aber auch später wieder öffnen, wenn du etwas nachlesen oder einen Schritt wiederholen möchtest.
+We will go through the most important parts together. You can also reopen the pages later if you want to look something up or repeat a step.
 
-Die Inhalte sind so aufgebaut:
+The content is organized like this:
 
-| Bereich | Wofür du ihn nutzt |
+| Area | What you use it for |
 | --- | --- |
-| [Theorie](theorie) | Die wichtigsten Begriffe und Grundideen |
-| Setup: [macOS](setup/mac), [Windows](setup/windows) | Werkzeuge installieren und prüfen |
-| Tutorials: [GitHub](tutorials/github), [Zed](tutorials/zed), [OpenCode](tutorials/opencode) | Einzelne Werkzeuge Schritt für Schritt verstehen |
-| [Erstes Projekt](mein-erstes-projekt) | Gemeinsamer Einstieg in die Arbeit mit einem Coding Agent |
-| [Eigenes Projekt](freies-projekt-inspiration) | Raum für deine eigene Idee |
-| [Glossar](glossar) | Kurze Erklärungen wichtiger Begriffe |
+| [Theory](theorie) | The most important terms and basic ideas |
+| Setup: [macOS](setup/mac), [Windows](setup/windows) | Install and check tools |
+| Tutorials: [GitHub](tutorials/github), [Zed](tutorials/zed), [OpenCode](tutorials/opencode) | Understand individual tools step by step |
+| [First project](mein-erstes-projekt) | Shared first steps with a Coding Agent |
+| [Your own project](freies-projekt-inspiration) | Space for your own idea |
+| [Glossary](glossar) | Short explanations of important terms |
 
 ---
 
-## Grober Ablauf
+## Rough schedule
 
-Der Workshop dauert ungefähr vier Stunden inklusive Pausen.
+The workshop lasts about four hours including breaks.
 
-| Zeit | Abschnitt | Inhalt |
+| Time | Section | Content |
 | --- | --- | --- |
-| 0:00-0:35 | Einstieg und Theorie | Was ist Vibe Coding? Was ist ein Coding Agent? Was kann KI gut, was nicht? |
-| 0:35-1:10 | Setup | Wir richten die wichtigsten Werkzeuge ein und klären Grundbegriffe. |
-| 1:10-1:25 | Pause | Kurz durchatmen. |
-| 1:25-2:15 | Erstes gemeinsames Projekt | Wir bauen gemeinsam ein kleines Projekt und üben Prompts, Nachfragen und Korrekturen. |
-| 2:15-2:35 | Konzeptphase | Du entwickelst eine eigene kleine Projektidee. |
-| 2:35-2:50 | Pause | Zweite kurze Pause. |
-| 2:50-3:45 | Eigenes Projekt | Du arbeitest mit einem Coding Agent an deiner Idee. |
-| 3:45-4:00 | Abschluss | Wir sammeln Erkenntnisse, Probleme und nächste Schritte. |
+| 0:00-0:35 | Introduction and theory | What is Vibe Coding? What is a Coding Agent? What is AI good at, and what is it not good at? |
+| 0:35-1:10 | Setup | We set up the most important tools and clarify basic terms. |
+| 1:10-1:25 | Break | Time to breathe. |
+| 1:25-2:15 | First shared project | We build a small project together and practice prompts, follow-up questions, and corrections. |
+| 2:15-2:35 | Concept phase | You develop your own small project idea. |
+| 2:35-2:50 | Break | Second short break. |
+| 2:50-3:45 | Your own project | You work with a Coding Agent on your idea. |
+| 3:45-4:00 | Wrap-up | We collect insights, problems, and next steps. |
 
-Die Zeiten sind Orientierungspunkte. Wenn eine Phase mehr Zeit braucht, passen wir den Ablauf an.
+The times are guideposts. If one phase needs more time, we will adjust the schedule.
 
 ---
 
-## Während des Workshops
+## During the workshop
 
-Du musst nicht alles sofort perfekt verstehen. Das Ziel ist, handlungsfähig zu werden.
+You do not have to understand everything perfectly right away. The goal is to become able to act.
 
-Das ist bereits ein wichtiger Teil von Vibe Coding: nicht ein perfekter Befehl, sondern ein guter Arbeitsprozess.
+That is already an important part of Vibe Coding: not one perfect command, but a good working process.
 
-## Was du jetzt gelernt hast
+## What you have learned
 
-Du weißt jetzt, wie diese Website aufgebaut ist und welche Stationen dich im Workshop erwarten.
+You now know how this website is structured and which stations you will move through during the workshop.

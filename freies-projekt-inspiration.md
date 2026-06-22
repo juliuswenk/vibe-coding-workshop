@@ -1,165 +1,164 @@
 ---
 layout: default
-title: Freies Projekt Inspiration
+title: Free Project Inspiration
 ---
 
-# Freies Projekt: Inspiration
+# Free Project: Inspiration
 
-## Was diese Seite erklärt
+## What this page explains
 
-Diese Seite sammelt Ideen für dein eigenes kleines Projekt.
+This page collects ideas for your own small project.
 
-Die Ideen sind so gedacht, dass du in ungefähr einer Stunde eine erste Version bauen kannst. Sie müssen nicht perfekt werden. Wichtig ist, dass du schnell etwas Sichtbares hast und dann Schritt für Schritt verbessern kannst.
+The ideas are designed so that you can build a first version in about one hour. They do not have to become perfect. What matters is that you quickly have something visible and can then improve it step by step.
 
-Einige Ideen sind einfacher. Andere sind etwas anspruchsvoller, weil sie zum Beispiel eine `API` nutzen.
+Some ideas are easier. Others are more challenging because, for example, they use an `API`.
 
-Eine `API` ist eine Schnittstelle, über die dein Projekt Daten von einem anderen Dienst bekommen kann, zum Beispiel Wetterdaten, Bilder oder Texte.
+An `API` is an interface that lets your project get data from another service, for example weather data, images, or text.
 
-## Warum das für Vibe Coding wichtig ist
+## Why this matters for Vibe Coding
 
-Ein gutes Vibe-Coding-Projekt beginnt nicht mit Code, sondern mit einer klaren Idee.
+A good Vibe Coding project does not start with code. It starts with a clear idea.
 
-Wenn du dein Projekt in kleine Bestandteile zerlegst, kann ein `Coding Agent` gezielter helfen. Du kannst erst eine einfache Version bauen lassen und danach einzelne Teile verbessern.
+If you break your project into small parts, a `Coding Agent` can help more precisely. You can first build a simple version and then improve individual parts.
 
-Wichtig: Starte klein. Eine sichtbare erste Version ist besser als ein großes Konzept, das nach einer Stunde noch nicht läuft.
-
----
-
-## Projektideen
-
-### Idee 1: Interaktives Moodboard
-
-| Eigenschaft | Einschätzung |
-| --- | --- |
-| Schwierigkeit | einfach |
-| Art | visuell |
-
-Du baust eine Seite, auf der Bilder, Farben, Wörter und Formen zu einer Stimmung kombiniert werden.
-
-Grobe Bestandteile:
-
-- eine große Moodboard-Fläche
-- mehrere Farbfelder
-- kurze Textfragmente oder Begriffe
-- einfache Bild- oder Formkarten
-- ein Button, der eine neue Anordnung erzeugt
-
-Mögliche Erweiterung:
-
-- verschiedene Stimmungen wie `ruhig`, `laut`, `digital`, `organisch`
-- kleine Animationen beim Wechsel
-- eigenes Farbschema
-
-### Idee 2: Digitale Ausstellung
-
-| Eigenschaft | Einschätzung |
-| --- | --- |
-| Schwierigkeit | einfach |
-| Art | visuell |
-
-Du baust eine kleine Online-Ausstellung mit mehreren Arbeiten, Bildern oder fiktiven Exponaten.
-
-Grobe Bestandteile:
-
-- eine Startübersicht
-- mehrere Exponat-Karten
-- Titel, Beschreibung und Jahr pro Exponat
-- eine Detailansicht oder ein größerer Bildbereich
-- einfache Navigation zwischen den Arbeiten
-
-Mögliche Erweiterung:
-
-- Filter nach Thema oder Farbe
-- dunkler Ausstellungsmodus
-- kleine Übergänge beim Wechsel zwischen Exponaten
-
-### Idee 3: Wetter-Visualisierung
-
-| Eigenschaft | Einschätzung |
-| --- | --- |
-| Schwierigkeit | anspruchsvoller |
-| Art | visuell mit `API` |
-
-Du baust eine Seite, die Wetterdaten abruft und daraus eine visuelle Stimmung erzeugt.
-
-Grobe Bestandteile:
-
-- Eingabe für eine Stadt
-- Verbindung zu einer Wetter-`API`
-- Anzeige von Temperatur, Wetterzustand und Ort
-- Hintergrundfarbe passend zum Wetter
-- einfache Formen oder Animationen für Sonne, Wolken oder Regen
-
-Mögliche Erweiterung:
-
-- Vergleich von zwei Städten
-- Wetter als abstraktes Poster
-- Tageszeit visuell berücksichtigen
-
-
-### Idee 4: Lernkarten für ein Thema
-
-| Eigenschaft | Einschätzung |
-| --- | --- |
-| Schwierigkeit | einfach |
-| Art | Alltags-Tool |
-
-Du baust ein kleines Tool zum Lernen von Begriffen, Vokabeln oder Konzepten.
-
-Grobe Bestandteile:
-
-- Liste mit Fragen und Antworten
-- eine Karte, die sich umdrehen oder aufklappen lässt
-- Buttons für `Weiter` und `Zurück`
-- einfacher Fortschritt, zum Beispiel `3 von 10`
-- klare Gestaltung für schnelles Wiederholen
-
-Mögliche Erweiterung:
-
-- Kategorien
-- eigene Karten direkt im Browser hinzufügen
-- Karten als `verstanden` markieren
-
-### Idee 5: Mensa- oder Tagesplaner
-
-| Eigenschaft | Einschätzung |
-| --- | --- |
-| Schwierigkeit | anspruchsvoller |
-| Art | Alltags-Tool mit Datenquelle oder `API` |
-
-Du baust eine kleine Seite, die einen Tag übersichtlich plant oder externe Tagesdaten anzeigt.
-
-Grobe Bestandteile:
-
-- Tagesübersicht mit Zeitblöcken
-- wichtige Termine oder Aufgaben
-- farbliche Markierung nach Kategorie
-- einfache Eingabe für neue Einträge
-- optional externe Daten, zum Beispiel Mensa, Wetter oder Kalenderdaten
-
-Mögliche Erweiterung:
-
-- Daten aus einer `API` laden
-- lokale Speicherung im Browser
-- kompakte mobile Ansicht
+Important: start small. A visible first version is better than a large concept that still does not run after an hour.
 
 ---
 
-## Wie du eine Idee auswählst
+## Project ideas
 
-Wähle nicht die größte Idee. Wähle die Idee, bei der du schnell eine erste Version sehen kannst.
+### Idea 1: Interactive moodboard
 
-Eine gute erste Version beantwortet nur diese Fragen:
+| Property | Estimate |
+| --- | --- |
+| Difficulty | easy |
+| Type | visual |
 
-1. Was sieht man auf der Seite?
-2. Was kann man anklicken oder eingeben?
-3. Was verändert sich dadurch?
-4. Welche Datei oder Funktion ist der wichtigste Teil?
+You build a page where images, colors, words, and shapes combine into a mood.
 
-Wenn du nach 20 Minuten noch nichts im Browser sehen kannst, ist dein erster Schritt wahrscheinlich zu groß.
+Rough parts:
 
-## Was du jetzt gelernt hast
+- one large moodboard area
+- several color fields
+- short text fragments or terms
+- simple image or shape cards
+- a button that creates a new arrangement
 
-Du hast mehrere mögliche Projektideen gesehen und kannst besser einschätzen, welche Bestandteile ein kleines Vibe-Coding-Projekt braucht.
+Possible extension:
 
-Du kannst jetzt eine Idee auswählen, sie in grobe Teile zerlegen und mit einer einfachen ersten Version starten.
+- different moods such as `calm`, `loud`, `digital`, `organic`
+- small animations when switching
+- your own color scheme
+
+### Idea 2: Digital exhibition
+
+| Property | Estimate |
+| --- | --- |
+| Difficulty | easy |
+| Type | visual |
+
+You build a small online exhibition with several works, images, or fictional exhibits.
+
+Rough parts:
+
+- a starting overview
+- several exhibit cards
+- title, description, and year for each exhibit
+- a detail view or larger image area
+- simple navigation between works
+
+Possible extension:
+
+- filter by topic or color
+- dark exhibition mode
+- small transitions when switching between exhibits
+
+### Idea 3: Weather visualization
+
+| Property | Estimate |
+| --- | --- |
+| Difficulty | more challenging |
+| Type | visual with `API` |
+
+You build a page that fetches weather data and turns it into a visual mood.
+
+Rough parts:
+
+- input for a city
+- connection to a weather `API`
+- display of temperature, weather condition, and place
+- background color matching the weather
+- simple shapes or animations for sun, clouds, or rain
+
+Possible extension:
+
+- compare two cities
+- weather as an abstract poster
+- visually include the time of day
+
+### Idea 4: Flashcards for a topic
+
+| Property | Estimate |
+| --- | --- |
+| Difficulty | easy |
+| Type | everyday tool |
+
+You build a small tool for learning terms, vocabulary, or concepts.
+
+Rough parts:
+
+- list of questions and answers
+- a card that flips or opens
+- buttons for `Next` and `Back`
+- simple progress, for example `3 of 10`
+- clear design for quick repetition
+
+Possible extension:
+
+- categories
+- add your own cards directly in the browser
+- mark cards as `understood`
+
+### Idea 5: Cafeteria or day planner
+
+| Property | Estimate |
+| --- | --- |
+| Difficulty | more challenging |
+| Type | everyday tool with data source or `API` |
+
+You build a small page that clearly plans a day or displays external daily data.
+
+Rough parts:
+
+- daily overview with time blocks
+- important appointments or tasks
+- color marking by category
+- simple input for new entries
+- optional external data, for example cafeteria, weather, or calendar data
+
+Possible extension:
+
+- load data from an `API`
+- local storage in the browser
+- compact mobile view
+
+---
+
+## How to choose an idea
+
+Do not choose the biggest idea. Choose the idea where you can quickly see a first version.
+
+A good first version only answers these questions:
+
+1. What can you see on the page?
+2. What can you click or enter?
+3. What changes because of that?
+4. Which file or function is the most important part?
+
+If you still cannot see anything in the browser after 20 minutes, your first step is probably too large.
+
+## What you have learned
+
+You have seen several possible project ideas and can better judge which parts a small Vibe Coding project needs.
+
+You can now choose an idea, break it into rough parts, and start with a simple first version.

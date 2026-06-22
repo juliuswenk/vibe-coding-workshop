@@ -5,77 +5,77 @@ title: GitHub Tutorial
 
 # GitHub Tutorial
 
-In diesem Tutorial lernst du, wie du dein Projekt mit `Git` und `GitHub` sicherst.
+In this tutorial, you learn how to save your project with `Git` and `GitHub`.
 
-Wir arbeiten hauptsächlich mit der Oberfläche von `Zed`, nicht mit Terminal-Befehlen. Das Ziel ist: Du sollst verstehen, was passiert, ohne direkt alle Git-Befehle auswendig zu lernen.
+We mainly work with the `Zed` interface, not with Terminal commands. The goal is: you should understand what is happening without having to memorize all Git commands right away.
 
-## Was diese Seite erklärt
+## What this page explains
 
-Diese Seite erklärt:
+This page explains:
 
-- was `Git` ist
-- was `GitHub` ist
-- warum du beides beim Vibe Coding nutzen solltest
-- welche Begriffe wichtig sind
-- wie du ein Repository auf GitHub erstellst
-- wie du es mit Zed auf deinen Rechner holst
-- wie du Änderungen speicherst
-- wie du Änderungen zu GitHub hochlädst
+- what `Git` is
+- what `GitHub` is
+- why you should use both for Vibe Coding
+- which terms matter
+- how to create a Repository on GitHub
+- how to bring it onto your computer with Zed
+- how to save changes
+- how to upload changes to GitHub
 
-## Warum das für Vibe Coding wichtig ist
+## Why this matters for Vibe Coding
 
-Wenn du mit einem `Coding Agent` arbeitest, können schnell viele Dateien geändert werden.
+When you work with a `Coding Agent`, many files can change quickly.
 
-Das ist praktisch, aber auch riskant. Ein Agent kann:
+That is useful, but also risky. An Agent can:
 
-- etwas kaputt machen
-- zu viele Dateien ändern
-- eine gute Version überschreiben
-- eine Lösung komplizierter machen als nötig
+- break something
+- change too many files
+- overwrite a good version
+- make a solution more complicated than necessary
 
-`Git` ist dein Sicherheitsnetz. Es speichert Projektstände. Wenn etwas funktioniert, kannst du diesen Stand sichern. Wenn später etwas schiefgeht, kannst du sehen, was sich geändert hat.
+`Git` is your safety net. It saves project states. When something works, you can save that state. If something goes wrong later, you can see what changed.
 
 ---
 
-## Git und GitHub kurz erklärt
+## Git and GitHub in short
 
-`Git` ist ein Werkzeug auf deinem Computer. Es merkt sich Änderungen in deinem Projekt.
+`Git` is a tool on your computer. It remembers changes in your project.
 
-`GitHub` ist eine Website, auf der du dein Git-Projekt online speichern kannst.
+`GitHub` is a website where you can store your Git project online.
 
-## Die wichtigsten Begriffe
+## The most important terms
 
 ### Repository
 
-Ein `Repository`, kurz `Repo`, ist ein Projektordner, der von Git verwaltet wird.
+A `Repository`, or `Repo` for short, is a project folder managed by Git.
 
-Beispiel:
+Example:
 
 ```text
-mein-erstes-projekt
+my-first-project
 ```
 
-Wenn dieser Ordner ein Git-Repository ist, kann Git Änderungen darin speichern.
+If this folder is a Git Repository, Git can save changes inside it.
 
 ### Clone
 
-`Clone` bedeutet: Du kopierst ein GitHub-Repository auf deinen Computer. Dann ist es nicht mehr nur online, sondern du hast eine lokale Kopie.
+`Clone` means: you copy a GitHub Repository to your computer. Then it is no longer only online; you also have a local copy.
 
-Beispiel:
+Example:
 
 ```text
-GitHub Repo online -> Projektordner auf deinem Laptop
+GitHub Repo online -> project folder on your laptop
 ```
 
-Danach kannst du lokal an den Dateien arbeiten.
+After that, you can work on the files locally.
 
 ### Commit
 
-Ein `Commit` ist ein gespeicherter Projektstand.
+A `Commit` is a saved project state.
 
-Ein Commit braucht eine kurze Nachricht.
+A Commit needs a short message.
 
-Gute Commit-Nachrichten:
+Good Commit messages:
 
 ```text
 Add first homepage
@@ -89,7 +89,7 @@ Change button colors
 Fix layout spacing
 ```
 
-Schlechte Commit-Nachrichten:
+Bad Commit messages:
 
 ```text
 asdf
@@ -100,138 +100,138 @@ changes
 ```
 
 ```text
-final final wirklich final
+final final really final
 ```
 
 ### Stage
 
-`Stage` bedeutet: Du wählst aus, welche Änderungen in den nächsten Commit sollen.
+`Stage` means: you choose which changes should go into the next Commit.
 
-Beispiel:
+Example:
 
-- Du hast `index.html` geändert.
-- Du hast `style.css` geändert.
-- Du möchtest beide Änderungen speichern.
-- Dann stagest du beide Dateien und machst danach einen Commit.
+- You changed `index.html`.
+- You changed `style.css`.
+- You want to save both changes.
+- Then you stage both files and make a Commit afterward.
 
-Für den Anfang gilt: Wenn du alleine arbeitest, kannst du meistens alle sinnvollen Änderungen gemeinsam stagen.
+For the start: if you are working alone, you can usually stage all meaningful changes together.
 
 ### Push
 
-`Push` bedeutet: Du lädst deine lokalen Commits zu GitHub hoch.
+`Push` means: you upload your local Commits to GitHub.
 
-Beispiel:
+Example:
 
 ```text
-Dein Laptop -> GitHub
+Your laptop -> GitHub
 ```
 
-Erst nach einem Push ist deine neue Version online auf GitHub sichtbar.
+Only after a Push is your new version visible online on GitHub.
 
 ### Pull
 
-`Pull` bedeutet: Du holst neue Änderungen von GitHub auf deinen Computer.
+`Pull` means: you download new changes from GitHub to your computer.
 
-Beispiel:
+Example:
 
 ```text
-GitHub -> dein Laptop
+GitHub -> your laptop
 ```
 
-Wenn du alleine arbeitest, brauchst du `Pull` seltener. Es ist trotzdem gut, vor dem Arbeiten kurz zu prüfen, ob GitHub neue Änderungen hat.
+If you work alone, you need `Pull` less often. Still, it is good to briefly check whether GitHub has new changes before you start working.
 
 ### Branch
 
-Ein `Branch` ist eine eigene Entwicklungslinie in Git.
+A `Branch` is a separate line of development in Git.
 
-Für diesen Workshop bleiben wir auf `main`. Das ist der Haupt-Branch.
+For this workshop, we stay on `main`. That is the main Branch.
 
-Branches werden später wichtig, wenn mehrere Menschen an einem Projekt arbeiten oder du größere Änderungen getrennt ausprobieren möchtest.
+Branches become important later when several people work on a project or when you want to try larger changes separately.
 
 ---
 
-## Der einfache Solo-Workflow
+## The simple solo workflow
 
-Für den Anfang reicht dieser Ablauf:
+For the beginning, this workflow is enough:
 
-1. Repository auf GitHub erstellen.
-2. Repository mit Zed auf den Computer clonen.
-3. Dateien in Zed ändern.
-4. Änderungen im Git Panel prüfen.
-5. Änderungen stagen. (Welche Änderungen sollen wirklich gespeichert werden?)
-6. Commit mit kurzer Nachricht erstellen. (Die aktuelle Version auf deinem Computer speichern)
-7. Push zu GitHub machen. (Die Version auf deinem Computer auf GitHub hochladen)
+1. Create a Repository on GitHub.
+2. Clone the Repository to your computer with Zed.
+3. Change files in Zed.
+4. Check changes in the Git Panel.
+5. Stage changes. (Which changes should really be saved?)
+6. Create a Commit with a short message. (Save the current version on your computer.)
+7. Push to GitHub. (Upload the version from your computer to GitHub.)
 
-Kurz gesagt:
-
-```text
-Ändern -> Prüfen -> Commit (Speichern) -> Push (Hochladen)
-```
-
-## Repository erstellen und öffnen
-
-### 1. Neues Repository auf GitHub erstellen
-
-1. Öffne [github.com](https://github.com/).
-2. Melde dich an.
-3. Klicke oben rechts auf das `+`.
-4. Wähle `New repository`.
-5. Gib deinem Repository einen Namen.
-
-Beispiel:
+In short:
 
 ```text
-mein-erstes-vibe-coding-projekt
+Change -> Check -> Commit (Save) -> Push (Upload)
 ```
 
-6. Wähle `Public` oder `Private`.
-7. Aktiviere `Add a README file`.
-8. Klicke auf `Create repository`.
+## Create and open a Repository
 
-Für den Workshop ist `Private` völlig okay. `Public` bedeutet, dass andere Menschen dein Repository sehen können.
+### 1. Create a new Repository on GitHub
 
-### 2. Repository-Adresse kopieren
+1. Open [github.com](https://github.com/).
+2. Sign in.
+3. Click the `+` in the top right.
+4. Choose `New repository`.
+5. Give your Repository a name.
 
-Nach dem Erstellen siehst du dein neues Repository auf GitHub.
-
-1. Klicke auf den grünen Button `Code`.
-2. Wähle `HTTPS`.
-3. Kopiere die Adresse.
-
-Sie sieht ungefähr so aus:
+Example:
 
 ```text
-https://github.com/dein-name/mein-erstes-vibe-coding-projekt.git
+my-first-vibe-coding-project
 ```
 
-Diese Adresse sagt Zed, welches Repository auf deinen Computer kopiert werden soll.
+6. Choose `Public` or `Private`.
+7. Activate `Add a README file`.
+8. Click `Create repository`.
 
-### 3. Repository in Zed clonen
+For the workshop, `Private` is completely fine. `Public` means other people can see your Repository.
 
-Öffne `Zed`.
+### 2. Copy the Repository address
 
-Dann:
+After creating it, you see your new Repository on GitHub.
 
-1. Öffne die Command Palette.
+1. Click the green `Code` button.
+2. Choose `HTTPS`.
+3. Copy the address.
+
+It looks roughly like this:
+
+```text
+https://github.com/your-name/my-first-vibe-coding-project.git
+```
+
+This address tells Zed which Repository should be copied to your computer.
+
+### 3. Clone the Repository in Zed
+
+Open `Zed`.
+
+Then:
+
+1. Open the Command Palette.
    - macOS: `Cmd + Shift + P`
    - Windows: `Ctrl + Shift + P`
-2. Suche nach `clone`.
-3. Wähle die Git-Clone-Aktion aus.
-4. Füge die GitHub-Adresse ein.
-5. Wähle einen Ort auf deinem Computer aus, zum Beispiel deinen Projektordner.
-6. Öffne das geklonte Projekt in Zed.
+2. Search for `clone`.
+3. Choose the Git clone action.
+4. Paste the GitHub address.
+5. Choose a place on your computer, for example your project folder.
+6. Open the cloned project in Zed.
 
-Wenn Zed dich fragt, ob du dich bei GitHub anmelden möchtest, folge dem Login-Flow.
+If Zed asks whether you want to sign in to GitHub, follow the login flow.
 
-Am Ende solltest du dein Projekt links im Dateibereich von Zed sehen.
+At the end, you should see your project in the file area on the left side of Zed.
 
 ---
 
-## Erste Änderung speichern
+## Save your first change
 
-### 4. Erste Änderung machen
+### 4. Make the first change
 
-Erstelle eine neue Datei in Zed.
+Create a new file in Zed.
 
 Name:
 
@@ -239,195 +239,195 @@ Name:
 index.md
 ```
 
-Inhalt:
-
-```
-Mein erstes Vibe-Coding-Projekt
-```
-
-Speichere die Datei.
-
-Jetzt hat dein Projekt eine Änderung.
-
-### 5. Git Panel in Zed öffnen
-
-Das `Git Panel` zeigt dir, welche Dateien geändert wurden.
-
-Du kannst es öffnen über:
-
-- das Git-Symbol in der Statusleiste
-- oder die Command Palette mit `git panel: toggle focus`
-
-Im Git Panel solltest du jetzt `index.md` als geänderte oder neue Datei sehen.
-
-Wenn du nichts siehst, prüfe:
-
-- Ist die Datei gespeichert?
-- Hast du wirklich das geklonte Repository geöffnet?
-- Bist du im richtigen Projektordner?
-
-### 6. Änderung prüfen
-
-Bevor du etwas speicherst, schau dir die Änderung an.
-
-In Zed kannst du dafür das Git Panel oder den `Project Diff` nutzen.
-
-`Diff` bedeutet: Git zeigt dir den Unterschied zwischen dem alten und dem neuen Zustand.
-
-Beispiel:
+Content:
 
 ```text
-Vorher: Datei existiert nicht.
-Nachher: index.md wurde hinzugefügt.
+My first Vibe Coding project
 ```
 
-Das ist wichtig, weil du gerade beim Vibe Coding nicht blind alles übernehmen solltest, was ein Agent geändert hat.
+Save the file.
 
-### 7. Änderung stagen
+Now your project has a change.
 
-Im Git Panel kannst du Dateien auswählen, die in den nächsten Commit sollen.
+### 5. Open the Git Panel in Zed
 
-Für den Anfang:
+The `Git Panel` shows which files were changed.
 
-1. Suche `index.md` im Git Panel.
-2. Setze das Häkchen neben der Datei.
+You can open it through:
 
-Damit ist die Datei `staged`.
+- the Git icon in the status bar
+- or the Command Palette with `git panel: toggle focus`
 
-Das bedeutet: Diese Änderung wird gleich im nächsten Commit gespeichert.
+In the Git Panel, you should now see `index.md` as a changed or new file.
 
-### 8. Commit erstellen
+If you do not see anything, check:
 
-Unten im Git Panel gibt es ein Feld für die Commit-Nachricht.
+- Is the file saved?
+- Did you really open the cloned Repository?
+- Are you in the right project folder?
 
-Schreibe:
+### 6. Check the change
+
+Before saving anything, look at the change.
+
+In Zed, you can use the Git Panel or the `Project Diff` for that.
+
+`Diff` means: Git shows you the difference between the old and the new state.
+
+Example:
 
 ```text
-index.md hinzugefügt
+Before: file does not exist.
+After: index.md was added.
 ```
 
-Dann klicke auf den Commit-Button oder nutze die passende Tastenkombination, die Zed dir anzeigt.
+This matters because, especially in Vibe Coding, you should not blindly accept everything an Agent changed.
 
-Jetzt hast du deinen ersten Commit erstellt.
+### 7. Stage the change
 
-Das heißt: Git hat diesen Projektstand gespeichert.
+In the Git Panel, you can choose files that should go into the next Commit.
 
-### 9. Änderung zu GitHub pushen
+For the start:
 
-Der Commit liegt jetzt erstmal nur auf deinem Computer.
+1. Find `index.md` in the Git Panel.
+2. Check the box next to the file.
 
-Damit GitHub ihn bekommt, musst du `pushen`.
+Now the file is `staged`.
 
-Im Git Panel gibt es dafür einen `Push`-Button. Du kannst auch über die Command Palette nach `git: push` suchen.
+That means: this change will be saved in the next Commit.
 
-Nach dem Push:
+### 8. Create a Commit
 
-1. Öffne dein Repository auf GitHub.
-2. Lade die Seite neu.
-3. Prüfe, ob `index.md` dort sichtbar ist.
+At the bottom of the Git Panel, there is a field for the Commit message.
 
-Wenn ja: Du hast deine lokale Änderung erfolgreich zu GitHub hochgeladen.
+Write:
+
+```text
+Add index.md
+```
+
+Then click the Commit button or use the keyboard shortcut Zed shows you.
+
+Now you have created your first Commit.
+
+That means: Git saved this project state.
+
+### 9. Push the change to GitHub
+
+The Commit is currently only on your computer.
+
+To give it to GitHub, you have to `push`.
+
+There is a `Push` button in the Git Panel. You can also search for `git: push` in the Command Palette.
+
+After the Push:
+
+1. Open your Repository on GitHub.
+2. Reload the page.
+3. Check whether `index.md` is visible there.
+
+If yes: you successfully uploaded your local change to GitHub.
 
 ---
 
-## Weiterarbeiten und prüfen
+## Keep working and checking
 
-### 10. Später weiterarbeiten
+### 10. Continue later
 
-Wenn du später weiterarbeitest, nutze diesen Ablauf:
+When you continue later, use this workflow:
 
-1. Öffne das Projekt in Zed.
-2. Mache eine kleine Änderung.
-3. Prüfe die Änderung im Git Panel.
-4. Stage die passende Datei.
-5. Schreibe eine klare Commit-Nachricht.
-6. Committe.
-7. Pushe.
+1. Open the project in Zed.
+2. Make a small change.
+3. Check the change in the Git Panel.
+4. Stage the right file.
+5. Write a clear Commit message.
+6. Commit.
+7. Push.
 
-Beispiel:
+Example:
 
 ```text
 Change homepage text
 ```
 
-Oder:
+Or:
 
 ```text
 Add project cards
 ```
 
-### 11. Wann du pull benutzt
+### 11. When to use pull
 
-Wenn du alleine arbeitest, passiert auf GitHub meistens nichts, was nicht vorher von deinem Computer kam.
+If you work alone, usually nothing happens on GitHub that did not first come from your computer.
 
-Trotzdem ist `Pull` nützlich, wenn:
+Still, `Pull` is useful when:
 
-- du an einem anderen Computer gearbeitet hast
-- du auf GitHub direkt eine Datei geändert hast
-- später andere Menschen mitarbeiten
+- you worked on another computer
+- you changed a file directly on GitHub
+- other people work with you later
 
-`Pull` holt Änderungen von GitHub zurück auf deinen Computer.
+`Pull` brings changes from GitHub back to your computer.
 
-In Zed findest du `Pull` im Git Panel oder über die Command Palette mit `git: pull`.
+In Zed, you find `Pull` in the Git Panel or through the Command Palette with `git: pull`.
 
 ---
 
-### 12. Git und Coding Agents
+### 12. Git and Coding Agents
 
-Wenn ein Coding Agent Dateien ändert, schau danach ins Git Panel.
+When a Coding Agent changes files, look into the Git Panel afterward.
 
-Frage dich:
+Ask yourself:
 
-- Welche Dateien wurden geändert?
-- Passen diese Änderungen zur Aufgabe?
-- Wurde etwas verändert, das gar nicht nötig war?
-- Kann ich das Ergebnis öffnen oder testen?
+- Which files were changed?
+- Do these changes match the task?
+- Was something changed that was not necessary?
+- Can I open or test the result?
 
-Guter Prompt nach einer Agent-Änderung:
+Good prompt after an Agent change:
 
 ```text
-Fasse mir kurz zusammen, welche Dateien du geändert hast und warum.
-Ändere nichts weiter.
+Briefly summarize which files you changed and why.
+Do not change anything else.
 ```
 
-Wenn alles passt, machst du einen Commit.
+If everything fits, make a Commit.
 
-Beispiel:
+Example:
 
 ```text
 Add first prototype layout
 ```
 
-### 13. Zusammenarbeit kurz erwähnt
+### 13. Collaboration, briefly
 
-Git und GitHub sind auch für Zusammenarbeit gedacht.
+Git and GitHub are also made for collaboration.
 
-Mehrere Menschen können an einem Projekt arbeiten, Änderungen teilen und später zusammenführen.
+Several people can work on a project, share changes, and merge them later.
 
-Das ist mächtig, aber für den Start auch mehr Komplexität. In diesem Workshop arbeiten wir erstmal alleine auf `main`.
+That is powerful, but it is also more complexity at the start. In this workshop, we first work alone on `main`.
 
-Merke dir nur: Wenn du später mit anderen zusammenarbeitest, werden `Pull`, `Branches` und `Pull Requests` wichtiger.
+Just remember: when you work with others later, `Pull`, `Branches`, and `Pull Requests` become more important.
 
-## Mini-Glossar
+## Mini glossary
 
-| Begriff | Bedeutung |
+| Term | Meaning |
 | --- | --- |
-| `Repository` | Ein Projektordner, der von Git verwaltet wird |
-| `Clone` | Ein GitHub-Repository auf deinen Computer kopieren |
-| `Stage` | Änderungen für den nächsten Commit auswählen |
-| `Commit` | Einen Projektstand speichern |
-| `Push` | Lokale Commits zu GitHub hochladen |
-| `Pull` | Neue Änderungen von GitHub herunterladen |
-| `Branch` | Eine eigene Entwicklungslinie in Git |
-| `main` | Der Haupt-Branch deines Projekts |
-| `Diff` | Anzeige, was sich geändert hat |
+| `Repository` | A project folder managed by Git |
+| `Clone` | Copy a GitHub Repository to your computer |
+| `Stage` | Select changes for the next Commit |
+| `Commit` | Save a project state |
+| `Push` | Upload local Commits to GitHub |
+| `Pull` | Download new changes from GitHub |
+| `Branch` | A separate line of development in Git |
+| `main` | The main Branch of your project |
+| `Diff` | A view that shows what changed |
 
 ---
 
-## Was du jetzt gelernt hast
+## What you have learned
 
-Du weißt jetzt, was `Git` und `GitHub` sind und warum sie beim Vibe Coding wichtig sind.
+You now know what `Git` and `GitHub` are and why they matter for Vibe Coding.
 
-Du kannst ein Repository auf GitHub erstellen, es mit Zed auf deinen Computer clonen, Änderungen prüfen, committen und zu GitHub pushen.
+You can create a Repository on GitHub, clone it to your computer with Zed, check changes, commit them, and push them to GitHub.
 
-Das ist ein wichtiger Schritt: Du hast jetzt ein Sicherheitsnetz für deine Projekte.
+This is an important step: you now have a safety net for your projects.

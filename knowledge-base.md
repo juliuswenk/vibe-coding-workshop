@@ -5,27 +5,27 @@ title: Knowledge Base
 
 # Knowledge Base
 
-## Was diese Seite erklärt
+## What this page explains
 
-Diese Seite sammelt zusätzliche Notizen, kleine Erinnerungen und hilfreiche Formulierungen für den Workshop.
+This page collects extra notes, small reminders, and useful phrasing for the workshop.
 
-## Warum das für Vibe Coding wichtig ist
+## Why this matters for Vibe Coding
 
-Beim Arbeiten mit einem Coding Agent tauchen oft kleine Fragen auf, die nicht in ein eigenes Tutorial passen. Eine Knowledge Base gibt dir einen Ort, an dem du solche Hinweise schnell wiederfindest.
+When you work with a Coding Agent, small questions often come up that do not need their own tutorial. A Knowledge Base gives you one place where you can quickly find these hints again.
 
 ---
 
-## Nützliche Prompts
+## Useful prompts
 
 | Situation | Prompt |
 | --- | --- |
-| Projekt verstehen | `Erkläre mir in einfachen Worten, welche Dateien wichtig sind. Ändere nichts.` |
-| Änderung prüfen | `Fasse zusammen, welche Dateien du geändert hast und warum. Ändere nichts weiter.` |
-| Fehler verstehen | `Erkläre diese Fehlermeldung einfach und schlage den kleinsten Fix vor.` |
-| Komplexität begrenzen | `Halte die Lösung einfacher. Füge keine neuen Libraries hinzu.` |
+| Understand a project | `Explain in simple words which files are important. Do not change anything.` |
+| Check a change | `Summarize which files you changed and why. Do not change anything else.` |
+| Understand an error | `Explain this error message simply and suggest the smallest fix.` |
+| Limit complexity | `Keep the solution simpler. Do not add new libraries.` |
 
 ---
 
-## Was du jetzt gelernt hast
+## What you have learned
 
-Du hast einen Ort für kurze Hilfen, die du während des Workshops schnell nachschlagen kannst.
+You now have a place for short helpful notes that you can quickly look up during the workshop.

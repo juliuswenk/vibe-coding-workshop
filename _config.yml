@@ -1,11 +1,11 @@
 title: Vibe-Coding 101 @ SRH
-description: Workshop-Materialien
+description: Workshop materials
 theme: jekyll-theme-minimal
 nav:
   - title: Start
     url: /
   - divider: true
-  - title: Grundlagen
+  - title: Basics
     children:
       - title: Vibe-Coding Input
         url: /theorie
@@ -23,12 +23,12 @@ nav:
       - title: Opencode Tutorial
         url: /tutorials/opencode
   - divider: true
-  - title: Projekte
+  - title: Projects
     children:
-      - title: Mein erstes Projekt
+      - title: My first project
         url: /mein-erstes-projekt
-      - title: Projekt-Inspiration
+      - title: Project inspiration
         url: /freies-projekt-inspiration
   - divider: true
-  - title: Glossar
+  - title: Glossary
     url: /glossar

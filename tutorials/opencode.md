@@ -5,288 +5,288 @@ title: OpenCode Tutorial
 
 # OpenCode Tutorial
 
-In diesem Tutorial lernst du, wie du `OpenCode` in `Zed` nutzt.
+In this tutorial, you learn how to use `OpenCode` in `Zed`.
 
-OpenCode ist ein `Coding Agent`: Du gibst ihm Aufgaben, Fragen und Feedback. Der Agent kann dein Projekt lesen, Änderungen vorschlagen und beim Bauen deines Projekts helfen.
+OpenCode is a `Coding Agent`: you give it tasks, questions, and feedback. The Agent can read your project, suggest changes, and help build your project.
 
-## Was diese Seite erklärt
+## What this page explains
 
-Diese Seite erklärt:
+This page explains:
 
-- was OpenCode ist
-- wie OpenCode in Zed eingebunden wird
-- was das Agent Panel ist
-- was Threads sind
-- wie du einen OpenCode-Thread startest
-- welche Optionen wichtig sind
-- wie du ein Modell auswählst
-- wie du dem Agenten guten Kontext gibst
-- wie du Änderungen prüfst
-- wann du einen neuen Thread starten solltest
+- what OpenCode is
+- how OpenCode is integrated into Zed
+- what the Agent Panel is
+- what Threads are
+- how to start an OpenCode Thread
+- which options matter
+- how to choose a model
+- how to give the Agent good context
+- how to check changes
+- when to start a new Thread
 
-## Warum das für Vibe Coding wichtig ist
+## Why this matters for Vibe Coding
 
-Wenn du OpenCode in Zed nutzt, arbeitest du direkt im Projekt. Das bedeutet:
+When you use OpenCode in Zed, you work directly inside the project. That means:
 
-- Der Agent kann deine Dateien sehen.
-- Du kannst Änderungen direkt prüfen.
-- Du kannst Git nutzen, um gute Zwischenstände zu speichern.
-- Du kannst in kleinen Schritten weiterarbeiten.
-
----
-
-## Was ist OpenCode?
-
-`OpenCode` ist ein Coding Agent.
-
-Ein Coding Agent ist mehr als ein Chatbot. Er kann mit deinem Projekt arbeiten:
-
-- Dateien lesen
-- Code erklären
-- Änderungen planen
-- Dateien ändern
-- Fehlermeldungen analysieren
-- Befehle vorschlagen oder ausführen, wenn du es erlaubst
-
-Wichtig: OpenCode ist ein Werkzeug. Es ersetzt nicht dein eigenes Denken.
+- The Agent can see your files.
+- You can check changes directly.
+- You can use Git to save good intermediate states.
+- You can keep working in small steps.
 
 ---
 
-## OpenCode in Zed installieren
+## What is OpenCode?
 
-Zed kann externe Agents über die `ACP Registry` installieren.
+`OpenCode` is a Coding Agent.
 
-`ACP` steht für `Agent Client Protocol`. Für dich heißt das einfach: Zed kann OpenCode als externen Agenten einbinden.
+A Coding Agent is more than a chatbot. It can work with your project:
 
-So installierst du OpenCode in Zed:
+- read files
+- explain code
+- plan changes
+- change files
+- analyze error messages
+- suggest or run commands if you allow it
 
-1. Öffne `Zed`.
-2. Öffne die Command Palette.
+Important: OpenCode is a tool. It does not replace your own thinking.
+
+---
+
+## Install OpenCode in Zed
+
+Zed can install external Agents through the `ACP Registry`.
+
+`ACP` stands for `Agent Client Protocol`. For you, this simply means: Zed can integrate OpenCode as an external Agent.
+
+Install OpenCode in Zed like this:
+
+1. Open `Zed`.
+2. Open the Command Palette.
    - macOS: `Cmd + Shift + P`
    - Windows: `Ctrl + Shift + P`
-3. Suche nach:
+3. Search for:
 
 ```text
 zed: acp registry
 ```
 
-4. Öffne die ACP Registry.
-5. Suche nach `OpenCode`.
-6. Installiere OpenCode.
-7. Starte Zed neu, falls Zed dich dazu auffordert.
+4. Open the ACP Registry.
+5. Search for `OpenCode`.
+6. Install OpenCode.
+7. Restart Zed if Zed asks you to.
 
-Was bringt das?
+Why do this?
 
-Nach der Installation kann OpenCode direkt im Agent Panel von Zed genutzt werden. Du musst dann nicht ständig zwischen Editor und externem Terminal wechseln.
+After installation, OpenCode can be used directly in Zed's Agent Panel. You do not have to constantly switch between the Editor and an external Terminal.
 
 ---
 
-## Agent Panel öffnen
+## Open the Agent Panel
 
-Das `Agent Panel` ist der Bereich in Zed, in dem du mit einem Agenten arbeitest.
+The `Agent Panel` is the area in Zed where you work with an Agent.
 
-Du öffnest es über:
+Open it through:
 
-- das ✨-Symbol in Zed
-- oder die Command Palette mit:
+- the sparkle icon in Zed
+- or the Command Palette with:
 
 ```text
 agent: new thread
 ```
 
-Was bringt das?
+Why do this?
 
-Das Agent Panel hält deine Unterhaltung mit dem Agenten direkt neben deinem Projekt. Du kannst Fragen stellen und gleichzeitig sehen, welche Dateien betroffen sind.
+The Agent Panel keeps your conversation with the Agent directly next to your project. You can ask questions and see which files are affected at the same time.
 
-## OpenCode-Thread starten
+## Start an OpenCode Thread
 
-Ein `Thread` ist eine Unterhaltung mit einem Agenten.
+A `Thread` is a conversation with an Agent.
 
-So startest du einen OpenCode-Thread:
+Start an OpenCode Thread like this:
 
-1. Öffne das Agent Panel.
-2. Öffne das Menü für einen neuen Thread.
-3. Wähle `OpenCode` als Agent aus.
-4. Schreibe deinen ersten Prompt.
+1. Open the Agent Panel.
+2. Open the menu for a new Thread.
+3. Choose `OpenCode` as the Agent.
+4. Write your first prompt.
 
-Guter erster Prompt:
+Good first prompt:
 
 ```text
-Schau dir dieses Projekt kurz an.
-Erkläre mir in einfachen Worten, welche Dateien wichtig sind.
-Ändere noch nichts.
+Take a quick look at this project.
+Explain in simple words which files are important.
+Do not change anything yet.
 ```
 
-Was bringt das?
+Why do this?
 
-Du gibst dem Agenten zuerst eine Analyseaufgabe statt sofort eine Bauaufgabe. Dadurch verstehst du besser, womit du arbeitest.
+You first give the Agent an analysis task instead of a build task. This helps you better understand what you are working with.
 
 ---
 
-## Modell auswählen
+## Choose a model
 
-OpenCode braucht ein KI-Modell im Hintergrund.
+OpenCode needs an AI model in the background.
 
-Je nach OpenCode-Konfiguration kannst du ein Modell auswählen.
+Depending on the OpenCode configuration, you can choose a model.
 
-Typische Unterschiede zwischen Modellen:
+Typical differences between models:
 
-- Einige Modelle sind schneller.
-- Einige Modelle sind besser bei komplexen Aufgaben.
-- Einige Modelle können längeren Kontext besser verarbeiten.
-- Einige Modelle machen bessere Erklärungen.
+- Some models are faster.
+- Some models are better at complex tasks.
+- Some models can handle longer context better.
+- Some models give better explanations.
 
-Für Anfänger*innen gilt:
+For beginners:
 
-Was bringt das?
+Why does this matter?
 
-Die Modellwahl beeinflusst Qualität, Geschwindigkeit und manchmal Kosten. Für den Workshop ist wichtiger, dass du sauber arbeitest, als dass du sofort das "beste" Modell findest.
+The model choice affects quality, speed, and sometimes cost. For the workshop, clean work is more important than immediately finding the "best" model.
 
-## Thread Panel und Thread History
+## Thread Panel and Thread History
 
-Zed kann mehrere Agent-Threads verwalten.
+Zed can manage several Agent Threads.
 
-Ein Thread ist sinnvoll für eine konkrete Aufgabe.
+A Thread is useful for one concrete task.
 
-Beispiele:
+Examples:
 
 ```text
-Thread 1: Projekt verstehen
-Thread 2: Startseite bauen
-Thread 3: Layout verbessern
-Thread 4: Fehler beheben
+Thread 1: Understand project
+Thread 2: Build homepage
+Thread 3: Improve layout
+Thread 4: Fix error
 ```
 
-Was bringt das?
+Why do this?
 
-Getrennte Threads halten den Kontext sauberer. Wenn ein Thread sehr lang wird, kann der Agent alte Entscheidungen durcheinanderbringen.
+Separate Threads keep the context cleaner. If a Thread becomes very long, the Agent can mix up old decisions.
 
-Für Anfänger*innen reicht:
+For beginners, this is enough:
 
-- Nutze einen Thread pro größerem Arbeitsschritt.
-- Starte einen neuen Thread, wenn das Thema wechselt.
-- Lass dir am Ende eines Threads den Stand zusammenfassen.
+- Use one Thread per larger work step.
+- Start a new Thread when the topic changes.
+- Ask for a summary at the end of a Thread.
 
-Guter Abschlussprompt:
-
-```text
-Fasse zusammen:
-1. Was wurde gebaut?
-2. Welche Dateien wurden geändert?
-3. Wie teste ich das Projekt?
-4. Was ist der nächste sinnvolle Schritt?
-```
-
----
-
-## Dateien erwähnen
-
-Wenn du weißt, welche Datei wichtig ist, nenne sie direkt.
-
-Beispiel:
+Good closing prompt:
 
 ```text
-Schau dir `index.html` und `style.css` an.
-Erkläre mir, wie die Seite aufgebaut ist.
-Ändere noch nichts.
-```
-
-Was bringt das?
-
-Der Agent konzentriert sich auf die relevanten Dateien und verliert weniger Zeit mit dem Rest des Projekts.
-
-## Tool Permissions und Bestätigung
-
-Ein Coding Agent kann je nach Einstellung Werkzeuge nutzen, zum Beispiel Dateien ändern oder Befehle ausführen.
-
-Wenn Zed oder OpenCode fragt, ob eine Aktion erlaubt ist, lies kurz, was passieren soll.
-
-Achte besonders auf:
-
-- Welche Datei wird geändert?
-- Wird ein Befehl ausgeführt?
-- Werden neue Pakete installiert?
-- Werden viele Dateien verändert?
-
-Was bringt das?
-
-Du vermeidest, dass der Agent zu viel auf einmal macht.
-
-Gute Grenze:
-
-```text
-Füge keine neuen Libraries hinzu, ohne vorher zu fragen.
+Summarize:
+1. What was built?
+2. Which files were changed?
+3. How do I test the project?
+4. What is the next useful step?
 ```
 
 ---
 
-## Wann du einen neuen Thread starten solltest
+## Mention files
 
-Starte einen neuen Thread, wenn:
+If you know which file matters, name it directly.
 
-- ein Thema abgeschlossen ist
-- der Thread sehr lang geworden ist
-- der Agent sich im Kreis dreht
-- du mit einer neuen Aufgabe beginnst
-- du eine saubere Zusammenfassung als Startpunkt willst
-
-Guter Start für einen neuen Thread:
+Example:
 
 ```text
-Hier ist der aktuelle Stand:
-[kurze Zusammenfassung einfügen]
-
-Bitte schlage den nächsten kleinen Schritt vor.
-Ändere noch nichts.
+Look at `index.html` and `style.css`.
+Explain how the page is structured.
+Do not change anything yet.
 ```
 
-Was bringt das?
+Why do this?
 
-Ein neuer Thread reduziert alten Ballast. Das hilft dem Agenten, fokussierter zu arbeiten.
+The Agent focuses on the relevant files and wastes less time on the rest of the project.
 
-## Gute erste Prompts
+## Tool permissions and confirmation
 
-Projekt verstehen:
+A Coding Agent can use tools depending on its settings, for example changing files or running commands.
+
+If Zed or OpenCode asks whether an action is allowed, briefly read what is supposed to happen.
+
+Pay special attention to:
+
+- Which file is being changed?
+- Is a command being run?
+- Are new packages being installed?
+- Are many files being changed?
+
+Why do this?
+
+You avoid letting the Agent do too much at once.
+
+Good limit:
 
 ```text
-Schau dir dieses Projekt an.
-Erkläre mir in einfachen Worten, welche Dateien wichtig sind.
-Ändere nichts.
+Do not add new libraries without asking first.
 ```
 
-Plan erstellen:
+---
+
+## When to start a new Thread
+
+Start a new Thread when:
+
+- a topic is finished
+- the Thread has become very long
+- the Agent keeps going in circles
+- you begin a new task
+- you want a clean summary as the starting point
+
+Good start for a new Thread:
 
 ```text
-Ich möchte eine einfache Projektseite bauen.
-Bitte schlage zuerst einen Plan in 3 bis 5 Schritten vor.
-Ändere noch keine Dateien.
+Here is the current state:
+[paste short summary]
+
+Please suggest the next small step.
+Do not change anything yet.
 ```
 
-Kleine Änderung:
+Why do this?
+
+A new Thread reduces old baggage. That helps the Agent work with more focus.
+
+## Good first prompts
+
+Understand project:
 
 ```text
-Erstelle eine einfache Startseite mit Titel, kurzem Beschreibungstext und drei Karten.
-Nutze nur HTML und CSS.
-Ändere nur die notwendigen Dateien.
-Erkläre danach, was du geändert hast.
+Look at this project.
+Explain in simple words which files are important.
+Do not change anything.
 ```
 
-Fehler erklären:
+Create plan:
 
 ```text
-Ich bekomme diese Fehlermeldung:
-
-[Fehlermeldung einfügen]
-
-Bitte erkläre sie in einfachen Worten.
-Schlage den kleinsten möglichen Fix vor.
-Ändere noch nichts.
+I want to build a simple project page.
+Please first suggest a plan in 3 to 5 steps.
+Do not change any files yet.
 ```
 
-## Was du jetzt gelernt hast
+Small change:
 
-Du weißt jetzt, wie OpenCode in Zed eingebunden wird und wie du einen OpenCode-Thread startest.
+```text
+Create a simple homepage with a title, short description, and three cards.
+Use only HTML and CSS.
+Only change the necessary files.
+Afterward, explain what you changed.
+```
 
-Du kennst die wichtigsten Optionen: Agent Panel, Threads, Modellwahl, Auth, Kontext, Tool-Bestätigungen und Git-Prüfung.
+Explain error:
 
-Der wichtigste Punkt: Lass OpenCode klein anfangen, prüfe jede Änderung und speichere gute Zwischenstände mit Git.
+```text
+I get this error message:
+
+[paste error message]
+
+Please explain it in simple words.
+Suggest the smallest possible fix.
+Do not change anything yet.
+```
+
+## What you have learned
+
+You now know how OpenCode is integrated into Zed and how to start an OpenCode Thread.
+
+You know the most important options: Agent Panel, Threads, model choice, auth, context, tool confirmations, and Git checks.
+
+The most important point: let OpenCode start small, check every change, and save good intermediate states with Git.

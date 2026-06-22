@@ -5,56 +5,56 @@ title: Zed Tutorial
 
 # Zed Tutorial
 
-In diesem Tutorial lernst du, was `Zed` ist und wie du dich in der Oberfläche zurechtfindest.
+In this tutorial, you learn what `Zed` is and how to find your way around its interface.
 
-Zed ist das Programm, in dem du deine Projektdateien öffnest, bearbeitest, mit Git arbeitest und später deinen Coding Agent nutzt.
+Zed is the program where you open and edit your project files, work with Git, and later use your Coding Agent.
 
-## Was diese Seite erklärt
+## What this page explains
 
-Diese Seite erklärt:
+This page explains:
 
-- was ein Code Editor ist
-- warum wir Zed im Workshop nutzen
-- wie Zed grob aufgebaut ist
-- welche Bereiche der Oberfläche wichtig sind
-- wie du ein Projekt öffnest
-- wie du Dateien erstellst und bearbeitest
-- wo du Git und Agent-Funktionen findest
+- what a Code Editor is
+- why we use Zed in the workshop
+- how Zed is roughly structured
+- which parts of the interface matter
+- how to open a project
+- how to create and edit files
+- where to find Git and Agent features
 
-## Warum das für Vibe Coding wichtig ist
+## Why this matters for Vibe Coding
 
-Beim Vibe Coding arbeitest du nicht nur in einem Chatfenster.
+When Vibe Coding, you do not only work in a chat window.
 
-Du brauchst eine Umgebung, in der du:
+You need an environment where you can:
 
-- Dateien sehen kannst
-- Änderungen prüfen kannst
-- Code oder Text bearbeiten kannst
-- dein Projekt starten oder testen kannst
-- mit Git speichern kannst
-- mit einem Coding Agent im Projekt arbeiten kannst
+- see files
+- check changes
+- edit code or text
+- start or test your project
+- save with Git
+- work with a Coding Agent inside the project
 
-Zed ist diese Arbeitsumgebung. Wenn du Zed grob verstehst, kannst du besser nachvollziehen, was ein Agent in deinem Projekt verändert.
+Zed is this working environment. If you roughly understand Zed, you can better follow what an Agent changes in your project.
 
 ---
 
-## Was ist ein Code Editor?
+## What is a Code Editor?
 
-Ein `Code Editor` ist ein Programm zum Bearbeiten von Code- und Textdateien.
+A `Code Editor` is a program for editing code and text files.
 
-Du kannst ihn dir wie einen sehr spezialisierten Texteditor vorstellen.
+You can think of it as a very specialized text editor.
 
-Ein normaler Texteditor kann Text schreiben. Ein Code Editor kann zusätzlich:
+A normal text editor can write text. A Code Editor can also:
 
-- Projektordner anzeigen
-- Code farbig markieren
-- Fehler sichtbar machen
-- Dateien schnell suchen
-- Git-Änderungen anzeigen
-- ein Terminal öffnen
-- mit Coding Agents verbunden werden
+- show project folders
+- highlight code with colors
+- make errors visible
+- search files quickly
+- show Git changes
+- open a terminal
+- connect to Coding Agents
 
-Beispiele für Code Editoren sind:
+Examples of Code Editors are:
 
 - `Zed`
 - `Visual Studio Code`
@@ -63,80 +63,80 @@ Beispiele für Code Editoren sind:
 
 ---
 
-## Die wichtigsten Bereiche in Zed
+## The most important areas in Zed
 
-Zed besteht grob aus diesen Bereichen:
+Zed roughly consists of these areas:
 
 ```text
-Projektdateien links | Editor in der Mitte | Panels unten/seitlich
+Project files on the left | Editor in the middle | Panels at the bottom/side
 ```
 
-Je nach Fenstergröße oder Einstellung können Panels an anderen Stellen erscheinen. Das ist normal.
+Depending on window size or settings, panels may appear in different places. That is normal.
 
 ### 1. Project Panel
 
-Das `Project Panel` zeigt die Dateien und Ordner deines Projekts.
+The `Project Panel` shows the files and folders of your project.
 
-Typische Dinge, die du dort machst:
+Typical things you do there:
 
-- Dateien öffnen
-- neue Dateien erstellen
-- Ordner erstellen
-- Dateien umbenennen
-- sehen, welche Dateien zum Projekt gehören
+- open files
+- create new files
+- create folders
+- rename files
+- see which files belong to the project
 
-Beispiel:
+Example:
 
 ```text
-mein-projekt
+my-project
 ├── index.html
 ├── style.css
 └── README.md
 ```
 
-Wenn du eine Datei anklickst, öffnet sie sich im Editor.
+When you click a file, it opens in the Editor.
 
-### 2. Editor-Bereich
+### 2. Editor area
 
-Der Editor ist der große Bereich in der Mitte.
+The Editor is the large area in the middle.
 
-Hier bearbeitest du Dateien.
+This is where you edit files.
 
-Zed hebt Code farbig hervor. Das nennt man `Syntax Highlighting`.
+Zed highlights code with colors. This is called `Syntax Highlighting`.
 
-Das hilft dir zu erkennen:
+It helps you recognize:
 
-- Was ist Text?
-- Was ist ein HTML-Tag?
-- Was ist ein Dateiname?
-- Was ist vielleicht ein Fehler?
+- What is text?
+- What is an HTML tag?
+- What is a filename?
+- What might be an error?
 
 ### 3. Tabs
 
-Wenn du mehrere Dateien öffnest, erscheinen sie als Tabs.
+When you open several files, they appear as Tabs.
 
-Beispiel:
+Example:
 
 ```text
 index.html | style.css | README.md
 ```
 
-Ein Tab ist wie ein geöffneter Reiter im Browser.
+A Tab is like an open browser tab.
 
-Du kannst zwischen Dateien wechseln, ohne sie jedes Mal neu suchen zu müssen.
+You can switch between files without searching for them every time.
 
 ### 4. Command Palette
 
-Die `Command Palette` ist eine Suchfunktion für Zed-Befehle.
+The `Command Palette` is a search function for Zed commands.
 
-Du öffnest sie mit:
+Open it with:
 
 - macOS: `Cmd + Shift + P`
 - Windows: `Ctrl + Shift + P`
 
-Danach kannst du nach Aktionen suchen.
+Then you can search for actions.
 
-Beispiele:
+Examples:
 
 ```text
 git panel
@@ -150,17 +150,17 @@ agent: new thread
 zed: acp registry
 ```
 
-Wenn du nicht weißt, wo eine Funktion ist, ist die Command Palette oft der schnellste Weg.
+If you do not know where a feature is, the Command Palette is often the fastest way.
 
 ### 5. Terminal
 
-Das `Terminal` ist ein Bereich, in dem du Textbefehle ausführen kannst.
+The `Terminal` is an area where you can run text commands.
 
-In Zed kannst du ein Terminal direkt im Projekt öffnen.
+In Zed, you can open a Terminal directly inside the project.
 
-Das ist praktisch, weil du dann nicht zwischen vielen Fenstern wechseln musst.
+That is useful because you do not have to switch between many windows.
 
-Beispiele für Befehle:
+Examples of commands:
 
 ```text
 node --version
@@ -174,154 +174,152 @@ opencode --version
 git status
 ```
 
-Für den Start musst du nicht viele Befehle kennen. Aber du solltest wissen, dass das Terminal existiert.
+You do not need to know many commands at the start. But you should know that the Terminal exists.
 
 ### 6. Git Panel
 
-Das `Git Panel` zeigt dir, welche Dateien sich geändert haben.
+The `Git Panel` shows which files have changed.
 
-Du nutzt es, um:
+You use it to:
 
-- Änderungen anzuschauen
-- Dateien zu stagen
-- Commits zu erstellen
-- Änderungen zu GitHub zu pushen
-- Änderungen von GitHub zu pullen
+- look at changes
+- stage files
+- create commits
+- push changes to GitHub
+- pull changes from GitHub
 
-Beim Vibe Coding ist das besonders wichtig, weil ein Coding Agent mehrere Dateien ändern kann.
+This is especially important in Vibe Coding because a Coding Agent can change several files.
 
-Nach Agent-Änderungen solltest du immer kurz ins Git Panel schauen.
+After Agent changes, you should always briefly look at the Git Panel.
 
-Frage dich:
+Ask yourself:
 
-- Welche Dateien wurden geändert?
-- Passt das zur Aufgabe?
-- Wurde etwas Unerwartetes geändert?
-
+- Which files were changed?
+- Does that match the task?
+- Was anything unexpected changed?
 
 ### 7. Agent Panel
 
-Das `Agent Panel` ist der Bereich, in dem du mit einem Coding Agent arbeitest.
+The `Agent Panel` is the area where you work with a Coding Agent.
 
-Du kannst dort zum Beispiel:
+There you can, for example:
 
-- Fragen zu deinem Projekt stellen
-- Dateien erklären lassen
-- kleine Änderungen planen lassen
-- Änderungen durchführen lassen
-- Fehlermeldungen erklären lassen
+- ask questions about your project
+- have files explained
+- ask for small changes to be planned
+- have changes made
+- have error messages explained
 
-Guter erster Prompt:
+Good first prompt:
 
 ```text
-Schau dir dieses Projekt kurz an.
-Erkläre mir in einfachen Worten, welche Dateien wichtig sind.
-Ändere noch nichts.
+Take a quick look at this project.
+Explain in simple words which files are important.
+Do not change anything yet.
 ```
 
-Wichtig: Lass den Agenten nicht sofort alles bauen. Starte klein.
+Important: do not let the Agent build everything immediately. Start small.
 
 ---
 
-## Mit einem Projekt arbeiten
+## Working with a project
 
-### 8. Ein Projekt öffnen
+### 8. Open a project
 
-Ein Projekt ist meistens einfach ein Ordner.
+A project is usually just a folder.
 
-Um ein Projekt in Zed zu öffnen:
+To open a project in Zed:
 
-1. Öffne `Zed`.
-2. Klicke auf `File`.
-3. Wähle `Open Folder`.
-4. Wähle deinen Projektordner.
-5. Öffne ihn.
+1. Open `Zed`.
+2. Click `File`.
+3. Choose `Open Folder`.
+4. Select your project folder.
+5. Open it.
 
-Danach sollte der Ordner links im Project Panel sichtbar sein.
+After that, the folder should be visible on the left in the Project Panel.
 
-### 9. Eine Datei erstellen
+### 9. Create a file
 
-Im Project Panel:
+In the Project Panel:
 
-1. Rechtsklick auf deinen Projektordner.
-2. Wähle `New File`.
-3. Gib einen Dateinamen ein.
+1. Right-click your project folder.
+2. Choose `New File`.
+3. Enter a filename.
 
-Beispiel:
+Example:
 
 ```text
 index.html
 ```
 
-Dann kannst du die Datei im Editor bearbeiten.
+Then you can edit the file in the Editor.
 
+### 10. Typical workshop workflow in Zed
 
-### 10. Typischer Workshop-Workflow in Zed
+For the workshop, this workflow is enough:
 
-Für den Workshop reicht dieser Ablauf:
+1. Open the project folder in Zed.
+2. Briefly look at which files exist.
+3. Ask the Coding Agent for a small plan.
+4. Let it make a small change.
+5. Check the result.
+6. Open the Git Panel.
+7. Look at the changes.
+8. Create a commit if it works.
 
-1. Projektordner in Zed öffnen.
-2. Kurz anschauen, welche Dateien existieren.
-3. Coding Agent nach einem kleinen Plan fragen.
-4. Eine kleine Änderung machen lassen.
-5. Ergebnis prüfen.
-6. Git Panel öffnen.
-7. Änderungen anschauen.
-8. Commit erstellen, wenn es funktioniert.
-
-Kurz:
+In short:
 
 ```text
-Öffnen -> Planen -> Ändern -> Prüfen -> Committen
+Open -> Plan -> Change -> Check -> Commit
 ```
 
 ---
 
-## Orientierung behalten
+## Stay oriented
 
-### 11. Was du nicht sofort verstehen musst
+### 11. What you do not have to understand immediately
 
-Du musst am Anfang nicht verstehen:
+At the beginning, you do not have to understand:
 
-- alle Einstellungen
-- alle Tastenkürzel
-- Debugging
-- Worktrees
-- komplexe Git-Funktionen
-- alle Agent-Profile
-- jede Fehlermeldung
+- all settings
+- all keyboard shortcuts
+- debugging
+- worktrees
+- complex Git features
+- all Agent profiles
+- every error message
 
-Das kommt später, wenn du es wirklich brauchst.
+That comes later when you actually need it.
 
-Für den Start reicht:
+For the start, it is enough to:
 
-- Projekt öffnen
-- Dateien finden
-- Dateien bearbeiten
-- Git Panel öffnen
-- Agent Panel öffnen
-- kleine Änderungen prüfen
+- open a project
+- find files
+- edit files
+- open the Git Panel
+- open the Agent Panel
+- check small changes
 
-### 12. Wenn du dich verirrst
+### 12. If you get lost
 
-Wenn Zed unübersichtlich wird:
+If Zed becomes confusing:
 
-1. Schließe unnötige Tabs.
-2. Öffne den Projektordner neu.
-3. Suche Dateien mit `Cmd + P` oder `Ctrl + P`.
-4. Öffne die Command Palette und suche nach der Funktion.
-5. Frage den Coding Agent:
+1. Close unnecessary Tabs.
+2. Reopen the project folder.
+3. Search files with `Cmd + P` or `Ctrl + P`.
+4. Open the Command Palette and search for the feature.
+5. Ask the Coding Agent:
 
 ```text
-Ich bin in Zed gerade unsicher.
-Erkläre mir, welche Datei ich öffnen soll und warum.
-Ändere nichts.
+I am unsure where I am in Zed right now.
+Explain which file I should open and why.
+Do not change anything.
 ```
 
-## Was du jetzt gelernt hast
+## What you have learned
 
-Du weißt jetzt, was Zed ist, was eine IDE grob bedeutet und welche Bereiche der Oberfläche für den Workshop wichtig sind.
+You now know what Zed is, roughly what an IDE means, and which interface areas are important for the workshop.
 
-Du kannst ein Projekt öffnen, Dateien finden, neue Dateien erstellen, das Git Panel finden und das Agent Panel einordnen.
+You can open a project, find files, create new files, find the Git Panel, and understand what the Agent Panel is for.
 
-Das ist genug, um im Workshop nicht nur Prompts zu schreiben, sondern wirklich am eigenen Projekt zu arbeiten.
+That is enough to not only write prompts during the workshop, but to really work on your own project.

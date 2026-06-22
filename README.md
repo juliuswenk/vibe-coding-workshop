@@ -1,75 +1,75 @@
 # Vibe Coding Workshop SRH
 
-## Autor
+## Author
 
 Julius Wenk
 
 ---
 
-Das ist das Repo für den Vibe Coding Workshop and der SRH. Hier liegen alle Dateien für den Workshop. Dazu gehören die Ablaufpläne, Tutorials, Aufgaben und Musterlösungen.
+This is the repository for the Vibe Coding Workshop at SRH. It contains the files for the workshop, including schedules, tutorials, tasks, and sample solutions.
 
 ---
 
-## Ablaufplan
+## Schedule
 
-**Dauer:** ca. 4 Stunden inklusive Pausen
+**Duration:** about 4 hours including breaks
 
-### Was wollen wir machen?
+### What do we want to do?
 
-| Schritt | Inhalt |
+| Step | Content |
 | --- | --- |
-| 1 | Theorie-Input: Was ist `Vibe Coding`, was kann es, was nicht? |
-| 2 | Setup: benötigte Tools installieren |
-| 3 | Erste gemeinsame Schritte mit einem kleinen Projekt |
-| 4 | Konzeptphase für ein eigenes Projekt |
-| 5 | Eigenes Projekt erstellen |
+| 1 | Theory input: What is `Vibe Coding`, what can it do, and what can it not do? |
+| 2 | Setup: install the required tools |
+| 3 | First shared steps with a small project |
+| 4 | Concept phase for an own project |
+| 5 | Create an own project |
 
 ---
 
-### Wie arbeiten wir?
+### How do we work?
 
-Es gibt die zentrale Seite auf Github pages, die als Startseite für den Workshop dient. Hier sind alle Links zu den verschiedenen Unterseiten des Workshops. Wir werden (fast alles) gemeinsam durchgehen und ich werde die Inhalte der einzelnen Seiten erklären, so können die Studis später nochmal nachlesen, falls sie etwas nicht verstanden haben und ich muss keine Slides bauen, die sowieso keiner liest.
+There is one central GitHub Pages site that serves as the workshop homepage. It contains all links to the different workshop subpages. We will go through almost everything together, and I will explain the content of the individual pages. Students can read things again later if they did not understand something, and I do not have to build slides that nobody reads anyway.
 
 ---
 
-### Was in dieses Repo noch rein muss
+### What still needs to go into this repo
 
-- Ausgebaute README.md (Ziele und Grenzen des Workshops)
-- Setup Datei (Wie installiere ich die benötigten Tools? Warum brauche ich sie überhaupt? Welchen Sinn haben die Tools für mich?)
+- Expanded `README.md` with goals and limits of the workshop
+- Setup file: how to install the required tools, why they are needed, and what they are useful for
 - Slides
-- Erste kleine Projektidee mit Musterlösung und Ideen zur Weiterntwicklung
-- Inspiration für eigene Projekte
+- First small project idea with sample solution and ideas for further development
+- Inspiration for own projects
 - Knowledge Base
-- Knowledge für mich über Skills
-- Glossar über wichtige Begriffe und Konzepte, die im Workshp fallen könnten
+- Knowledge for me about Skills
+- Glossary of important terms and concepts that may appear in the workshop
 
 ---
 
-### Ziele für den Workshop
+### Goals for the workshop
 
-- Vibe Coding als Tool verstehen, nicht als "Allheilmittel" (Möflichkeiten und Grenzen verstehen)
-- Die Wichtigkeit von Konzepten verstehen: Hier findet die Gestaltung statt (Wir geben nicht alles einfach blind an die KI ab, denn sonst entsteht Slop)
-- Inspirieren statt overwhelmen
-- Wie muss ich an die Konzeption von Software ran gehen?
+- Understand Vibe Coding as a tool, not as a cure-all. Understand possibilities and limits.
+- Understand the importance of concepts: this is where design happens. We do not blindly hand everything to AI, because otherwise slop appears.
+- Inspire instead of overwhelming.
+- Learn how to approach the concept phase of software.
 
 ---
 
-## Seitenstruktur
+## Page structure
 
-- index.md: Die Hauptseite des Workshops, Ziele und Struktur, Schritt für Schritt Start
+- `index.md`: the main workshop page, goals and structure, step-by-step start
 - `theorie`: Vibe Coding 101
-- `tutorials`: Hier findest du die Tutorials für den Workshop
-  - github.md
-  - zed.md
-  - Opencode.md
-- `mein-erstes-projekt`: Hier ist das erste Projekt beschrieben, dass wir gmeiensam machen werden. Heir habe ich schon die Konzeption und zerlegung in kleine Teile vorgemacht, um sie zu demonstrieren.
-- `freies-projekt-inspiration`: Hier sind ein paar Ideen skizzenhaft gebaut, die die Studis als Inspiration für eigene Projekte nutzen können. Hier sind nur fertige Skizzen drin, kein Bauplan oder Code.
-- `setup`: Hier findest du die Setup-Anleitung für den Workshop
-  - windows.md
-    - github
-    - zed
-    - opencode/codex/claude
-  - mac.md
-    - github
-    - zed
-    - opencode/codex/claude
+- `tutorials`: tutorials for the workshop
+  - `github.md`
+  - `zed.md`
+  - `opencode.md`
+- `mein-erstes-projekt`: the first project we will build together. The concept and breakdown into small parts are already prepared here for demonstration.
+- `freies-projekt-inspiration`: a few roughly sketched ideas that students can use as inspiration for own projects. These are finished sketches only, not a build plan or code.
+- `setup`: setup guide for the workshop
+  - `windows.md`
+    - GitHub
+    - Zed
+    - OpenCode/Codex/Claude
+  - `mac.md`
+    - GitHub
+    - Zed
+    - OpenCode/Codex/Claude
